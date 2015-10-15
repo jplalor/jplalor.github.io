@@ -32,7 +32,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-SITEURL = 'http://localhost:8000'
+SITEURL = 'jplalor.github.io'
 
 THEME = '/home/lalor/code/jplalor/pelican-themes/svbhack'
 

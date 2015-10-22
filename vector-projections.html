@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ## for client-side less
+  <link rel="stylesheet/less" type="text/css" href="http://jplalor.github.io/theme/css/style.less">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
+  -->
+  <link rel="stylesheet" type="text/css" href="http://jplalor.github.io/theme/css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://jplalor.github.io/theme/css/pygments.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="John Lalor">
+  <meta name="description" content="Posts and writings by John Lalor">
+
+
+<meta name="keywords" content="linalg, ml">
+
+  <title>
+    John Lalor
+&ndash; Dot Products and Vector Projections  </title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47968906-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+  <aside>
+    <div id="user_meta">
+      <a href="http://jplalor.github.io">
+        <img src="http://jplalor.github.io/images/me.jpg" alt="logo">
+      </a>
+      <h2><a href="http://jplalor.github.io">John Lalor</a></h2>
+      <p></p>
+      <ul>
+        <li><a href="http://jplalor.github.io/pages/about.html">About</a></li>
+        <li><a href="https://people.cs.umass.edu/~lalor/" target="_blank">Academic Page</a></li>
+        <li><a href="http://www.twitter.com/lalorjp" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <p>
+      <a href="http://jplalor.github.io">Index</a> &brvbar; <a href="http://jplalor.github.io/archives.html">Archives</a>
+      </p>
+    </header>
+
+<article>
+  <div class="article_title">
+    <h3><a href="http://jplalor.github.io/vector-projections.html">Dot Products and Vector Projections</a></h3>
+  </div>
+  <div class="article_text">
+    <p>Every once in a while I'm going to write a post about something I learned in my Machine Learning course here at UMass. I'd like to do one post per lecture, but I'm late out of the gate, so it might be less frequent. These posts aren't intended to be thorough explanations of particular topics, but instead will be relatively high-level overviews, with a simple example to illustrate the concept. That's the plan anyway. Comments or corrections are welcome and encouraged.</p>
+<p>This post is about dot products and projections, mostly because they're really useful and came up early in lecture. The projection of a vector from one space to another can be very useful when trying to reduce the dimensionality of a set of vectors.</p>
+<p>Ok, quick pause for some background. What does that all mean?</p>
+<p>One way of thinking about data is as a collection of vectors. For example, if you are looking at a dataset where each entry is the height and weight of an individual, one of your vectors would look like this:</p>
+<div class="math">$$v_a: \{70, 180\}$$</div>
+<p>Where <span class="math">\(v_{a1}\)</span> is individual a's height in inches and <span class="math">\(v_{a2}\)</span> is individual a's weight in pounds. This vector has a dimensionality of 2.</p>
+<p>Not all datasets will have dimensionality of 2. Many will have much higher dimensionality, which can make working with them difficult. One way of making life easier is attempting to take your high dimensional data and <em>project</em> it onto a lower dimensional vector. In order to do this, we need to talk about dot products.</p>
+<p>Algebraically, the dot product of two vectors is the sum of the product of each pair of values in the vectors. So you take each pair of values from the two vectors, multiply them together, and add up all of those products.</p>
+<div class="math">$$A\cdot B = \sum_{i=1}^n A_iB_i$$</div>
+<p>Knowing how to calculate a dot product, we can now project one vector onto another. In order to project vector B onto vector A, we take the dot product of B and A, and divide by the magnitude of A, which is really the square root of the dot product of A with itself, <span class="math">\(\lvert\lvert A \rvert\rvert = \sqrt{A\cdot A}\)</span></p>
+<div class="math">$$comp_ab = \frac{A\cdot B}{\lvert\lvert A \rvert\rvert}$$</div>
+<p>This will give a scalar value, which is called the component or scalar projection of B in the A direction. You can think of it as the length of the projection of vector B. To turn this into a vector projection, we multiply it by the unit vector for A: <span class="math">\(\frac{A}{\lvert\lvert A\rvert\rvert}\)</span>. The formula for the projection is therefore:</p>
+<div class="math">$$proj_BA = \frac{A\cdot B}{\lvert\lvert A \rvert\rvert}\frac{A}{\lvert\lvert A\rvert\rvert}$$</div>
+<p>Let's look at an example to see how this all works. Consider two vectors:</p>
+<div class="math">$$A = \{2, 4, 6\}$$</div>
+<div class="math">$$B = \{10, 11, 12\}$$</div>
+<p>Let's project B onto A. First, we'll calculate the scalar projection:</p>
+<div class="math">$$comp_AB = \frac{A\cdot B}{\lvert\lvert A\rvert\rvert}$$</div>
+<div class="math">$$ = \frac{2 * 10 + 4 * 11 + 6 * 12}{\sqrt{2 * 2 + 4 * 4 + 6 * 6}} = 18.174$$</div>
+<p>So our scalar projection is 18.174. Now, we take that and multiply it by the A unit vector:</p>
+<div class="math">$$proj_AB = \frac{A\cdot B}{\lvert\lvert A \rvert\rvert}\frac{A}{\lvert\lvert A\rvert\rvert}$$</div>
+<div class="math">$$ = 18.174\frac{A}{\lvert\lvert A\rvert\rvert} = \{4.8571, 9.7143, 14.5714\}$$</div>
+<p>The result is the vector B <em>projected</em> onto vector a.</p>
+<p>So there you have it. Dot products and projections. As you might have noticed, the vectors involved above were of the same length. But I thought we were going to project to lower dimensions? We will, we will. In order to do that we have to identify <em>basis vectors</em> that identify the dimensions that we want to project to. That is a topic for a later post.</p>
+<p>References:</p>
+<p><a href="http://math.oregonstate.edu/home/programs/undergrad/CalculusQuestStudyGuides/vcalc/dotprod/dotprod.html">http://math.oregonstate.edu/home/programs/undergrad/CalculusQuestStudyGuides/vcalc/dotprod/dotprod.html</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Vector_projection">https://en.wikipedia.org/wiki/Vector_projection</a></p>
+<p><a href="http://mathworld.wolfram.com/DotProduct.html">http://mathworld.wolfram.com/DotProduct.html</a></p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div>
+  <div class="article_meta">
+    <p>Posted on: Tue 20 October 2015</p>
+    <p>Category: <a href="http://jplalor.github.io/category/learning-machine-learning.html">Learning-Machine-Learning</a>
+ &ndash; Tags:
+      <a href="http://jplalor.github.io/tag/linalg.html">linalg</a>,      <a href="http://jplalor.github.io/tag/ml.html">ml</a>    </p>
+  </div>
+
+
+</article>
+
+
+    <div id="ending_message">
+      <p>&copy; John Lalor. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
+    </div>
+  </main>
+</body>
+</html>

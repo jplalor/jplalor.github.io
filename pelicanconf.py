@@ -40,5 +40,6 @@ GOOGLE_ANALYTICS = 'UA-47968906-2'
 
 USER_LOGO_URL = SITEURL + '/images/me.jpg'
 
-
+PLUGIN_PATHS = ['/home/lalor/code/jplalor/pelican-plugins']
+PLUGINS = ['render_math']
 

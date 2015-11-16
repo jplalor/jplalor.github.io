@@ -34,12 +34,12 @@ DEFAULT_PAGINATION = 10
 
 SITEURL = 'http://jplalor.github.io'
 
-THEME = '/home/lalor/code/jplalor/pelican-themes/svbhack'
+THEME = '/home/lalor/projects/personal/jplalor/pelican-themes/svbhack'
 
 GOOGLE_ANALYTICS = 'UA-47968906-2'
 
 USER_LOGO_URL = SITEURL + '/images/me.jpg'
 
-PLUGIN_PATHS = ['/home/lalor/code/jplalor/pelican-plugins']
+PLUGIN_PATHS = ['/home/lalor/projects/personal/jplalor/pelican-plugins']
 PLUGINS = ['render_math']
 

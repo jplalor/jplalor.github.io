@@ -26,6 +26,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 #Projects
 
 Below are a few projects that I've worked on, either as part of a class project or on my own time.
+
 - [GutenRecs][10]: "More like this" book recommendations for Project Gutenberg. Final Project for ECT 584: Web Data Mining at DePaul
 - [An Analysis of Major League Baseball as a Social Network][11]: Final project for CSC 495: Social Network Analysis at DePaul.
 - [Goodreads Right Click][12]: A Chrome Extension for Searching on Goodreads. I wanted this to exist, so I built it.

@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <!-- ## for client-side less
-  <link rel="stylesheet/less" type="text/css" href="http://jplalor.github.io/theme/css/style.less">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
-  -->
-  <link rel="stylesheet" type="text/css" href="http://jplalor.github.io/theme/css/style.css">
-  <link rel="stylesheet" type="text/css" href="http://jplalor.github.io/theme/css/pygments.css">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+  <head>
+      <title>John Lalor</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="John Lalor">
-  <meta name="description" content="Posts and writings by John Lalor">
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+        <div class= "siteimage">
+          <a class="nodec" href=images/me.jpg>
+            <img width="200" height="200" src=images/me.jpg>
+          </a>
+        </div>
 
-
-<meta name="keywords" content="ml, lstm">
-
-  <title>
-    John Lalor
-&ndash; Generating Seinfeld Dialog using Neural Networks  </title>
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-47968906-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-</head>
-
-<body>
-  <aside>
-    <div id="user_meta">
-      <a href="http://jplalor.github.io">
-        <img src="http://jplalor.github.io/images/me.jpg" alt="logo">
-      </a>
-      <h2><a href="http://jplalor.github.io">John Lalor</a></h2>
-      <p></p>
-      <ul>
-        <li><a href="http://jplalor.github.io/pages/about.html">About</a></li>
-        <li><a href="https://people.cs.umass.edu/~lalor/" target="_blank">Academic Page</a></li>
-        <li><a href="http://www.twitter.com/lalorjp" target="_blank">Twitter</a></li>
-      </ul>
-    </div>
-  </aside>
-
-  <main>
-    <header>
-      <p>
-      <a href="http://jplalor.github.io">Index</a> &brvbar; <a href="http://jplalor.github.io/archives.html">Archives</a>
-      </p>
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">John Lalor</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+              <li><a class="nodec" href="/">home</a></li>
+              <li><a class="nodec" href="/blog_index.html">blog</a></li>
+              <li><a class="nodec" href="/pdfs/cv.pdf">cv</a></li>
+            <!--pages-->
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/jplalor"></a></li>
+              <li><a class="nodec icon-twitter" href="http://www.twitter.com/lalorjp"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
     </header>
 
-<article>
-  <div class="article_title">
-    <h3><a href="http://jplalor.github.io/drafts/lstm-seinfeld.html">Generating Seinfeld Dialog using Neural Networks</a></h3>
-  </div>
-  <div class="article_text">
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/drafts/lstm-seinfeld.html" rel="bookmark" title="Permalink to Generating Seinfeld Dialog using Neural Networks">
+      Generating Seinfeld Dialog using Neural Networks
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2016-01-29T09:00:00-05:00">
+      Fri 29 January 2016
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
     <p>Neural networks are all the rage these days, with a huge number of examples of their capabilities around the web. One particular type is the Long Short-Term Memory Recurring Neural Network (LSTM RNN). I'll leave the explanation of how they work to more qualified people (add links here), but I wanted to show off a particularly interesting application of the technology.</p>
 <p>Andrej Karpathy released an LSTM RNN that takes a block of text as input and can generate as output text that follows the patterns found in the input text, one character at a time. He has examples of the network generating Shakespeare, Wikipedia articles, and even LateX and Linux source code. As the system learns, the output it generates looks more and more realistic compared to the input.</p>
 <p>Here, I used Andrej's code to simulate some of the most important text out there...dialog from scripts of the TV series Seinfeld!</p>
@@ -105,21 +100,19 @@ JERRY: Yeah, and then she doesn't leave, it's Different. You have no spreading <
 <p>You can see that the network does a good job of recognizing actual characters from the show, from the major players (Jerry and co.) to less common characters like Bania and (one of my favorites) Steinbrenner. The actual dialog isn't great, but you can see some spots where it makes a little sense. What if we run it some more?</p>
 <p>(add more content here)</p>
 <p>References:</p>
-  </div>
-  <div class="article_meta">
-    <p>Posted on: Fri 29 January 2016</p>
-    <p>Category: <a href="http://jplalor.github.io/category/machine-learning.html">Machine-Learning</a>
- &ndash; Tags:
-      <a href="http://jplalor.github.io/tag/ml.html">ml</a>,      <a href="http://jplalor.github.io/tag/lstm.html">lstm</a>    </p>
-  </div>
+  </div><!-- .content -->
+
+</section>
 
 
-</article>
-
-
-    <div id="ending_message">
-      <p>&copy; John Lalor. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. </p>
-    </div>
-  </main>
-</body>
+    <!-- footer -->
+    <footer>
+      <p>
+        © John Lalor, license <a href=""> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a> with
+        <a href="http://github.com/porterjamesj/crowsfoot">crowsfoot</a> theme.
+      </p>
+    </footer>
+  </body>
 </html>

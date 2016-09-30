@@ -21,25 +21,44 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('Academic Page', 'https://people.cs.umass.edu/~lalor/'),
+         ('Blog', '/blog_index.html'),
          )
 
 # Social widget
 SOCIAL = (('Twitter', 'http://www.twitter.com/lalorjp'),
           )
 
+# for crowsfoot theme
+TWITTER_ADDRESS = 'http://www.twitter.com/lalorjp'
+GITHUB_ADDRESS = 'https://github.com/jplalor'
+
+MENUITEMS = (
+    ('home', '/'),
+    ('blog', '/blog_index.html'),
+    ('cv', '/pdfs/cv.pdf'),
+)
+
 DEFAULT_PAGINATION = 10
 
+INDEX_SAVE_AS = 'blog_index.html'
+
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 SITEURL = 'http://jplalor.github.io'
 
-THEME = '/home/lalor/projects/personal/jplalor/pelican-themes/svbhack'
+THEME = '/home/lalor/projects/personal/pelican-themes/crowsfoot'
 
 GOOGLE_ANALYTICS = 'UA-47968906-2'
 
-USER_LOGO_URL = SITEURL + '/images/me.jpg'
+USER_LOGO_URL = 'images/me.jpg'
+PROFILE_IMAGE_URL = 'images/me.jpg'
 
-PLUGIN_PATHS = ['/home/lalor/projects/personal/jplalor/pelican-plugins']
+SHOW_ARTICLE_AUTHOR = False
+DISPLAY_PAGES_ON_MENU = False
+
+STATIC_PATHS = ['images', 'pdfs']
+
+PLUGIN_PATHS = ['/home/lalor/projects/personal/pelican-plugins']
 PLUGINS = ['render_math']
 

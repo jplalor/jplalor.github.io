@@ -16,12 +16,12 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Publications
 
-- T. Munkhdalai, J. Lalor, H. Yu, **Citation Analysis with Neural Attention Models**, to appear at *LOUHI 2016 : EMNLP 2016 Workshop - The Seventh International Workshop on Health Text Mining and Information Analysis*, Austin, Texas, USA, November 2016.
-- J. Lalor, H. Wu, H. Yu, <b>Building an Evaluation Scale using Item Response Theory</b>, To appear at <i>EMNLP 2016: Conference on Empirical Methods in Natural Language Processing</i>, Austin, Texas, USA, November 2016. [arXiv pre-print][4]
-- C. Miller, A. Settle, and J. Lalor. 2015. **Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls**, In *SIGITE 2015: The Special Interest Group for Information Technology Education Conference*, Chicago, Illnois, October 2015. [ACM link][5]
-- A. Settle, J. Lalor, and T. Steinbach. 2015. **Evaluating a Linked-courses Learning Community for Development Majors**. In *SIGITE 2015: The Special Interest Group for Information Technology Education Conference*, Chicago, Illnois, October 2015. [ACM link][6]
-- A. Settle, J. Lalor, and T. Steinbach, **A Computer Science Linked-courses Learning Community**, In *ITiCSE 2015: The 20th Annual Conference on Innovation and Technology in Computer Science Education*, Vilnius, Lithuania, July 2015. [ACM link][7]
-- A. Settle, J. Lalor, and T. Steinbach, **Reconsidering the Impact of CS1 on Novice Attitudes**. In *SIGCSE 2015: The Proceedings of the 45th Annual SIGCSE Technical Symposium on Computer Science Education*, Kansas City, Missouri, March 2015. [ACM link][8]
+- T. Munkhdalai, J. Lalor, H. Yu, **Citation Analysis with Neural Attention Models**, To appear in *LOUHI 2016 EMNLP Workshop*.
+- J. Lalor, H. Wu, H. Yu, **Building an Evaluation Scale using Item Response Theory**, To appear in *EMNLP 2016*. [arXiv pre-print][4]
+- C. Miller, A. Settle, and J. Lalor. 2015. **Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls**, *SIGITE 2015*. [ACM link][5]
+- A. Settle, J. Lalor, and T. Steinbach. 2015. **Evaluating a Linked-courses Learning Community for Development Majors**. In *SIGITE 2015*. [ACM link][6]
+- A. Settle, J. Lalor, and T. Steinbach, **A Computer Science Linked-courses Learning Community**, In *ITiCSE 2015*. [ACM link][7]
+- A. Settle, J. Lalor, and T. Steinbach, **Reconsidering the Impact of CS1 on Novice Attitudes**. In *SIGCSE 2015*. [ACM link][8]
 
 #Projects
 

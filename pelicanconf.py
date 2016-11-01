@@ -47,7 +47,7 @@ RELATIVE_URLS = True
 
 SITEURL = 'http://jplalor.github.io'
 
-THEME = '/home/lalor/projects/personal/pelican-themes/crowsfoot'
+THEME = '/home/lalor/projects/pelican-themes/crowsfoot'
 
 GOOGLE_ANALYTICS = 'UA-47968906-2'
 
@@ -57,8 +57,8 @@ PROFILE_IMAGE_URL = 'images/me.jpg'
 SHOW_ARTICLE_AUTHOR = False
 DISPLAY_PAGES_ON_MENU = False
 
-STATIC_PATHS = ['images', 'pdfs']
+STATIC_PATHS = ['images', 'pdfs', 'files']
 
-PLUGIN_PATHS = ['/home/lalor/projects/personal/pelican-plugins']
+PLUGIN_PATHS = ['/home/lalor/projects/pelican-plugins']
 PLUGINS = ['render_math']
 

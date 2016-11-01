@@ -11,13 +11,14 @@ This page contains code and data used in the following paper:
 
 ## Data
 
-<!--The dataset consists of response patterns collected using the Amazon Mechanical Turk crowdsourcing platform.
+The dataset consists of response patterns collected using the Amazon Mechanical Turk crowdsourcing platform.
 
-Included in the irt.zip file is the data (response_patterns.csv) and a README.
+Included in the zip file is the data and a README.
 
-License: the dataset is licensed under Creative Commons-->
+License: The data is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][3].
+Based on the [Stanford SNLI project][4].
 
-Download: *Dataset will be released with publication of the paper at EMNLP 2016 (Nov. 2016)*
+Download: [zip file][2]
 
 ## Code
 
@@ -25,8 +26,13 @@ Download: *Dataset will be released with publication of the paper at EMNLP 2016 
 Included are R files for each of the 5 evaluation scales.
 The code is hosted on GitHub.-->
 
-Download: *Code will be released with publication of the paper at EMNLP 2016 (Nov. 2016)*
+Download: **Code will be released with publication of the paper at EMNLP 2016 (Nov. 2016)**
+*Update: The code is coming soon. Please stay tuned.*
+
 
 Questions about the code or data? Contact me at lalor at cs dot umass dot edu.
 
 [1]:https://arxiv.org/abs/1605.08889v2
+[2]:/files/data_emnlp2016.zip
+[3]:http://creativecommons.org/licenses/by-sa/4.0/
+[4]:http://http://nlp.stanford.edu/projects/snli/

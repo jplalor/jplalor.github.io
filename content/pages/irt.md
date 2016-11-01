@@ -22,12 +22,10 @@ Download: [zip file][2]
 
 ## Code
 
-<!--Code used to generate the evaluation scales from the paper was written in R.
+Code used to generate the evaluation scales from the paper was written in R.
 Included are R files for each of the 5 evaluation scales.
-The code is hosted on GitHub.-->
 
-Download: **Code will be released with publication of the paper at EMNLP 2016 (Nov. 2016)**
-*Update: The code is coming soon. Please stay tuned.*
+Download: [code hosted on GitHub][5]
 
 
 Questions about the code or data? Contact me at lalor at cs dot umass dot edu.
@@ -36,3 +34,4 @@ Questions about the code or data? Contact me at lalor at cs dot umass dot edu.
 [2]:/files/data_emnlp2016.zip
 [3]:http://creativecommons.org/licenses/by-sa/4.0/
 [4]:http://http://nlp.stanford.edu/projects/snli/
+[5]:https://github.com/jplalor/irt-models

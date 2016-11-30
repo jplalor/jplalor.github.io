@@ -16,8 +16,8 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Publications
 
-- T. Munkhdalai, J. Lalor, H. Yu, **Citation Analysis with Neural Attention Models**, To appear in *LOUHI 2016 EMNLP Workshop*.
-- J. Lalor, H. Wu, H. Yu, **Building an Evaluation Scale using Item Response Theory**, To appear in *EMNLP 2016*. [arXiv pre-print][4]
+- T. Munkhdalai, J. Lalor, H. Yu, **Citation Analysis with Neural Attention Models**, In *LOUHI 2016 EMNLP Workshop*.
+- J. Lalor, H. Wu, H. Yu, **Building an Evaluation Scale using Item Response Theory**, In *EMNLP 2016*. [arXiv pre-print][4]
 - C. Miller, A. Settle, and J. Lalor. 2015. **Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls**, *SIGITE 2015*. [ACM link][5]
 - A. Settle, J. Lalor, and T. Steinbach. 2015. **Evaluating a Linked-courses Learning Community for Development Majors**. In *SIGITE 2015*. [ACM link][6]
 - A. Settle, J. Lalor, and T. Steinbach, **A Computer Science Linked-courses Learning Community**, In *ITiCSE 2015*. [ACM link][7]

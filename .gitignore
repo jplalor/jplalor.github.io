@@ -2,6 +2,13 @@
 __pycache__/
 *.py[cod]
 
+# Pelican config files
+pelicanconf.py
+publishconf.py
+pelicanconf.py.old
+publishconf.py.old
+
+
 # C extensions
 *.so
 

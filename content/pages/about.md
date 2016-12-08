@@ -11,9 +11,11 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
-- **December 2016:** I'm giving a talk as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8. I'll be presenting our EMNLP paper. Stay tuned for slides for the talk!
-- **September 2016:** Tsendee's paper "Citation Analysis with Neural Attention Models" was accepted to the EMNLP LOUHI Workshop!
-- **July 2016**: Our paper "Building an Evaluation Scale using Item Response Theory" was accepted to EMNLP 2016!
+1. **December 2016:** I gave a talk as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8. I presented our EMNLP paper on IRT.
+    * Slides from the talk can be found [here][15].
+    * If you're really interested, I recorded myself giving the talk as a practice run. It's on YouTube [here][16]. If you have any feedback I would love to hear it!
+2. **September 2016:** Tsendee's paper "Citation Analysis with Neural Attention Models" was accepted to the EMNLP LOUHI Workshop!
+3. **July 2016**: Our paper "Building an Evaluation Scale using Item Response Theory" was accepted to EMNLP 2016!
 
 # Publications
 
@@ -47,3 +49,5 @@ Below are a few projects that I've worked on, either as part of a class project 
 [12]:https://chrome.google.com/webstore/detail/goodreads-right-click/fbicpmopjallgdpklipffmihodimmcbe?utm_source=chrome-ntp-icon
 [13]:http://www.aclweb.org/anthology/W/W16/W16-6109.pdf
 [14]:https://people.cs.umass.edu/~mlfriend/pmwiki/pmwiki.php?n=Main.BuildingEvaluationScalesForNLPUsingItemResponseTheory
+[15]:http://jplalor.github.io/pdfs/mlfl_irt.pdf
+[16]:https://www.youtube.com/watch?v=iR_yMnUOhig

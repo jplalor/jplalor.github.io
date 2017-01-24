@@ -5,7 +5,7 @@ Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
-I am a 2nd-year PhD student at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I am working with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing.
+I am a PhD student at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I am working with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing.
 
 Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in Information Technology Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
 

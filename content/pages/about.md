@@ -1,30 +1,37 @@
 Title: About
 Date: 2015-10-15 10:03
+Modified: 2017-05-24 09:30
 Category: static
 Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
-I am a PhD student at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I am working with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing.
+I am a PhD student at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing.
 
-Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in Information Technology Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
+Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
 
 # Updates
 
-1. **December 2016:** I gave a talk as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8. I presented our EMNLP paper on IRT.
+1. **Summer 2017:** I'll be interning with the Alexa team at Amazon Boston!
+2. **December 2016:** I gave a talk as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8. I presented our EMNLP paper on IRT.
     * Slides from the talk can be found [here][15].
     * If you're really interested, I recorded myself giving the talk as a practice run. It's on YouTube [here][16]. If you have any feedback I would love to hear it!
-2. **September 2016:** Tsendee's paper "Citation Analysis with Neural Attention Models" was accepted to the EMNLP LOUHI Workshop!
-3. **July 2016**: Our paper "Building an Evaluation Scale using Item Response Theory" was accepted to EMNLP 2016!
+3. **September 2016:** Tsendee's paper "Citation Analysis with Neural Attention Models" was accepted to the EMNLP LOUHI Workshop!
+4. **July 2016**: Our paper "Building an Evaluation Scale using Item Response Theory" was accepted to EMNLP 2016!
 
 # Publications
 
-- T. Munkhdalai, J. Lalor, H. Yu, **Citation Analysis with Neural Attention Models**, In *LOUHI 2016 EMNLP Workshop*. [pdf][13]
-- J. Lalor, H. Wu, H. Yu, **Building an Evaluation Scale using Item Response Theory**, In *EMNLP 2016*. [arXiv pre-print][4]
-- C. Miller, A. Settle, and J. Lalor. 2015. **Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls**, *SIGITE 2015*. [ACM link][5]
-- A. Settle, J. Lalor, and T. Steinbach. 2015. **Evaluating a Linked-courses Learning Community for Development Majors**. In *SIGITE 2015*. [ACM link][6]
-- A. Settle, J. Lalor, and T. Steinbach, **A Computer Science Linked-courses Learning Community**, In *ITiCSE 2015*. [ACM link][7]
-- A. Settle, J. Lalor, and T. Steinbach, **Reconsidering the Impact of CS1 on Novice Attitudes**. In *SIGCSE 2015*. [ACM link][8]
+- T. Munkhdalai, J. Lalor, H. Yu. **Citation Analysis with Neural Attention Models**, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
+- J. Lalor, H. Wu, H. Yu. **Building an Evaluation Scale using Item Response Theory**, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
+- C. Miller, A. Settle, and J. Lalor. **Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls**, *SIGITE 2015*. [[ACM link][5]]
+- A. Settle, J. Lalor, and T. Steinbach. **Evaluating a Linked-courses Learning Community for Development Majors**. In *SIGITE 2015*. [[ACM link][6]]
+- A. Settle, J. Lalor, and T. Steinbach. **A Computer Science Linked-courses Learning Community**, In *ITiCSE 2015*. [[ACM link][7]]
+- A. Settle, J. Lalor, and T. Steinbach. **Reconsidering the Impact of CS1 on Novice Attitudes**. In *SIGCSE 2015*. [[ACM link][8]]
+
+# Preprints
+
+- J. Lalor, H. Wu, H. Yu. **Improving Machine Learning Ability with Fine-Tuning** [[arxiv][17]]
+- J. Lalor, H. Wu, T. Munkhdalai, H. Yu. **An Analysis of Machine Learning Ability** [[arxiv][18]]
 
 #Projects
 
@@ -51,3 +58,6 @@ Below are a few projects that I've worked on, either as part of a class project 
 [14]:https://people.cs.umass.edu/~mlfriend/pmwiki/pmwiki.php?n=Main.BuildingEvaluationScalesForNLPUsingItemResponseTheory
 [15]:http://jplalor.github.io/pdfs/mlfl_irt.pdf
 [16]:https://www.youtube.com/watch?v=iR_yMnUOhig
+[17]:https://arxiv.org/abs/1702.08563
+[18]:https://arxiv.org/abs/1702.04811
+[19]:http://jplalor.github.io/irt

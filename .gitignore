@@ -8,6 +8,7 @@ publishconf.py
 pelicanconf.py.old
 publishconf.py.old
 
+*~
 
 # C extensions
 *.so

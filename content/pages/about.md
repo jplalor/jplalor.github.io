@@ -12,26 +12,29 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
-1. **Summer 2017:** I'll be interning with the Alexa team at Amazon Boston!
-2. **December 2016:** I gave a talk as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8. I presented our EMNLP paper on IRT.
+
+1. **June 2017:** [CIFT][17] was accepted as a poster for the Work-in-Progress session at HCOMP 2017 in Quebec City!
+2. **June 2017:** Our podium abstract, *Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory*, was accepted for AMIA 2017 in Washington, DC!
+1. **Summer 2017:** Internship with the Alexa team at Amazon Boston!
+2. **December 2016:** I gave a talk on our EMNLP paper as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8.
     * Slides from the talk can be found [here][15].
     * If you're really interested, I recorded myself giving the talk as a practice run. It's on YouTube [here][16]. If you have any feedback I would love to hear it!
-3. **September 2016:** Tsendee's paper "Citation Analysis with Neural Attention Models" was accepted to the EMNLP LOUHI Workshop!
-4. **July 2016**: Our paper "Building an Evaluation Scale using Item Response Theory" was accepted to EMNLP 2016!
+3. **September 2016:** Tsendee's paper *Citation Analysis with Neural Attention Models* was accepted to the EMNLP LOUHI Workshop!
+4. **July 2016:** Our paper *Building an Evaluation Scale using Item Response Theory* was accepted to EMNLP 2016!
 
 # Publications
 
-- T. Munkhdalai, J. Lalor, H. Yu. **Citation Analysis with Neural Attention Models**, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
-- J. Lalor, H. Wu, H. Yu. **Building an Evaluation Scale using Item Response Theory**, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
-- C. Miller, A. Settle, and J. Lalor. **Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls**, *SIGITE 2015*. [[ACM link][5]]
-- A. Settle, J. Lalor, and T. Steinbach. **Evaluating a Linked-courses Learning Community for Development Majors**. In *SIGITE 2015*. [[ACM link][6]]
-- A. Settle, J. Lalor, and T. Steinbach. **A Computer Science Linked-courses Learning Community**, In *ITiCSE 2015*. [[ACM link][7]]
-- A. Settle, J. Lalor, and T. Steinbach. **Reconsidering the Impact of CS1 on Novice Attitudes**. In *SIGCSE 2015*. [[ACM link][8]]
+- T. Munkhdalai, J. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
+- J. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
+- C. Miller, A. Settle, and J. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]
+- A. Settle, J. Lalor, and T. Steinbach. Evaluating a Linked-courses Learning Community for Development Majors. In *SIGITE 2015*. [[ACM link][6]]
+- A. Settle, J. Lalor, and T. Steinbach. A Computer Science Linked-courses Learning Community, In *ITiCSE 2015*. [[ACM link][7]]
+- A. Settle, J. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[ACM link][8]]
 
 # Preprints
 
-- J. Lalor, H. Wu, H. Yu. **Improving Machine Learning Ability with Fine-Tuning** [[arxiv][17]]
-- J. Lalor, H. Wu, T. Munkhdalai, H. Yu. **An Analysis of Machine Learning Ability** [[arxiv][18]]
+- J. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability [[arxiv][17]]
+- J. Lalor, H. Wu, T. Munkhdalai, H. Yu. An Analysis of Machine Learning Ability [[arxiv][18]]
 
 #Projects
 

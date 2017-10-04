@@ -13,6 +13,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 # Updates
 
 
+1. **September 2017:** I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
 1. **June 2017:** [CIFT][17] was accepted as a poster for the Work-in-Progress session at HCOMP 2017 in Quebec City!
 2. **June 2017:** Our podium abstract, *Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory*, was accepted for AMIA 2017 in Washington, DC!
 1. **Summer 2017:** Internship with the Alexa team at Amazon Boston!

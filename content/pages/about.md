@@ -12,7 +12,6 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
-
 1. **September 2017:** I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
 1. **June 2017:** [CIFT][17] was accepted as a poster for the Work-in-Progress session at HCOMP 2017 in Quebec City!
 2. **June 2017:** Our podium abstract, *Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory*, was accepted for AMIA 2017 in Washington, DC!
@@ -25,6 +24,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Publications
 
+- J. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20]]
 - T. Munkhdalai, J. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
 - J. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
 - C. Miller, A. Settle, and J. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]
@@ -65,3 +65,4 @@ Below are a few projects that I've worked on, either as part of a class project 
 [17]:https://arxiv.org/abs/1702.08563
 [18]:https://arxiv.org/abs/1702.04811
 [19]:http://jplalor.github.io/irt
+[20]:http://jplalor.github.io/ehr

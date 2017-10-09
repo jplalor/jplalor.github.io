@@ -65,4 +65,4 @@ Below are a few projects that I've worked on, either as part of a class project 
 [17]:https://arxiv.org/abs/1702.08563
 [18]:https://arxiv.org/abs/1702.04811
 [19]:http://jplalor.github.io/irt
-[20]:http://jplalor.github.io/ehr
+[20]:http://jplalor.github.io/ehr.html

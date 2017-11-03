@@ -8,10 +8,12 @@ save_as: index.html
 
 I am a PhD student at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing.
 
-Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
+Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago and as an IT Audit Associate for [KPMG][23]. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
 
 # Updates
 
+1. **November 2017:** I'll be at the AMIA Annual Symposium presenting our podium abstract on a new test of Electronic Health Record note comprehension.
+1. **October 2017:** At HCOMP 2017 to present CIFT as a Works in Progress poster.
 1. **September 2017:** I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
 1. **June 2017:** [CIFT][17] was accepted as a poster for the Work-in-Progress session at HCOMP 2017 in Quebec City!
 2. **June 2017:** Our podium abstract, *Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory*, was accepted for AMIA 2017 in Washington, DC!
@@ -24,13 +26,17 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Publications
 
-- J. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20]]
 - T. Munkhdalai, J. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
 - J. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
 - C. Miller, A. Settle, and J. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]
 - A. Settle, J. Lalor, and T. Steinbach. Evaluating a Linked-courses Learning Community for Development Majors. In *SIGITE 2015*. [[ACM link][6]]
 - A. Settle, J. Lalor, and T. Steinbach. A Computer Science Linked-courses Learning Community, In *ITiCSE 2015*. [[ACM link][7]]
 - A. Settle, J. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[ACM link][8]]
+
+# Posters and Abstracts
+
+- J. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20], [slides][22]]
+- J. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][21]]
 
 # Preprints
 
@@ -66,3 +72,6 @@ Below are a few projects that I've worked on, either as part of a class project 
 [18]:https://arxiv.org/abs/1702.04811
 [19]:http://jplalor.github.io/irt
 [20]:http://jplalor.github.io/ehr.html
+[21]:http://jplalor.github.io/pdfs/cift_hcomp2017.pdf
+[22]:http://jplalor.github.io/pdfs/amia_ehr_2017.pdf
+[23]:http://www.kpmg.com

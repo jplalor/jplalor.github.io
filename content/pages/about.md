@@ -79,4 +79,4 @@ Below are a few projects that I've worked on, either as part of a class project 
 [22]:http://jplalor.github.io/pdfs/amia_ehr_2017.pdf
 [23]:http://www.kpmg.com
 [24]:https://www.cics.umass.edu/grads/phd-portfolio
-[25]:http://jplalor.github.io/pdfs/lalor_nldl.org
+[25]:http://jplalor.github.io/pdfs/lalor_nldl.pdf

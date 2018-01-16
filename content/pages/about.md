@@ -6,13 +6,14 @@ Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
-I am a PhD student at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing.
+I am a PhD candidate at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing.
 
 Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago and as an IT Audit Associate for [KPMG][23]. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
 
 # Updates
 
-1. **January 2018:** I'll be presenting at the first Northern Lights Deep Learning Workshop in Tromso, Norway!
+1. **January 2018:** I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway.
+1. **December 2017:** I passed the [CICS Portfolio][24] and am now a PhD candidate!
 1. November 2017: I attended the AMIA Annual Symposium presenting our podium abstract on a new test of Electronic Health Record note comprehension.
 1. October 2017: I was at HCOMP 2017 to present CIFT as a Works in Progress poster.
 1. September 2017: I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
@@ -36,6 +37,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Posters and Abstracts
 
+- J. Lalor, H. Wu, H. Yu, Modeling Difficulty to Understand Deep Learning Performance. *Northern Lights Deep Learning Workshop (NLDL), 2018* [[slides][25]]
 - J. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20], [slides][22]]
 - J. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][21]]
 
@@ -76,3 +78,5 @@ Below are a few projects that I've worked on, either as part of a class project 
 [21]:http://jplalor.github.io/pdfs/cift_hcomp2017.pdf
 [22]:http://jplalor.github.io/pdfs/amia_ehr_2017.pdf
 [23]:http://www.kpmg.com
+[24]:https://www.cics.umass.edu/grads/phd-portfolio
+[25]:http://jplalor.github.io/pdfs/lalor_nldl.org

@@ -1,0 +1,92 @@
+---
+title: StatNLP: Essential Information Theory, Part 1
+author: John Lalor
+date: February 15, 2018
+output: html
+Category: StatNLP
+Slug: info-theory-part-1
+Summary: Entropy!
+Tags: ml, nlp
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I'd like to blog regularly, but I often struggle to come up with topics. So what I'm going to do is blog my way through some textbooks, to work on my writing and also to make sure that I have the concepts in the books down pat. The first textbook in the series will be *Foundations of Statistical Natural Language Processing* by Manning and Sch&uuml;tze (which I'll refer to as StatNLP from here on out). And the first topic will be *Essential Information Theory* (section 2.2 in the book). This first post will introduce entropy and provide a few examples.
+
+# Information Theory Basics
+
+Information Theory as a field was developed by Claude Shannon in the 1940s. I won't go into too many details, but basically Shannon was working on a way to quantify how much information one could transmit through a channel that would inevitably lose some of the information due to some amount of noise. He introduced some key concepts that we'll define and visualize here. Information Theory as a whole is an active field, and we'll only scratch the surface here, but at the end of the series I'll provide some pointers for anyone interested in learning more.
+
+## Preliminaries
+
+In this post we'll be looking at probabilities of random variables. We'll define a discrete random variable as a set of outcomes $X$. Each potential outcome in $X$ has an associated probability: $p(X=x)$. The *expectation* (or *expected value*) of $X$ is a weighted sum of the outcomes according to the probabilities:
+
+$$\mathbb{E}[X] = \sum_{x \in X} xp(x)$$
+
+## Entropy
+
+One of the key pieces in Information Theory is entropy. Entropy is defined as the amount of *information* in a random variable. The formula for entropy is 
+
+$$H(X) = - \sum_{x \in X} p(x) \log p(x)$$
+
+Often times the logarithm in the formula is base 2, and the output is a measure of *bits*. Sometimes you'll see the natural log ($\ln$), and the output will be in *nats*. You can also write this formula a few other ways. If you don't like the minus sign in the beginning there, you can move it in and use the reciprocal of the logarithm:
+
+$$H(X) = \sum_{x \in X} p(x) \log \frac{1}{p(x)}$$
+$\log \frac{1}{p(x)}$ is known as the Shannon information content of an outcome (or information content for short). It tells you how much information you get for a specific outcome of a random variable. The previous formula looks a lot like an expectation. That's because it is! So we can rewrite the formula for entropy again as:
+
+$$H(X) = \mathbb{E}( \log \frac{1}{p(X)})$$
+
+Notice in this last formula that the $p(x)$ is now $p(X)$ (capital $X$ instead of lowercase $x$). When we have a lowercase $x$, we're looking for the probability of a specific value $x$ which is in the set of possible values $X$. In the third equation, we're calculating the expectation of the random variable $X$, and so we use $p(X)$.
+
+So what do all of these equivalent formulas mean? When we're calculating entropy, what we're really calculating is the amount of information contained in a particular random variable. On one extreme, if we know everything about the random variable (if $p(x) = 1$ for one of the potential outcomes), then there is no information to be gained from the random variable. On the other extreme, if all of the outcomes are equally likely (as in a standard six-sided die) then there is a lot of information in the random variable. 
+
+I always like to think about entropy in terms of flipping a coin. Let's say we have a completely unbiased coin, so that the probability of it landing on heads is equal to the probability of it landing on tails. Our random variable is still $X$, and the possible values are $x = H$ and $x = T$. The probability of each outcome is $p(x = H) = p(x = T) = 0.5$.
+
+Let's plug this in to our formula for entropy (we'll use the 2nd formula above).
+
+$$
+\begin{align}
+H(X) &= \sum_{x \in \{H, T\}}p(x) \log \frac{1}{p(x)} \\
+ &= 0.5 * \log \frac{1}{0.5} + 0.5 * \log \frac{1}{0.5} \\
+ &= 2*(0.5 \log 2) \\
+ &= 1
+\end{align}
+$$
+
+So what this tells us is that every time we flip an unbiased coin, we get 1 bit of information. what if the coin was biased? For example, let's say that the probability of heads is $0.75$ and the probability of tails is $0.25$. In that case when we calculate entropy we get
+
+$$
+\begin{align}
+H(X) &= \sum_{x \in \{H, T\}}p(x) \log \frac{1}{p(x)} \\
+ &= 0.75 * \log \frac{1}{0.75} + 0.25 * \log \frac{1}{0.25} \\
+ &\approx 0.81
+\end{align}
+$$
+We get less information if we flip a biased coin. Why is that? Because there is less uncertainty in the outcome of the coin flip. If the coin is biased, then one side is more likely to come up than the other. In the case above, if the probability of getting heads is $0.75$, then before you even flip it the odds are good that it will come up heads. So you don't get as much information as when the coin is unbiased, where there is more uncertainty (in fact, the maximum amount of uncertainty).
+
+Let's look at a plot of entropy as the bias of a coin changes.
+
+```{r entropy_plot, echo=FALSE}
+ent <- function(x){
+  if(x == 0){
+    return(0)
+  }
+  if(x == 1){
+    return(0)
+  }
+  return (x * log2(1/x) + (1-x)*log2(1/(1-x)))
+}
+x <- seq(0, 1, by=0.1)
+y <- sapply(x, ent)
+plot(x, y, ylim = c(0, 1), type='l', xlab = "p(x=H)", ylab="Entropy")
+```
+
+As the plot shows, the more biased the coin is, the less information we gain when we flip it. Sometimes it helps to think about entropy in terms of being surprised. When we flip a coin biased to land on heads, we're less surprised when it does land on heads (lower entropy). But when a coin is unbiased, each flip is a surprise (high entropy).
+
+# Conclusion
+
+Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.
+
+As a last note, I wrote this post in RMarkdown, which was surprisingly easy to integrate with this site, which runs on Pelican. All I needed was the [https://github.com/getpelican/pelican-plugins/tree/master/rmd_reader](RMD Reader Pelican Plugin).

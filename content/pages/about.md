@@ -12,6 +12,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **February 2018:** Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research!
 1. **January 2018:** I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway.
 1. **December 2017:** I passed the [CICS Portfolio][24] and am now a PhD candidate!
 1. November 2017: I attended the AMIA Annual Symposium presenting our podium abstract on a new test of Electronic Health Record note comprehension.
@@ -28,6 +29,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Publications
 
+- J. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu. ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension, J Med Internet Res (forthcoming). [[project page][20]]
 - T. Munkhdalai, J. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
 - J. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
 - C. Miller, A. Settle, and J. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]

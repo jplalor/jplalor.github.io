@@ -89,4 +89,4 @@ As the plot shows, the more biased the coin is, the less information we gain whe
 
 Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.
 
-As a last note, I wrote this post in RMarkdown, which was surprisingly easy to integrate with this site, which runs on Pelican. All I needed was the [https://github.com/getpelican/pelican-plugins/tree/master/rmd_reader](RMD Reader Pelican Plugin).
+As a last note, I wrote this post in RMarkdown, which was surprisingly easy to integrate with this site, which runs on Pelican. All I needed was the [RMD Reader Pelican Plugin](https://github.com/getpelican/pelican-plugins/tree/master/rmd_reader).

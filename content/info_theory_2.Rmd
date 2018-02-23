@@ -60,6 +60,8 @@ Ok, so what just happened? Let's take the previous set of equations one at a tim
 
 *chain rule*
 
+*Plots*
+
 
 
 ## Wrapping Up

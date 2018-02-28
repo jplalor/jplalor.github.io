@@ -1,5 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/statnlp.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2018-02-15T00:00:00-05:00</updated><entry><title>StatNLP: Essential Information Theory, Part 1</title><link href="http://jplalor.github.io/info-theory-part-1.html" rel="alternate"></link><updated>2018-02-15T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-15:info-theory-part-1.html</id><summary type="html">&lt;p&gt;I'd like to blog regularly, but I often struggle to come up with topics. So what I'm going to do is blog my way through some textbooks, to work on my writing and also to make sure that I have the concepts in the books down pat. The first textbook in the series will be &lt;em&gt;Foundations of Statistical Natural Language Processing&lt;/em&gt; by Manning and Sch&amp;uuml;tze (which I'll refer to as StatNLP from here on out). And the first topic will be &lt;em&gt;Essential Information Theory&lt;/em&gt; (section 2.2 in the book). This first post will introduce entropy and provide a few examples.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/statnlp.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2018-02-23T00:00:00-05:00</updated><entry><title>StatNLP: Essential Information Theory, Part 2</title><link href="http://jplalor.github.io/info-theory-part-2.html" rel="alternate"></link><updated>2018-02-23T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-23:info-theory-part-2.html</id><summary type="html">&lt;p&gt;Welcome back! In the last post we started our discussion of Information Theory, and defined some key building blocks related to calculating information for a single random variable. This time we'll look at the relationships between two random variables, and what they can tell us (if anything) about the informativeness of each other.&lt;/p&gt;
+&lt;h2&gt;Joint Entropy&lt;/h2&gt;
+&lt;p&gt;The first thing we'll look at is &lt;strong&gt;joint entropy&lt;/strong&gt;. For two random variables, &lt;span class="math"&gt;\(X\)&lt;/span&gt; and &lt;span class="math"&gt;\(Y\)&lt;/span&gt;, the joint entropy between them is &lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+H(X, Y) &amp;amp;= - \sum_{x \in X} \sum_{y \in Y} p(x, y) \log p(x, y) \\
+&amp;amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(x, y)}
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;Joint entropy refers to the amount of information you would need to determine the values of two random variables.
+As an example, we'll go back to coin flipping from last time.
+Now, we have two independent coins, both of them unbiased (so &lt;span class="math"&gt;\(p(x=H) = p(x=T) = p(y=H) = p(y=T) = 0.5\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;The joint entropy for these two random variables is as follows (below the order for the variables is &lt;span class="math"&gt;\((x,y)\)&lt;/span&gt;, so &lt;span class="math"&gt;\(p(H,H)\)&lt;/span&gt; is really &lt;span class="math"&gt;\(p(x=H, y=H)\)&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+H(X, Y) &amp;amp;=  \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{ p(x, y)} \\
+&amp;amp;= p(H,H)\log \frac{1}{p(H,H)} + p(H,T)\log \frac{1}{p(H,T)} \\
+&amp;amp;+ p(T,H)\log \frac{1}{p(T,H)} + p(T,T)\log \frac{1}{p(T,T)} \\
+&amp;amp;= \frac{1}{4}\log 4 + \frac{1}{4}\log 4+ \frac{1}{4}\log 4+ \frac{1}{4}\log 4 \\
+&amp;amp;= 2
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;
+This should make sense, since we showed last time that the entropy of a single unbiased coin is 1 bit. If we have two coins, we then double our information.&lt;/p&gt;
+&lt;h2&gt;Conditional Entropy&lt;/h2&gt;
+&lt;p&gt;Conditional entropy is related to joint entropy. We're still dealing with two random variables, but with conditional entropy we're interested in how much information is gained &lt;em&gt;when we know one of the outcomes.&lt;/em&gt; &lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+H(Y \vert X) &amp;amp;= \sum_{x \in X} p(x) H(Y \vert X = x) \\
+&amp;amp;= \sum_{x \in X} p(x) [\sum_{y \in Y} p(y \vert x) \log \frac{1}{p(y \vert x)}] \\
+&amp;amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) log \frac{1}{p(y \vert x)}
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;Ok, so what just happened? Let's take the previous set of equations one at a time. In the first line we define the conditional entropy as a weighted average of the conditional entropies of &lt;span class="math"&gt;\(Y\)&lt;/span&gt; given each possible value of &lt;span class="math"&gt;\(X\)&lt;/span&gt;. In the second line we just expand that out, using the definition of entropy. Finally, &lt;span class="math"&gt;\(p(x)p(y|x) = p(x,y)\)&lt;/span&gt; so we can rewrite the equation as in the third line.&lt;/p&gt;
+&lt;p&gt;Joint and conditional entropy are closely related. With joint entropy, we are measuring the amount of information in two random variables. Conditional entropy we already know one of the two random variables, and so we're measuring how much additional information is in the other. We can also look at it mathematically, starting with the definition of joint entropy:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+H(X, Y) &amp;amp;=  \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{ p(x, y)} \\
+&amp;amp;= \sum_{x \in X} \sum_{y \in Y} p(x,y) \log \frac{1}{ p(x) p(y\vert x)} \\
+&amp;amp;= \sum_{x \in X} \sum_{y \in Y} p(x,y)[ \log \frac{1}{p(x)} + \log \frac{1}{p(y \vert x)}] \\
+&amp;amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
+&amp;amp;= \sum_{x \in X} p(x) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
+&amp;amp;= H(X) + H(Y \vert X)
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;Let's walk through that. In eqn. 12, we rewrite &lt;span class="math"&gt;\(p(x,y)\)&lt;/span&gt; in the log. In eqn 13. we split that log product into a sum of logs. In eqn. 14 we move &lt;span class="math"&gt;\(p(x,y)\)&lt;/span&gt; into the sum, and in eqn. 15 we use the fact that &lt;span class="math"&gt;\(\sum_{y \in Y} p(x, y) = p(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;So to get the joint entropy of two random variables, you calculate the entropy of one, and add the conditional entropy of the other, given the first one. If the two random variables are independent, then &lt;span class="math"&gt;\(H(X, Y) = H(X) + H(Y)\)&lt;/span&gt;. We saw that above with our two coin example. If you swap all of the x's and y's in the above, you'll see that the order doesn't matter, and &lt;span class="math"&gt;\(H(X,Y) = H(X) + H(Y \vert X) = H(Y) + H(X \vert Y)\)&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Wrapping Up&lt;/h2&gt;
+&lt;p&gt;There were a lot of equations here, but hopefully they all make sense. We're still trying to measure information (as in standard entropy for a single random variable) but now we can look at the information relationship between pairs of random variables. Next time we'll look at two more advanced concepts: mutual information and KL-Divergence.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category></entry><entry><title>StatNLP: Essential Information Theory, Part 1</title><link href="http://jplalor.github.io/info-theory-part-1.html" rel="alternate"></link><updated>2018-02-15T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-15:info-theory-part-1.html</id><summary type="html">&lt;p&gt;I'd like to blog regularly, but I often struggle to come up with topics. So what I'm going to do is blog my way through some textbooks, to work on my writing and also to make sure that I have the concepts in the books down pat. The first textbook in the series will be &lt;em&gt;Foundations of Statistical Natural Language Processing&lt;/em&gt; by Manning and Sch&amp;uuml;tze (which I'll refer to as StatNLP from here on out). And the first topic will be &lt;em&gt;Essential Information Theory&lt;/em&gt; (section 2.2 in the book). This first post will introduce entropy and provide a few examples.&lt;/p&gt;
 &lt;h1&gt;Information Theory Basics&lt;/h1&gt;
 &lt;p&gt;Information Theory as a field was developed by Claude Shannon in the 1940s. I won't go into too many details, but basically Shannon was working on a way to quantify how much information one could transmit through a channel that would inevitably lose some of the information due to some amount of noise. He introduced some key concepts that we'll define and visualize here. Information Theory as a whole is an active field, and we'll only scratch the surface here, but at the end of the series I'll provide some pointers for anyone interested in learning more.&lt;/p&gt;
 &lt;h2&gt;Preliminaries&lt;/h2&gt;
@@ -40,7 +143,7 @@ We get less information if we flip a biased coin. Why is that? Because there is 
 &lt;p&gt;As the plot shows, the more biased the coin is, the less information we gain when we flip it. Sometimes it helps to think about entropy in terms of being surprised. When we flip a coin biased to land on heads, we're less surprised when it does land on heads (lower entropy). But when a coin is unbiased, each flip is a surprise (high entropy).&lt;/p&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.&lt;/p&gt;
-&lt;p&gt;As a last note, I wrote this post in RMarkdown, which was surprisingly easy to integrate with this site, which runs on Pelican. All I needed was the &lt;a href="RMD Reader Pelican Plugin"&gt;https://github.com/getpelican/pelican-plugins/tree/master/rmd_reader&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As a last note, I wrote this post in RMarkdown, which was surprisingly easy to integrate with this site, which runs on Pelican. All I needed was the &lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/rmd_reader"&gt;RMD Reader Pelican Plugin&lt;/a&gt;.&lt;/p&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",

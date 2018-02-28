@@ -10,6 +10,7 @@ I am a PhD candidate at the University of Massachusetts Amherst in the [College 
 
 Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago and as an IT Audit Associate for [KPMG][23]. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
 
+
 # Updates
 
 1. **February 2018:** Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research!

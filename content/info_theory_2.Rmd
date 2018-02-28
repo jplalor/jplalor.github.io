@@ -56,12 +56,24 @@ $$
 
 Ok, so what just happened? Let's take the previous set of equations one at a time. In the first line we define the conditional entropy as a weighted average of the conditional entropies of $Y$ given each possible value of $X$. In the second line we just expand that out, using the definition of entropy. Finally, $p(x)p(y|x) = p(x,y)$ so we can rewrite the equation as in the third line.
 
-*Relationship between conditional and joint*
+Joint and conditional entropy are closely related. With joint entropy, we are measuring the amount of information in two random variables. Conditional entropy we already know one of the two random variables, and so we're measuring how much additional information is in the other. We can also look at it mathematically, starting with the definition of joint entropy:
 
-*chain rule*
+$$
+\begin{align}
+H(X, Y) &=  \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{ p(x, y)} \\
+&= \sum_{x \in X} \sum_{y \in Y} p(x,y) \log \frac{1}{ p(x) p(y\vert x)} \\
+&= \sum_{x \in X} \sum_{y \in Y} p(x,y)[ \log \frac{1}{p(x)} + \log \frac{1}{p(y \vert x)}] \\
+&= \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
+&= \sum_{x \in X} p(x) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
+&= H(X) + H(Y \vert X)
+\end{align}
+$$
 
-*Plots*
+Let's walk through that. In eqn. 12, we rewrite $p(x,y)$ in the log. In eqn 13. we split that log product into a sum of logs. In eqn. 14 we move $p(x,y)$ into the sum, and in eqn. 15 we use the fact that $\sum_{y \in Y} p(x, y) = p(x)$.
 
+So to get the joint entropy of two random variables, you calculate the entropy of one, and add the conditional entropy of the other, given the first one. If the two random variables are independent, then $H(X, Y) = H(X) + H(Y)$. We saw that above with our two coin example. If you swap all of the x's and y's in the above, you'll see that the order doesn't matter, and $H(X,Y) = H(X) + H(Y \vert X) = H(Y) + H(X \vert Y)$
 
 
 ## Wrapping Up
+
+There were a lot of equations here, but hopefully they all make sense. We're still trying to measure information (as in standard entropy for a single random variable) but now we can look at the information relationship between pairs of random variables. Next time we'll look at two more advanced concepts: mutual information and KL-Divergence.

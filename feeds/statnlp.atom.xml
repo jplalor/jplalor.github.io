@@ -1,5 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor - StatNLP</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/statnlp.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2018-02-23T00:00:00-05:00</updated><entry><title>StatNLP: Essential Information Theory, Part 2</title><link href="http://jplalor.github.io/info-theory-part-2.html" rel="alternate"></link><published>2018-02-23T00:00:00-05:00</published><updated>2018-02-23T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-23:/info-theory-part-2.html</id><summary type="html">&lt;p&gt;Joint and Conditional Entropy&lt;/p&gt;</summary><content type="html">&lt;p&gt;Welcome back! In the last post we started our discussion of Information Theory, and defined some key building blocks related to calculating information for a single random variable. This time we'll look at the relationships between two random variables, and what they can tell us (if anything) about the informativeness of each other.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/statnlp.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2018-03-28T00:00:00-04:00</updated><entry><title>StatNLP: Essential Information Theory, Part 3</title><link href="http://jplalor.github.io/info-theory-part-3.html" rel="alternate"></link><updated>2018-03-28T00:00:00-04:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-03-28:info-theory-part-3.html</id><summary type="html">&lt;p&gt;After a bit of a hiatus, it's time to wrap up the Information Theory introduction. In this post I'm going to talk about Mutual Information and KL-Divergence. I'll look at why these two are important, how we get them from what we already know, and what we can do with them (with an example or two for good measure). After this post we can hit the ground running with the StatNLP book, woohoo!&lt;/p&gt;
+&lt;h2&gt;Mutual Information&lt;/h2&gt;
+&lt;p&gt;At the end of the previous post, we looked at the relationship between joint entropy and conditional entropy. Recall that &lt;span class="math"&gt;\(H(X,Y) = H(X) + H(Y \vert X)\)&lt;/span&gt;. In this formula, we can reverse &lt;span class="math"&gt;\(X\)&lt;/span&gt; and &lt;span class="math"&gt;\(Y\)&lt;/span&gt; to get &lt;span class="math"&gt;\(H(X,Y) = H(Y) + H(X \vert Y)\)&lt;/span&gt;. The two are equivalent. If we rearrange those formulas we can derive the formula for &lt;em&gt;mutual information:&lt;/em&gt;&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+H(X) + H(Y \vert X) &amp;amp;= H(Y) + H(X \vert Y) \\
+H(X) - H(X \vert Y) &amp;amp;= H(Y) - H(Y \vert X) \\
+&amp;amp;= I(X;Y)
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;
+Mutual information describes the reduction in uncertainty of one random variable that you get if you know another random variable. For example if &lt;span class="math"&gt;\(X\)&lt;/span&gt; is a random variable indicating whether it is currently raining or not, and &lt;span class="math"&gt;\(Y\)&lt;/span&gt; is a random variable indicating whether the ground or not is wet, if you know that the ground is wet (&lt;span class="math"&gt;\(Y=1\)&lt;/span&gt;), that will reduce the amount of uncertainty in determining whether it is raining (&lt;span class="math"&gt;\(X\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;How do you calculate mutual information? From Equation 2.36 in StatNLP:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+I(X;Y) &amp;amp;= H(X) - H(X \vert Y) \\
+&amp;amp;= H(X) + H(Y) - H(X,Y)  \textit{ by the chain rule} \\
+&amp;amp;= \sum_x p(x) \log \frac{1}{p(x)} + \sum_y p(y) \log \frac{1}{p(y)} + \sum_{x,y} p(x,y) \log p(x,y) \\
+&amp;amp;= \sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)}
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;In the case where two random variables are independent, then &lt;span class="math"&gt;\(I(X;Y) = 0\)&lt;/span&gt;. Why? Because &lt;span class="math"&gt;\(H(X \vert Y) = H(X)\)&lt;/span&gt;, so we have &lt;span class="math"&gt;\(I(X;Y) = H(X) - H(X) = 0\)&lt;/span&gt;. This makes sense since mutual information is measuring the reduction in uncertainty for one variable when you know another one. If you know &lt;span class="math"&gt;\(Y\)&lt;/span&gt;, but it is independent of &lt;span class="math"&gt;\(X\)&lt;/span&gt;, there is no reduction in uncertainty for &lt;span class="math"&gt;\(X\)&lt;/span&gt;. &lt;/p&gt;
+&lt;h2&gt;KL-Divergence&lt;/h2&gt;
+&lt;p&gt;The next definition is for Kullback-Leibler divergence, or KL-divergence. KL-divergence measures how far one probability distribution is from another:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+D(p \vert \vert q) = \sum_{x \in X} p(x) \log \frac{p(x)}{q(x)}
+$$&lt;/div&gt;
+&lt;p&gt;
+It's worth noting that KL-divergence is not a distance metric since it is not symmetric, &lt;span class="math"&gt;\(D(p \vert \vert q) \neq D(q \vert \vert p)\)&lt;/span&gt;. It's useful for determining how good of an estimate q is for p. And looking at our equation for mutual information, we see that it can be expressed as a KL-divergence: &lt;span class="math"&gt;\(I(X;Y) = D(p(x,y) \vert \vert p(x)p(y))\)&lt;/span&gt;. This shows us that mutual information is a way to quantify the dependence of a joint distribution. &lt;/p&gt;
+&lt;h2&gt;Cross Entropy&lt;/h2&gt;
+&lt;p&gt;Imagine that you have some random variable &lt;span class="math"&gt;\(X\)&lt;/span&gt; with some true probability distribution &lt;span class="math"&gt;\(p(x)\)&lt;/span&gt;. You don't know what &lt;span class="math"&gt;\(p\)&lt;/span&gt; is, but you have this other distribution &lt;span class="math"&gt;\(q\)&lt;/span&gt;, and you want to know how good of a job it does at approximating &lt;span class="math"&gt;\(p(x)\)&lt;/span&gt;. To answer this question requires &lt;em&gt;cross entropy:&lt;/em&gt; &lt;span class="math"&gt;\(H(X, q) = H(X) + D(p \vert \vert q)\)&lt;/span&gt;. Now wait a minute. The formula for cross entropy still requires that we know &lt;span class="math"&gt;\(p(x)\)&lt;/span&gt;. Let's rearrange some terms:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+H(X, q) &amp;amp;= H(X) + D(p \vert \vert q) \\
+&amp;amp;= - \sum_x p(x) \log p(x) + \sum_x p(x) \log \frac{p(x)}{q(x)} \\
+&amp;amp;= - \sum_x p(x) \log p(x) + \sum_x p(x) \log p(x) + \sum_x p(x) \log \frac{1}{q(x)} \\
+&amp;amp;= \sum_x p(x) \frac{1}{\log q(x)} \\
+&amp;amp;= \mathbb{E}_p [\log \frac{1}{q(x)}]
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;
+We can calculate this if we know &lt;span class="math"&gt;\(q\)&lt;/span&gt;.&lt;/p&gt;
+&lt;h2&gt;Wrapping Up&lt;/h2&gt;
+&lt;p&gt;These last few posts had a lot of definitions and math in them, but hopefully they are helpful for defining some key concepts in Information Theory. Entropy is a useful tool for machine learning and NLP, and upcoming posts will be using these concepts.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category></entry><entry><title>StatNLP: Essential Information Theory, Part 2</title><link href="http://jplalor.github.io/info-theory-part-2.html" rel="alternate"></link><updated>2018-02-23T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-23:info-theory-part-2.html</id><summary type="html">&lt;p&gt;Welcome back! In the last post we started our discussion of Information Theory, and defined some key building blocks related to calculating information for a single random variable. This time we'll look at the relationships between two random variables, and what they can tell us (if anything) about the informativeness of each other.&lt;/p&gt;
 &lt;h2&gt;Joint Entropy&lt;/h2&gt;
 &lt;p&gt;The first thing we'll look at is &lt;strong&gt;joint entropy&lt;/strong&gt;. For two random variables, &lt;span class="math"&gt;\(X\)&lt;/span&gt; and &lt;span class="math"&gt;\(Y\)&lt;/span&gt;, the joint entropy between them is &lt;/p&gt;
 &lt;div class="math"&gt;$$
@@ -102,7 +200,7 @@ $$&lt;/div&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="ml"></category><category term="nlp"></category></entry><entry><title>StatNLP: Essential Information Theory, Part 1</title><link href="http://jplalor.github.io/info-theory-part-1.html" rel="alternate"></link><published>2018-02-15T00:00:00-05:00</published><updated>2018-02-15T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-15:/info-theory-part-1.html</id><summary type="html">&lt;p&gt;Entropy!&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'd like to blog regularly, but I often struggle to come up with topics. So what I'm going to do is blog my way through some textbooks, to work on my writing and also to make sure that I have the concepts in the books down pat. The first textbook in the series will be &lt;em&gt;Foundations of Statistical Natural Language Processing&lt;/em&gt; by Manning and Sch&amp;uuml;tze (which I'll refer to as StatNLP from here on out). And the first topic will be &lt;em&gt;Essential Information Theory&lt;/em&gt; (section 2.2 in the book). This first post will introduce entropy and provide a few examples.&lt;/p&gt;
+&lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category></entry><entry><title>StatNLP: Essential Information Theory, Part 1</title><link href="http://jplalor.github.io/info-theory-part-1.html" rel="alternate"></link><updated>2018-02-15T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-15:info-theory-part-1.html</id><summary type="html">&lt;p&gt;I'd like to blog regularly, but I often struggle to come up with topics. So what I'm going to do is blog my way through some textbooks, to work on my writing and also to make sure that I have the concepts in the books down pat. The first textbook in the series will be &lt;em&gt;Foundations of Statistical Natural Language Processing&lt;/em&gt; by Manning and Sch&amp;uuml;tze (which I'll refer to as StatNLP from here on out). And the first topic will be &lt;em&gt;Essential Information Theory&lt;/em&gt; (section 2.2 in the book). This first post will introduce entropy and provide a few examples.&lt;/p&gt;
 &lt;h1&gt;Information Theory Basics&lt;/h1&gt;
 &lt;p&gt;Information Theory as a field was developed by Claude Shannon in the 1940s. I won't go into too many details, but basically Shannon was working on a way to quantify how much information one could transmit through a channel that would inevitably lose some of the information due to some amount of noise. He introduced some key concepts that we'll define and visualize here. Information Theory as a whole is an active field, and we'll only scratch the surface here, but at the end of the series I'll provide some pointers for anyone interested in learning more.&lt;/p&gt;
 &lt;h2&gt;Preliminaries&lt;/h2&gt;
@@ -139,7 +237,7 @@ $$&lt;/div&gt;
 &lt;p&gt;
 We get less information if we flip a biased coin. Why is that? Because there is less uncertainty in the outcome of the coin flip. If the coin is biased, then one side is more likely to come up than the other. In the case above, if the probability of getting heads is &lt;span class="math"&gt;\(0.75\)&lt;/span&gt;, then before you even flip it the odds are good that it will come up heads. So you don't get as much information as when the coin is unbiased, where there is more uncertainty (in fact, the maximum amount of uncertainty).&lt;/p&gt;
 &lt;p&gt;Let's look at a plot of entropy as the bias of a coin changes.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk entropy_plot" src="http://jplalor.github.io/figure/info_theory-entropy_plot-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="plot of chunk entropy_plot" src="http://jplalor.github.io/figure/info_theory-entropy_plot-1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;As the plot shows, the more biased the coin is, the less information we gain when we flip it. Sometimes it helps to think about entropy in terms of being surprised. When we flip a coin biased to land on heads, we're less surprised when it does land on heads (lower entropy). But when a coin is unbiased, each flip is a surprise (high entropy).&lt;/p&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.&lt;/p&gt;
@@ -198,4 +296,4 @@ We get less information if we flip a biased coin. Why is that? Because there is 
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</content><category term="ml"></category><category term="nlp"></category></entry></feed>
+&lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category></entry></feed>

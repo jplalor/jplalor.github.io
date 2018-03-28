@@ -46,68 +46,63 @@
 <section class="content">
 
   <h3 class="posttitle">
-    <a class="nodec" href="/info-theory-part-2.html" rel="bookmark" title="Permalink to StatNLP: Essential Information Theory, Part 2">
-      StatNLP: Essential Information Theory, Part 2
+    <a class="nodec" href="/info-theory-part-3.html" rel="bookmark" title="Permalink to StatNLP: Essential Information Theory, Part 3">
+      StatNLP: Essential Information Theory, Part 3
     </a>
   </h3>
 
   <div class="postinfo">
-    <p class="published" title="2018-02-23T00:00:00-05:00">
-      Fri 23 February 2018
+    <p class="published" title="2018-03-28T00:00:00-04:00">
+      Wed 28 March 2018
     </p>
 
   </div><!-- .postinfo -->
 
   <div class="article">
-    <p>Welcome back! In the last post we started our discussion of Information Theory, and defined some key building blocks related to calculating information for a single random variable. This time we'll look at the relationships between two random variables, and what they can tell us (if anything) about the informativeness of each other.</p>
-<h2>Joint Entropy</h2>
-<p>The first thing we'll look at is <strong>joint entropy</strong>. For two random variables, <span class="math">\(X\)</span> and <span class="math">\(Y\)</span>, the joint entropy between them is </p>
+    <p>After a bit of a hiatus, it's time to wrap up the Information Theory introduction. In this post I'm going to talk about Mutual Information and KL-Divergence. I'll look at why these two are important, how we get them from what we already know, and what we can do with them (with an example or two for good measure). After this post we can hit the ground running with the StatNLP book, woohoo!</p>
+<h2>Mutual Information</h2>
+<p>At the end of the previous post, we looked at the relationship between joint entropy and conditional entropy. Recall that <span class="math">\(H(X,Y) = H(X) + H(Y \vert X)\)</span>. In this formula, we can reverse <span class="math">\(X\)</span> and <span class="math">\(Y\)</span> to get <span class="math">\(H(X,Y) = H(Y) + H(X \vert Y)\)</span>. The two are equivalent. If we rearrange those formulas we can derive the formula for <em>mutual information:</em></p>
 <div class="math">$$
 \begin{align}
-H(X, Y) &amp;= - \sum_{x \in X} \sum_{y \in Y} p(x, y) \log p(x, y) \\
-&amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(x, y)}
-\end{align}
-$$</div>
-<p>Joint entropy refers to the amount of information you would need to determine the values of two random variables.
-As an example, we'll go back to coin flipping from last time.
-Now, we have two independent coins, both of them unbiased (so <span class="math">\(p(x=H) = p(x=T) = p(y=H) = p(y=T) = 0.5\)</span>).</p>
-<p>The joint entropy for these two random variables is as follows (below the order for the variables is <span class="math">\((x,y)\)</span>, so <span class="math">\(p(H,H)\)</span> is really <span class="math">\(p(x=H, y=H)\)</span>:</p>
-<div class="math">$$
-\begin{align}
-H(X, Y) &amp;=  \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{ p(x, y)} \\
-&amp;= p(H,H)\log \frac{1}{p(H,H)} + p(H,T)\log \frac{1}{p(H,T)} \\
-&amp;+ p(T,H)\log \frac{1}{p(T,H)} + p(T,T)\log \frac{1}{p(T,T)} \\
-&amp;= \frac{1}{4}\log 4 + \frac{1}{4}\log 4+ \frac{1}{4}\log 4+ \frac{1}{4}\log 4 \\
-&amp;= 2
+H(X) + H(Y \vert X) &amp;= H(Y) + H(X \vert Y) \\
+H(X) - H(X \vert Y) &amp;= H(Y) - H(Y \vert X) \\
+&amp;= I(X;Y)
 \end{align}
 $$</div>
 <p>
-This should make sense, since we showed last time that the entropy of a single unbiased coin is 1 bit. If we have two coins, we then double our information.</p>
-<h2>Conditional Entropy</h2>
-<p>Conditional entropy is related to joint entropy. We're still dealing with two random variables, but with conditional entropy we're interested in how much information is gained <em>when we know one of the outcomes.</em> </p>
+Mutual information describes the reduction in uncertainty of one random variable that you get if you know another random variable. For example if <span class="math">\(X\)</span> is a random variable indicating whether it is currently raining or not, and <span class="math">\(Y\)</span> is a random variable indicating whether the ground or not is wet, if you know that the ground is wet (<span class="math">\(Y=1\)</span>), that will reduce the amount of uncertainty in determining whether it is raining (<span class="math">\(X\)</span>).</p>
+<p>How do you calculate mutual information? From Equation 2.36 in StatNLP:</p>
 <div class="math">$$
 \begin{align}
-H(Y \vert X) &amp;= \sum_{x \in X} p(x) H(Y \vert X = x) \\
-&amp;= \sum_{x \in X} p(x) [\sum_{y \in Y} p(y \vert x) \log \frac{1}{p(y \vert x)}] \\
-&amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) log \frac{1}{p(y \vert x)}
+I(X;Y) &amp;= H(X) - H(X \vert Y) \\
+&amp;= H(X) + H(Y) - H(X,Y)  \textit{ by the chain rule} \\
+&amp;= \sum_x p(x) \log \frac{1}{p(x)} + \sum_y p(y) \log \frac{1}{p(y)} + \sum_{x,y} p(x,y) \log p(x,y) \\
+&amp;= \sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)}
 \end{align}
 $$</div>
-<p>Ok, so what just happened? Let's take the previous set of equations one at a time. In the first line we define the conditional entropy as a weighted average of the conditional entropies of <span class="math">\(Y\)</span> given each possible value of <span class="math">\(X\)</span>. In the second line we just expand that out, using the definition of entropy. Finally, <span class="math">\(p(x)p(y|x) = p(x,y)\)</span> so we can rewrite the equation as in the third line.</p>
-<p>Joint and conditional entropy are closely related. With joint entropy, we are measuring the amount of information in two random variables. Conditional entropy we already know one of the two random variables, and so we're measuring how much additional information is in the other. We can also look at it mathematically, starting with the definition of joint entropy:</p>
+<p>In the case where two random variables are independent, then <span class="math">\(I(X;Y) = 0\)</span>. Why? Because <span class="math">\(H(X \vert Y) = H(X)\)</span>, so we have <span class="math">\(I(X;Y) = H(X) - H(X) = 0\)</span>. This makes sense since mutual information is measuring the reduction in uncertainty for one variable when you know another one. If you know <span class="math">\(Y\)</span>, but it is independent of <span class="math">\(X\)</span>, there is no reduction in uncertainty for <span class="math">\(X\)</span>. </p>
+<h2>KL-Divergence</h2>
+<p>The next definition is for Kullback-Leibler divergence, or KL-divergence. KL-divergence measures how far one probability distribution is from another:</p>
+<div class="math">$$
+D(p \vert \vert q) = \sum_{x \in X} p(x) \log \frac{p(x)}{q(x)}
+$$</div>
+<p>
+It's worth noting that KL-divergence is not a distance metric since it is not symmetric, <span class="math">\(D(p \vert \vert q) \neq D(q \vert \vert p)\)</span>. It's useful for determining how good of an estimate q is for p. And looking at our equation for mutual information, we see that it can be expressed as a KL-divergence: <span class="math">\(I(X;Y) = D(p(x,y) \vert \vert p(x)p(y))\)</span>. This shows us that mutual information is a way to quantify the dependence of a joint distribution. </p>
+<h2>Cross Entropy</h2>
+<p>Imagine that you have some random variable <span class="math">\(X\)</span> with some true probability distribution <span class="math">\(p(x)\)</span>. You don't know what <span class="math">\(p\)</span> is, but you have this other distribution <span class="math">\(q\)</span>, and you want to know how good of a job it does at approximating <span class="math">\(p(x)\)</span>. To answer this question requires <em>cross entropy:</em> <span class="math">\(H(X, q) = H(X) + D(p \vert \vert q)\)</span>. Now wait a minute. The formula for cross entropy still requires that we know <span class="math">\(p(x)\)</span>. Let's rearrange some terms:</p>
 <div class="math">$$
 \begin{align}
-H(X, Y) &amp;=  \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{ p(x, y)} \\
-&amp;= \sum_{x \in X} \sum_{y \in Y} p(x,y) \log \frac{1}{ p(x) p(y\vert x)} \\
-&amp;= \sum_{x \in X} \sum_{y \in Y} p(x,y)[ \log \frac{1}{p(x)} + \log \frac{1}{p(y \vert x)}] \\
-&amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
-&amp;= \sum_{x \in X} p(x) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
-&amp;= H(X) + H(Y \vert X)
+H(X, q) &amp;= H(X) + D(p \vert \vert q) \\
+&amp;= - \sum_x p(x) \log p(x) + \sum_x p(x) \log \frac{p(x)}{q(x)} \\
+&amp;= - \sum_x p(x) \log p(x) + \sum_x p(x) \log p(x) + \sum_x p(x) \log \frac{1}{q(x)} \\
+&amp;= \sum_x p(x) \frac{1}{\log q(x)} \\
+&amp;= \mathbb{E}_p [\log \frac{1}{q(x)}]
 \end{align}
 $$</div>
-<p>Let's walk through that. In eqn. 12, we rewrite <span class="math">\(p(x,y)\)</span> in the log. In eqn 13. we split that log product into a sum of logs. In eqn. 14 we move <span class="math">\(p(x,y)\)</span> into the sum, and in eqn. 15 we use the fact that <span class="math">\(\sum_{y \in Y} p(x, y) = p(x)\)</span>.</p>
-<p>So to get the joint entropy of two random variables, you calculate the entropy of one, and add the conditional entropy of the other, given the first one. If the two random variables are independent, then <span class="math">\(H(X, Y) = H(X) + H(Y)\)</span>. We saw that above with our two coin example. If you swap all of the x's and y's in the above, you'll see that the order doesn't matter, and <span class="math">\(H(X,Y) = H(X) + H(Y \vert X) = H(Y) + H(X \vert Y)\)</span></p>
+<p>
+We can calculate this if we know <span class="math">\(q\)</span>.</p>
 <h2>Wrapping Up</h2>
-<p>There were a lot of equations here, but hopefully they all make sense. We're still trying to measure information (as in standard entropy for a single random variable) but now we can look at the information relationship between pairs of random variables. Next time we'll look at two more advanced concepts: mutual information and KL-Divergence.</p>
+<p>These last few posts had a lot of definitions and math in them, but hopefully they are helpful for defining some key concepts in Information Theory. Entropy is a useful tool for machine learning and NLP, and upcoming posts will be using these concepts.</p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",

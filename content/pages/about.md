@@ -30,24 +30,24 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Publications
 
-- J. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu. ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension, J Med Internet Res (forthcoming). [[project page][20]]
-- T. Munkhdalai, J. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
-- J. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
-- C. Miller, A. Settle, and J. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]
-- A. Settle, J. Lalor, and T. Steinbach. Evaluating a Linked-courses Learning Community for Development Majors. In *SIGITE 2015*. [[ACM link][6]]
-- A. Settle, J. Lalor, and T. Steinbach. A Computer Science Linked-courses Learning Community, In *ITiCSE 2015*. [[ACM link][7]]
-- A. Settle, J. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[ACM link][8]]
+- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, J Med Internet Res (forthcoming). [[project page][20]]
+- T. Munkhdalai, J.P. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
+- J.P. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
+- C. Miller, A. Settle, and J.P. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]
+- A. Settle, J.P. Lalor, and T. Steinbach. Evaluating a Linked-courses Learning Community for Development Majors. In *SIGITE 2015*. [[ACM link][6]]
+- A. Settle, J.P. Lalor, and T. Steinbach. A Computer Science Linked-courses Learning Community, In *ITiCSE 2015*. [[ACM link][7]]
+- A. Settle, J.P. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[ACM link][8]]
 
 # Posters and Abstracts
 
-- J. Lalor, H. Wu, H. Yu, Modeling Difficulty to Understand Deep Learning Performance. *Northern Lights Deep Learning Workshop (NLDL), 2018* [[slides][25]]
-- J. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20], [slides][22]]
-- J. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][21]]
+- J.P. Lalor, H. Wu, H. Yu, Modeling Difficulty to Understand Deep Learning Performance. *Northern Lights Deep Learning Workshop (NLDL), 2018* [[slides][25]]
+- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20], [slides][22]]
+- J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][21]]
 
 # Preprints
 
-- J. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability [[arxiv][17]]
-- J. Lalor, H. Wu, T. Munkhdalai, H. Yu. An Analysis of Machine Learning Ability [[arxiv][18]]
+- J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability [[arxiv][17]]
+- J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. An Analysis of Machine Learning Ability [[arxiv][18]]
 
 #Projects
 

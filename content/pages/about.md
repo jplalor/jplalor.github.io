@@ -13,6 +13,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **Summer 2018:** Internship with the Amazon Alexa team in Cambridge, MA.
 1. **February 2018:** Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research!
 1. **January 2018:** I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway.
 1. **December 2017:** I passed the [CICS Portfolio][24] and am now a PhD candidate!
@@ -21,7 +22,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 1. September 2017: I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
 1. June 2017: [CIFT][17] was accepted as a poster for the Work-in-Progress session at HCOMP 2017 in Quebec City!
 2. June 2017: Our podium abstract, *Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory*, was accepted for AMIA 2017 in Washington, DC!
-1. Summer 2017: Internship with the Alexa team at Amazon Boston!
+1. Summer 2017: Internship with the Amazon Alexa team in Cambridge, MA.
 2. December 2016: I gave a talk on our EMNLP paper as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8.
     * Slides from the talk can be found [here][15].
     * If you're really interested, I recorded myself giving the talk as a practice run. It's on YouTube [here][16]. If you have any feedback I would love to hear it!

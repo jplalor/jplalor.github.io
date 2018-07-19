@@ -13,6 +13,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **August 2018:** Two papers accepted to the UAI Uncertainty in Deep Learning workshop!
 1. **Summer 2018:** Internship with the Amazon Alexa team in Cambridge, MA.
 1. **February 2018:** Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research!
 1. **January 2018:** I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway.
@@ -20,6 +21,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 1. November 2017: I attended the AMIA Annual Symposium presenting our podium abstract on a new test of Electronic Health Record note comprehension.
 1. October 2017: I was at HCOMP 2017 to present CIFT as a Works in Progress poster.
 1. September 2017: I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
+<!---
 1. June 2017: [CIFT][17] was accepted as a poster for the Work-in-Progress session at HCOMP 2017 in Quebec City!
 2. June 2017: Our podium abstract, *Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory*, was accepted for AMIA 2017 in Washington, DC!
 1. Summer 2017: Internship with the Amazon Alexa team in Cambridge, MA.
@@ -28,6 +30,11 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
     * If you're really interested, I recorded myself giving the talk as a practice run. It's on YouTube [here][16]. If you have any feedback I would love to hear it!
 3. September 2016: Tsendee's paper *Citation Analysis with Neural Attention Models* was accepted to the EMNLP LOUHI Workshop!
 4. July 2016: Our paper *Building an Evaluation Scale using Item Response Theory* was accepted to EMNLP 2016!
+--->
+
+# Teaching
+
+FYS: Machine Learning and Healthcare: course page coming soon
 
 # Publications
 

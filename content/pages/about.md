@@ -22,15 +22,6 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 1. October 2017: I was at HCOMP 2017 to present CIFT as a Works in Progress poster.
 1. September 2017: I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
 
-[comment]: # 1. June 2017: [CIFT][17] was accepted as a poster for the Work-in-Progress session at HCOMP 2017 in Quebec City!
-[comment]: # 2. June 2017: Our podium abstract, *Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory*, was accepted for AMIA 2017 in Washington, DC!
-[comment]: # 1. Summer 2017: Internship with the Amazon Alexa team in Cambridge, MA.
-[comment]: # 2. December 2016: I gave a talk on our EMNLP paper as part of the UMass CICS [Machine Learning and Friends Lunch][14] series on 12/8.
-[comment]: #     * Slides from the talk can be found [here][15].
-[comment]: #     * If you're really interested, I recorded myself giving the talk as a practice run. It's on YouTube [here][16]. If you have any feedback I would love to hear it!
-[comment]: # 3. September 2016: Tsendee's paper *Citation Analysis with Neural Attention Models* was accepted to the EMNLP LOUHI Workshop!
-[comment]: # 4. July 2016: Our paper *Building an Evaluation Scale using Item Response Theory* was accepted to EMNLP 2016!
-
 # Teaching
 
 FYS: Machine Learning and Healthcare: course page coming soon

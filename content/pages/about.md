@@ -28,7 +28,9 @@ FYS: Machine Learning and Healthcare: course page coming soon
 
 # Publications
 
-- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, J Med Internet Res 2018;20(4):e139. [[project page][20]]
+- J.P. Lalor, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. *UAI Workshop on Uncertainty in Deep Learning.*, 2018.
+- J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. *UAI Workshop on Uncertainty in Deep Learning.*, 2018.
+- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[project page][20]]
 - T. Munkhdalai, J.P. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
 - J.P. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
 - C. Miller, A. Settle, and J.P. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]

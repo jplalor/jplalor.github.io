@@ -55,4 +55,4 @@ There will also be content that is shared among the FYS sections. Once that is f
 [1]:http://www.umass.edu/registrar
 [2]:http://www.umass.edu/registrar/sites/default/files/academicregs.pdf
 [3]:http://jplalor.github.io/fys18.html
-[4]:htpp://jplalor.github.io/pdfs/fys18_syllabus.pdf
+[4]:http://jplalor.github.io/pdfs/fys18_syllabus.pdf

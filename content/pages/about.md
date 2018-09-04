@@ -25,7 +25,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Teaching
 
-FYS: Machine Learning and Healthcare: course page coming soon
+Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 
 # Publications
 
@@ -84,3 +84,4 @@ Below are a few projects that I've worked on, either as part of a class project 
 [23]:http://www.kpmg.com
 [24]:https://www.cics.umass.edu/grads/phd-portfolio
 [25]:http://jplalor.github.io/pdfs/lalor_nldl.pdf
+[26]:http://jplalor.github.io/fys18.html

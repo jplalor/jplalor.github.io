@@ -22,7 +22,9 @@ The first year seminar is intended to be an exploration of computer science for 
 
 - Email: lalor@cs.umass.edu
 - Office: CS Building Room 216
-- Office hours: TBD
+- Office hours:
+    - Tuesdays 2:30pm-3:30pm CS 216
+    - Tuesdays 5:00pm-5:30pm Hasbrouck 107
 
 ### Course website: [http://jplalor.github.io/fys18.html][3]
 

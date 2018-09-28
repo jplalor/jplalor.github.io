@@ -237,7 +237,7 @@ $$&lt;/div&gt;
 &lt;p&gt;
 We get less information if we flip a biased coin. Why is that? Because there is less uncertainty in the outcome of the coin flip. If the coin is biased, then one side is more likely to come up than the other. In the case above, if the probability of getting heads is &lt;span class="math"&gt;\(0.75\)&lt;/span&gt;, then before you even flip it the odds are good that it will come up heads. So you don't get as much information as when the coin is unbiased, where there is more uncertainty (in fact, the maximum amount of uncertainty).&lt;/p&gt;
 &lt;p&gt;Let's look at a plot of entropy as the bias of a coin changes.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk entropy_plot" src="http://jplalor.github.io/figure/info_theory-entropy_plot-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="plot of chunk entropy_plot" src="http://jplalor.github.io/figure/info_theory-entropy_plot-1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;As the plot shows, the more biased the coin is, the less information we gain when we flip it. Sometimes it helps to think about entropy in terms of being surprised. When we flip a coin biased to land on heads, we're less surprised when it does land on heads (lower entropy). But when a coin is unbiased, each flip is a surprise (high entropy).&lt;/p&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.&lt;/p&gt;

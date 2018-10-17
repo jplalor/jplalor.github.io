@@ -22,7 +22,8 @@
 \maketitle
 \vspace*{-5mm}
 \section{Research Interests}
-	\cvline{}{Natural Language Processing, Machine Learning, Health Informatics, Computer Science Education}
+        %\cvline{}{Natural Language Processing, Machine Learning, Health Informatics, Computer Science Education}
+        \cvline{}{My research is in machine learning and natural language processing. I am particularly interested in model evaluation and quantifying uncertainty, as well as applications in biomedical informatics.}
 
         \section{Education}
         \cventry{2019 (expected)}{Ph.D. Computer Science}{}{University of Massachusetts}{Amherst, MA}{
@@ -38,78 +39,97 @@
 
         \section{Professional Experience}
         \cventry{2018}{Applied Scientist Intern}{}{Amazon Alexa}{Cambridge, MA}{
-         Supervisors: Bill Campbell and Eunah Cho
+          Supervisors: Bill Campbell and Eunah Cho\\
+          I investigated ways to incorporate paraphrases as training data for semi-supervised machine learning models. I developed an embedding model for customer utterances that embeds paraphrase information. Analysis of these embeddings showed that they could be used to identify training data in both semi-supervised and active learning frameworks.
         }
         \cventry{2015 - present}{Research Assistant}{}{BioNLP Group}{Amherst, MA}{
-            Supervisor: Hong Yu
+          Supervisor: Hong Yu\\
+          In the BioNLP lab I conduct research on improving patient health literacy and Electronic Health Record (EHR) note understanding. I developed the ComprehENotes test, the first test of EHR note comprehension available, using de-identified patient notes and Sentence Verification Technique to generate questions, and Item Response Theory to deterine which questions to include in the test. I have used the ComprehENotes test to validate a previously self-reported results that EHR note comprehension is improved when patients are given the NoteAid tool to define medical terminology in the EHR note. I am also developing a machine learning model for identifying cases of hypoglycemia in patient secure messages with their health care providers.
         }
         \cventry{2017}{Applied Scientist Intern}{}{Amazon Alexa}{Cambridge, MA}{
-            Supervisors: Imre Kiss and Francois Mairesse
+          Supervisors: Imre Kiss and Francois Mairesse\\
+          I implemented a new internal metric to predict whether a customer request would be actioned correctly by Alexa. Using this metric I developed new regression tests for production model development, and developed a new semi-supervised technique for identifying apropriate unlabeled data for inclusion in training sets.
         }
-        \cventry{2016}{Graduate Intern}{}{ESPN Advanced Technology Group}{Bristol, CT}{
-            Supervisor: Zvi Topol
+        \cventry{2016}{Intern}{}{ESPN Advanced Technology Group}{Bristol, CT}{
+          Supervisor: Zvi Topol\\
+          I developed a text summarization model to extract short summaries from ESPN articles that could be presented as smartphone notifications or social media posts.
           }
         \cventry{2015}{Teaching Assistant}{}{Introduction to Computer Science, Amherst College}{Amherst, MA}{
-          Professor: Crystal Valentine
+          Professor: Crystal Valentine\\
+          As TA I held weekly office hours, assisted students during weekly lab session, and graded weekly lab programming asssignments. I also prepared and gave two lectures during the semester.
           }
-	\cventry{2013 - 2015}{Software Developer}{}{Eze Software Group}{Chicago, IL}{}
-	\cventry{2011 - 2013}{Advisory Sr. Associate}{}{KPMG}{Philadelphia, PA, Chicago, IL}{}
+	\cventry{2013 - 2015}{Software Developer}{}{Eze Software Group}{Chicago, IL}{
+          I designed and built a notification system to alert customers when trade orders are completed via email and text message.
+          I also designed and built an administrative dashboard for our case management system that filtered and displayed case information for 1000+ cases across 30+ clients.
+          %I added search functionality to the system using Lucene.NET to allow users to search 400,000 legacy cases.
+          I was the team lead for updating code and fixing bugs for internal case management, account management, and incident resolution systems.
+        }
+	\cventry{2011 - 2013}{Advisory Sr. Associate}{}{KPMG}{Philadelphia, PA, Chicago, IL}{
+          I coordinated and performed General IT Control and application control testing for large and mid-size companies across various industries as part of IT Financial Statement Audit Support teams. I also developed an automated user access testing application to identify terminated employees across application access lists.
+        }
 
-        \section{Manuscripts Under Review}
-        \cvline{1}{\textbf{J.P. Lalor}, B. Woolf, H. Yu. Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers. \textit{JMIR Preprints.} 27/04/2018:10793 DOI: 10.2196/preprints.10793}
-        \cvline{2}{J. Chen, \textbf{J.P. Lalor}, W. Liu, E. Druhl, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients' Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. \textit{JMIR Preprints.} 21/08/2018:11990 DOI: 10.2196/preprints.11990}
+    \section{Honors and Awards}
+        \cvline{2018}{UMass CICS Travel Grant recipient}
+        \cvline{2015}{DePaul University Graduate Assistantship}
+        \cvline{2015}{Inducted into the Upsilon Pi Epsilon computer science honor society, DePaul chapter}
+        \cvline{2007 - 2011}{Dean's List 4 semesters at Notre Dame}
+
+
+        \section{Publications}
+        \subsection{Manuscripts Under Review}
+        \cvline{15}{\textbf{J.P. Lalor}, B. Woolf, H. Yu. Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers. \textit{JMIR Preprints.} 27/04/2018:10793 DOI: 10.2196/preprints.10793}
+        \cvline{14}{J. Chen, \textbf{J.P. Lalor}, W. Liu, E. Druhl, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients' Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. \textit{JMIR Preprints.} 21/08/2018:11990 DOI: 10.2196/preprints.11990}
         %\cvlistitem{\textbf{J.P. Lalor}, R. Just. CCC-Rank: Ranking Pull Requests in Open Source Software.}
         %\cvlistitem{\textbf{J.P. Lalor}, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference.}
         %\cvlistitem{\textbf{J.P. Lalor}, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study.}
 
-        \section{Publications}
-        \cvline{1}{\textbf{J.P. Lalor}, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. To appear in \textit{EMNLP 2018: Conference on Empirical Methods in Natural Language Processing}, 2018.}
-        \cvline{2}{\textbf{J.P. Lalor}, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. \textit{Workshop on Uncertainty in Deep Learning. Uncertainty in Artificial Intelligence (UAI)}, 2018.}
-        \cvline{3}{\textbf{J.P. Lalor}, H. Wu, L. Chen, K. Mazor, H. Yu. ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation. \textit{J Med Internet Res} 2018;20(4):e139. doi:10.2196/jmir.9380}
-        \cvline{4}{T. Munkhdalai, \textbf{J.P. Lalor}, H. Yu. Citation Analysis with Neural Attention Models. \textit{LOUHI 2016 : The Seventh International Workshop on Health Text Mining and Information Analysis}, Austin, Texas, USA, November 2016.}
-        \cvline{5}{\textbf{J.P. Lalor}, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory. \textit{EMNLP 2016: Conference on Empirical Methods in Natural Language Processing}, Austin, Texas, USA, November 2016.}
-        \cvline{6}{C. Miller, A. Settle, \textbf{J.P. Lalor}. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls. \textit{SIGITE 2015: The Special Interest Group for Information Technology Education Conference}, Chicago, Illinois, October 2015}
+        \subsection{Journal and Conference Publications}
+        \cvline{13}{\textbf{J.P. Lalor}, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. To appear in \textit{EMNLP 2018: Conference on Empirical Methods in Natural Language Processing}, 2018.}
+        \cvline{12}{\textbf{J.P. Lalor}, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. \textit{Workshop on Uncertainty in Deep Learning. Uncertainty in Artificial Intelligence (UAI)}, 2018.}
+        \cvline{11}{\textbf{J.P. Lalor}, H. Wu, L. Chen, K. Mazor, H. Yu. ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation. \textit{J Med Internet Res} 2018;20(4):e139. doi:10.2196/jmir.9380}
+        \cvline{10}{T. Munkhdalai, \textbf{J.P. Lalor}, H. Yu. Citation Analysis with Neural Attention Models. \textit{LOUHI 2016 : The Seventh International Workshop on Health Text Mining and Information Analysis}, Austin, Texas, USA, November 2016.}
+        \cvline{9}{\textbf{J.P. Lalor}, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory. \textit{EMNLP 2016: Conference on Empirical Methods in Natural Language Processing}, Austin, Texas, USA, November 2016.}
+        \cvline{8}{C. Miller, A. Settle, \textbf{J.P. Lalor}. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls. \textit{SIGITE 2015: The Special Interest Group for Information Technology Education Conference}, Chicago, Illinois, October 2015}
         \cvline{7}{A. Settle, \textbf{J.P. Lalor}, T. Steinbach. Evaluating a Linked-Courses Learning Community for Development Majors. \textit{SIGITE 2015: The Special Interest Group for Information Technology Education Conference}, Chicago, Illinois, October 2015}
-	\cvline{8}{A. Settle, \textbf{J.P. Lalor}, T. Steinbach. A Computer Science Linked-Courses Learning Community. \textit{ITiCSE 2015: The 20th Annual Conference on Innovation and Technology in Computer Science Education}. Vilnius, Lithuania, July 2015}
-	\cvline{9}{A. Settle, \textbf{J.P. Lalor}, T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. \textit{SIGCSE 2015: The ACM Special Interest Group on Computer Science Education}. Kansas City, Missouri, March 2015}
+	\cvline{6}{A. Settle, \textbf{J.P. Lalor}, T. Steinbach. A Computer Science Linked-Courses Learning Community. \textit{ITiCSE 2015: The 20th Annual Conference on Innovation and Technology in Computer Science Education}. Vilnius, Lithuania, July 2015}
+	\cvline{5}{A. Settle, \textbf{J.P. Lalor}, T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. \textit{SIGCSE 2015: The ACM Special Interest Group on Computer Science Education}. Kansas City, Missouri, March 2015}
 
-        \section{Posters and Abstracts}
-        \cvline{1}{J. Chen, \textbf{J.P. Lalor}, H. Yu. Detecting Hypoglycemia Incidents from Patients' Secure Messages. \textit{American Medical Informatics Association (AMIA) Annual Symposium} Poster, 2018}
-        \cvline{2}{\textbf{J.P. Lalor}, H. Wu, H. Yu. Modeling Difficulty to Understand Deep Learning Performance. \textit{Northern Lights Deep Learning Workshop (NLDL)}, 2018.}
-        \cvline{3}{\textbf{J.P. Lalor}, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability. \textit{Human Computation and Crowdsourcing (HCOMP)} Works-in-Progress, 2017.}
-        \cvline{4}{\textbf{J.P. Lalor}, H. Wu, L. Chen, K. Mazor, H. Yu. Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory. \textit{American Medical Informatics Association (AMIA) Annual Symposium} Podium Abstract, 2017.}
+        \subsection{Posters and Abstracts}
+        \cvline{4}{J. Chen, \textbf{J.P. Lalor}, H. Yu. Detecting Hypoglycemia Incidents from Patients' Secure Messages. \textit{American Medical Informatics Association (AMIA) Annual Symposium} Poster, 2018}
+        \cvline{3}{\textbf{J.P. Lalor}, H. Wu, H. Yu. Modeling Difficulty to Understand Deep Learning Performance. \textit{Northern Lights Deep Learning Workshop (NLDL)}, 2018.}
+        \cvline{2}{\textbf{J.P. Lalor}, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability. \textit{Human Computation and Crowdsourcing (HCOMP)} Works-in-Progress, 2017.}
+        \cvline{1}{\textbf{J.P. Lalor}, H. Wu, L. Chen, K. Mazor, H. Yu. Generating a Test of Electronic Health Record Narrative Comprehension with Item Response Theory. \textit{American Medical Informatics Association (AMIA) Annual Symposium} Podium Abstract, 2017.}
 
         \section{Tutorials and Invited Talks}
-        \cvline{11/3/2018}{Evaluation and Interpretability in Deep Neural Networks. \textit{American Medical Informatics Association (AMIA) Annual Symposium} Instructional Workshop, 2018. With A. Jagannatha and H. Yu.}
-        \cvline{10/12/2018}{ComprehENotes: A New Test of EHR Note Comprehension. \textit{University of Notre Dame Mendoza College of Business.}}
-        \cvline{09/26/2018}{Leveraging Uncertainty for Better DNN Training and Evaluation. \textit{UMass Lowell Data Science Lecture Series.}}
-        \cvline{09/29/2017}{Building Better Evaluations using Item Response Theory. \textit{University of Notre Dame Natural Language Processing Group.}}
-        \cvline{12/08/2016}{Building Evaluation Scales for NLP using Item Response Theory. \textit{UMass CICS Machine Learning and Friends Lunch series.}}
+        \cvline{11/2018}{Evaluation and Interpretability in Deep Neural Networks. \textit{American Medical Informatics Association (AMIA) Annual Symposium} Instructional Workshop, 2018. With A. Jagannatha and H. Yu.}
+        \cvline{10/2018}{ComprehENotes: A New Test of EHR Note Comprehension. \textit{University of Notre Dame Mendoza College of Business.}}
+        \cvline{09/2018}{Leveraging Uncertainty for Better DNN Training and Evaluation. \textit{UMass Lowell Data Science Lecture Series.}}
+        \cvline{09/2017}{Building Better Evaluations using Item Response Theory. \textit{University of Notre Dame Natural Language Processing Group.}}
+        \cvline{12/2016}{Building Evaluation Scales for NLP using Item Response Theory. \textit{UMass CICS Machine Learning and Friends Lunch series.}}
 
 % Include skills for job apps
 %\section{Skills}
 %\cvlistitem {Programming Languages: Python, R, Java, C\#, SQL, Javascript}
 %\cvlistitem {Tools: Git, AngularJS, Flask, Django, Amazon Mechanical Turk, \LaTeX}
 
-\section{Honors and Awards}
-    \cvline{2018}{UMass CICS Travel Grant recipient}
-    \cvline{2015}{DePaul University Graduate Assistantship}
-    \cvline{2015}{Inducted into the Upsilon Pi Epsilon computer science honor society, DePaul chapter}
-    \cvline{2007 - 2011}{Dean's List 4 semesters at Notre Dame}
-
-    \section{Teaching and Mentoring Experience}
+    \section{Service}
+    \subsection{Teaching and Mentoring Experience}
     \cventry{Fall 2018}{Instructor}{}{UMass Lowell Data Science Lecture Series}{University of Massachusetts Lowell}{Prepared and gave three lectures on evaluation and interpretability in deep neural networks}
-    \cventry{Fall 2018}{Instructor}{}{CICS First Year Seminar}{University of Massachusetts Amherst}{Seminar topic: Artificial Intelligence in Healthcare}
+    \cventry{Fall 2018}{Instructor}{}{CICS First Year Seminar}{University of Massachusetts Amherst}{Seminar for first year students on Artificial Intelligence in Healthcare. I am the sole instructor for this course, and designed the syllabus, lectures, and assignments.}
+    \cventry{2018}{Research Mentor}{}{Long Le, B.S. in Computer Science}{University of Massachusetts Amherst}{}
     \cventry{2017-2018}{Research Mentor}{}{Nikhil Titus, M.S. in Computer Science}{University of Massachusetts Amherst}{}
     \cventry{2018}{Research Mentor}{}{UMass CICS Industry Mentor Program}{}{}
-    %\newpage
-    \section{Service}
-    \cvline{2018 - present}{Organizer, UMass CICS Machine Learning and Friends Lunch.}
-    \cvline{2018 - present}{Reviewer, American Journal of Preventative Medicine (AJPM).}
-    \cvline{2018 - present}{Reviewer, American Medical Informatics Association Annual Symposium (AMIA).}
-    \cvline{2017 - present}{Reviewer, Journal of Medical Internet Research (JMIR).}
     \cvline{2014 - 2015}{DePaul University Graduate Ambassador for prospective students}
     \cvline{2014 - 2015}{DePaul Tutor for undergraduate students}
+
+    \subsection{Organization}
+    \cvline{2018 - present}{Organizer, UMass CICS Machine Learning and Friends Lunch.}
+
+    %\newpage
+    \subsection{Reviewing}
+    \cvline{2018}{American Journal of Preventative Medicine (AJPM), American Medical Informatics Association (AMIA) Annual Symposium, Journal of Medical Internet Research (JMIR)}
+    \cvline{2017}{Journal of Medical Internet Research (JMIR)}
+
 
     \vspace*{\fill}
     \small

@@ -4,6 +4,7 @@ author: John Lalor
 date: October 17, 2018
 output: html
 Category: IRT
+Status: draft
 Slug: emnlp-16
 Summary: Notes on our EMNLP16 paper
 Tags: ml, nlp, irt

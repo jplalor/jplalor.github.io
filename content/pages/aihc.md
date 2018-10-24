@@ -55,7 +55,8 @@ There will also be content that is shared among the FYS sections. Once that is f
 - 09/18: Supervised learning pt. 1 
 - 09/25: Supervised learning pt. 2 ([slides][6])
 - 10/02: Unsupervised learning pt. 1 ([slides][7])
-- 10/16: Unsupervised learning pt. 2
+- 10/16: Unsupervised learning pt. 2 ([slides][8])
+- 10/23: Interpretability ([slides][9])
 
 [1]:http://www.umass.edu/registrar
 [2]:http://www.umass.edu/registrar/sites/default/files/academicregs.pdf
@@ -64,3 +65,5 @@ There will also be content that is shared among the FYS sections. Once that is f
 [5]:http://jplalor.github.io/pdfs/aihc_09_11.pdf
 [6]:http://jplalor.github.io/pdfs/aihc_09_25.pdf
 [7]:http://jplalor.github.io/pdfs/aihc_10_02.pdf
+[8]:http://jplalor.github.io/pdfs/aihc_10_16.pdf
+[9]:http://jplalor.github.io/pdfs/aihc_10_23.pdf

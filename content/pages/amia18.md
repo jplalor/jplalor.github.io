@@ -11,7 +11,7 @@ Welcome! This page includes resources for our 2018 AMIA workshop. If you have an
 
 ### Slides
 
-Coming soon
+[click here to download the slides][2]
 
 ### Interactive session
 
@@ -28,3 +28,4 @@ For the interactive portion of the workshop, we'll be using Google Colab.
 
 
 [1]:https://colab.research.google.com/drive/16CimrVVp77IY-5SFAoMnf78AmXdhUpTx
+[2]:pdfs/dnn_workshop.pdf

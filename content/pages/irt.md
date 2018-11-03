@@ -5,11 +5,17 @@ Author: John Lalor
 Summary: Code and data for our EMNLP 2016 paper
 save_as: irt.html
 
-This page contains code and data used in the following paper:
+## Overview
 
-- J. Lalor, H. Wu, H. Yu, **Building an Evaluation Scale using Item Response Theory**, In *EMNLP 2016*. [arXiv pre-print][1]
+This page contains code and data for our IRT analyses.
 
-## Data
+## SNLI
+
+If you use the following data, please cite:
+
+- J.P. Lalor, H. Wu, H. Yu, **Building an Evaluation Scale using Item Response Theory**, In *EMNLP 2016*. [arXiv pre-print][1]
+
+### Data
 
 The dataset consists of response patterns collected using the Amazon Mechanical Turk crowdsourcing platform.
 
@@ -20,13 +26,23 @@ Based on the [Stanford SNLI project][4].
 
 Download: [zip file][2]
 
-## Code
+### Code
 
 Code used to generate the evaluation scales from the paper was written in R.
 Included are R files for each of the 5 evaluation scales.
 
 Download: [code hosted on GitHub][5]
 
+
+## Sentiment Analysis
+
+If you use the following data please cite:
+
+- J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [arxiv pre-print][6]
+
+### Data
+
+[download data][7]
 
 Questions about the code or data? Contact me at lalor at cs dot umass dot edu.
 
@@ -35,3 +51,5 @@ Questions about the code or data? Contact me at lalor at cs dot umass dot edu.
 [3]:http://creativecommons.org/licenses/by-sa/4.0/
 [4]:http://http://nlp.stanford.edu/projects/snli/
 [5]:https://github.com/jplalor/irt-models
+[6]:https://arxiv.org/abs/1702.04811
+[7]:/files/emnlp_2018.tar.gz

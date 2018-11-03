@@ -52,4 +52,4 @@ Questions about the code or data? Contact me at lalor at cs dot umass dot edu.
 [4]:http://http://nlp.stanford.edu/projects/snli/
 [5]:https://github.com/jplalor/irt-models
 [6]:https://arxiv.org/abs/1702.04811
-[7]:/files/emnlp2018.tar.gz
+[7]:/files/emnlp18.tar.gz

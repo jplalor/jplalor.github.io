@@ -57,6 +57,7 @@ There will also be content that is shared among the FYS sections. Once that is f
 - 10/02: Unsupervised learning pt. 1 ([slides][7])
 - 10/16: Unsupervised learning pt. 2 ([slides][8])
 - 10/23: Interpretability ([slides][9])
+- 10/30: Ethics in ML ([slides][10])
 
 [1]:http://www.umass.edu/registrar
 [2]:http://www.umass.edu/registrar/sites/default/files/academicregs.pdf
@@ -67,3 +68,4 @@ There will also be content that is shared among the FYS sections. Once that is f
 [7]:http://jplalor.github.io/pdfs/aihc_10_02.pdf
 [8]:http://jplalor.github.io/pdfs/aihc_10_16.pdf
 [9]:http://jplalor.github.io/pdfs/aihc_10_23.pdf
+[10]:http://jplalor.github.io/pdfs/aihc_10_30.pdf

@@ -6,6 +6,8 @@ Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
+**I am currently on the academic job market.** Here are my [CV][29], [research statement][30], and [teaching statement][31]. 
+
 I am a PhD candidate at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing. I am particularly interested in model evaluation and quantifying uncertainty, as well as applications in biomedical informatics.
 
 Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago and as an IT Audit Associate for [KPMG][23]. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
@@ -48,11 +50,6 @@ Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20], [slides][22]]
 - J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][21]]
 
-# Preprints
-
-- J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability [[arxiv][17]]
-- J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. An Analysis of Machine Learning Ability [[arxiv][18]]
-
 #Projects
 
 Below are a few projects that I've worked on, either as part of a class project or on my own time.
@@ -90,3 +87,6 @@ Below are a few projects that I've worked on, either as part of a class project 
 [26]:http://jplalor.github.io/fys18.html
 [27]:https://arxiv.org/abs/1702.04811
 [28]:https://www.youtube.com/watch?v=4FZYB-YvV7k
+[29]:http://jplalor.github.io/pdfs/cv.pdf
+[30]:http://jplalor.github.io/pdfs/research_statement.pdf
+[31]:http://jplalor.github.io/pdfs/teaching_statement.pdf

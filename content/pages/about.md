@@ -6,8 +6,6 @@ Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
-**I am currently on the academic job market.** Here are my [CV][29], [research statement][30], and [teaching statement][31]. 
-
 I am a PhD candidate at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing. I am particularly interested in model evaluation and quantifying uncertainty, as well as applications in biomedical informatics.
 
 Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago and as an IT Audit Associate for [KPMG][23]. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
@@ -15,17 +13,16 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **November 2018:** Successfully defended my Ph.D. thesis proposal
 1. **October 2018:** Our latest paper using the ComprehENotes test was accepted for publication by the Journal of Medical Internet Research
 1. **October 2018:** Talk at Notre Dame Mendoza College of Business
 1. **August 2018:** One paper accepted to EMNLP 2018
 1. **August 2018:** Two papers accepted to the UAI Uncertainty in Deep Learning workshop
-1. Summer 2018: Internship with the Amazon Alexa team in Cambridge, MA
-1. February 2018: Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research
-1. January 2018: I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway
-1. December 2017: I passed the [CICS Portfolio][24] and am now a PhD candidate
-1. November 2017: I attended the AMIA Annual Symposium presenting our podium abstract on a new test of Electronic Health Record note comprehension
-1. October 2017: I was at HCOMP 2017 to present CIFT as a Works in Progress poster
-1. September 2017: I gave a talk at Notre Dame to the ND Natural Language Processing group. Thanks to Prof. David Chiang for the invitation!
+1. **Summer 2018:** Internship with the Amazon Alexa team in Cambridge, MA
+1. **February 2018:** Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research
+1. **January 2018:** I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway
+1. **December 2017:** I passed the [CICS Portfolio][24] and am now a PhD candidate
+1. **November 2017:** I attended the AMIA Annual Symposium presenting our podium abstract on a new test of Electronic Health Record note comprehension
 
 # Teaching
 

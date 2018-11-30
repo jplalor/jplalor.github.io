@@ -1,6 +1,7 @@
 Title: Confession: I'm a Nodder
 Date: 2016-12-08 13:11
 Category: Presentations
+Status: draft
 Author: John Lalor
 Summary: How I act when I'm listening to a talk...
 

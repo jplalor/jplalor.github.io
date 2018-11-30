@@ -1,6 +1,7 @@
 Title: Hello!
 Date: 2015-10-15 09:21
 Category: general
+Status: draft
 Author: John Lalor
 Summary: I'm starting a blog...
 

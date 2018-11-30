@@ -58,6 +58,10 @@ There will also be content that is shared among the FYS sections. Once that is f
 - 10/16: Unsupervised learning pt. 2 ([slides][8])
 - 10/23: Interpretability ([slides][9])
 - 10/30: Ethics in ML ([slides][10])
+- 11/06: Guest lecture: Diversity in CS
+- 11/13: Introduction to probability
+- 11/20: No class (Thanksgiving break)
+- 11/27: Class cancelled
 
 [1]:http://www.umass.edu/registrar
 [2]:http://www.umass.edu/registrar/sites/default/files/academicregs.pdf

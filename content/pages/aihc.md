@@ -62,6 +62,7 @@ There will also be content that is shared among the FYS sections. Once that is f
 - 11/13: Introduction to probability
 - 11/20: No class (Thanksgiving break)
 - 11/27: Class cancelled
+- 12/04: Graphical models ([slides courtesy of Kevin Small and Byron Wallace][11])
 
 [1]:http://www.umass.edu/registrar
 [2]:http://www.umass.edu/registrar/sites/default/files/academicregs.pdf
@@ -73,3 +74,4 @@ There will also be content that is shared among the FYS sections. Once that is f
 [8]:http://jplalor.github.io/pdfs/aihc_10_16.pdf
 [9]:http://jplalor.github.io/pdfs/aihc_10_23.pdf
 [10]:http://jplalor.github.io/pdfs/aihc_10_30.pdf
+[11]:https://www.cs.tufts.edu/comp/150AIH/pdf/lecture3.pdf

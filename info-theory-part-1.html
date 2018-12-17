@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>John Lalor</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+        <div class= "siteimage">
+          <a class="nodec" href=images/me_head_2.png>
+            <img width="200" height="200" src=images/me_head_2.png>
+          </a>
+        </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href=".">John Lalor</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+              <li><a class="nodec" href="/">home</a></li>
+              <li><a class="nodec" href="/blog_index.html">blog</a></li>
+              <li><a class="nodec" href="/pdfs/cv.pdf">cv</a></li>
+            <!--pages-->
+            <!-- services icons -->
+              <li><a class="nodec icon-mail-alt" href="mailto:lalor@cs.umass.edu"></a></li>
+              <li><a class="nodec icon-github" href="https://github.com/jplalor"></a></li>
+              <li><a class="nodec icon-twitter" href="http://www.twitter.com/lalorjp"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/info-theory-part-1.html" rel="bookmark" title="Permalink to StatNLP: Essential Information Theory, Part 1">
+      StatNLP: Essential Information Theory, Part 1
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2018-02-15T00:00:00-05:00">
+      Thu 15 February 2018
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <p>I'd like to blog regularly, but I often struggle to come up with topics. So what I'm going to do is blog my way through some textbooks, to work on my writing and also to make sure that I have the concepts in the books down pat. The first textbook in the series will be <em>Foundations of Statistical Natural Language Processing</em> by Manning and Sch&uuml;tze (which I'll refer to as StatNLP from here on out). And the first topic will be <em>Essential Information Theory</em> (section 2.2 in the book). This first post will introduce entropy and provide a few examples.</p>
+<h1>Information Theory Basics</h1>
+<p>Information Theory as a field was developed by Claude Shannon in the 1940s. I won't go into too many details, but basically Shannon was working on a way to quantify how much information one could transmit through a channel that would inevitably lose some of the information due to some amount of noise. He introduced some key concepts that we'll define and visualize here. Information Theory as a whole is an active field, and we'll only scratch the surface here, but at the end of the series I'll provide some pointers for anyone interested in learning more.</p>
+<h2>Preliminaries</h2>
+<p>In this post we'll be looking at probabilities of random variables. We'll define a discrete random variable as a set of outcomes <span class="math">\(X\)</span>. Each potential outcome in <span class="math">\(X\)</span> has an associated probability: <span class="math">\(p(X=x)\)</span>. The <em>expectation</em> (or <em>expected value</em>) of <span class="math">\(X\)</span> is a weighted sum of the outcomes according to the probabilities:</p>
+<div class="math">$$\mathbb{E}[X] = \sum_{x \in X} xp(x)$$</div>
+<h2>Entropy</h2>
+<p>One of the key pieces in Information Theory is entropy. Entropy is defined as the amount of <em>information</em> in a random variable. The formula for entropy is </p>
+<div class="math">$$H(X) = - \sum_{x \in X} p(x) \log p(x)$$</div>
+<p>Often times the logarithm in the formula is base 2, and the output is a measure of <em>bits</em>. Sometimes you'll see the natural log (<span class="math">\(\ln\)</span>), and the output will be in <em>nats</em>. You can also write this formula a few other ways. If you don't like the minus sign in the beginning there, you can move it in and use the reciprocal of the logarithm:</p>
+<div class="math">$$H(X) = \sum_{x \in X} p(x) \log \frac{1}{p(x)}$$</div>
+<p>
+<span class="math">\(\log \frac{1}{p(x)}\)</span> is known as the Shannon information content of an outcome (or information content for short). It tells you how much information you get for a specific outcome of a random variable. The previous formula looks a lot like an expectation. That's because it is! So we can rewrite the formula for entropy again as:</p>
+<div class="math">$$H(X) = \mathbb{E}( \log \frac{1}{p(X)})$$</div>
+<p>Notice in this last formula that the <span class="math">\(p(x)\)</span> is now <span class="math">\(p(X)\)</span> (capital <span class="math">\(X\)</span> instead of lowercase <span class="math">\(x\)</span>). When we have a lowercase <span class="math">\(x\)</span>, we're looking for the probability of a specific value <span class="math">\(x\)</span> which is in the set of possible values <span class="math">\(X\)</span>. In the third equation, we're calculating the expectation of the random variable <span class="math">\(X\)</span>, and so we use <span class="math">\(p(X)\)</span>.</p>
+<p>So what do all of these equivalent formulas mean? When we're calculating entropy, what we're really calculating is the amount of information contained in a particular random variable. On one extreme, if we know everything about the random variable (if <span class="math">\(p(x) = 1\)</span> for one of the potential outcomes), then there is no information to be gained from the random variable. On the other extreme, if all of the outcomes are equally likely (as in a standard six-sided die) then there is a lot of information in the random variable. </p>
+<p>I always like to think about entropy in terms of flipping a coin. Let's say we have a completely unbiased coin, so that the probability of it landing on heads is equal to the probability of it landing on tails. Our random variable is still <span class="math">\(X\)</span>, and the possible values are <span class="math">\(x = H\)</span> and <span class="math">\(x = T\)</span>. The probability of each outcome is <span class="math">\(p(x = H) = p(x = T) = 0.5\)</span>.</p>
+<p>Let's plug this in to our formula for entropy (we'll use the 2nd formula above).</p>
+<div class="math">$$
+\begin{align}
+H(X) &amp;= \sum_{x \in \{H, T\}}p(x) \log \frac{1}{p(x)} \\
+ &amp;= 0.5 * \log \frac{1}{0.5} + 0.5 * \log \frac{1}{0.5} \\
+ &amp;= 2*(0.5 \log 2) \\
+ &amp;= 1
+\end{align}
+$$</div>
+<p>So what this tells us is that every time we flip an unbiased coin, we get 1 bit of information. what if the coin was biased? For example, let's say that the probability of heads is <span class="math">\(0.75\)</span> and the probability of tails is <span class="math">\(0.25\)</span>. In that case when we calculate entropy we get</p>
+<div class="math">$$
+\begin{align}
+H(X) &amp;= \sum_{x \in \{H, T\}}p(x) \log \frac{1}{p(x)} \\
+ &amp;= 0.75 * \log \frac{1}{0.75} + 0.25 * \log \frac{1}{0.25} \\
+ &amp;\approx 0.81
+\end{align}
+$$</div>
+<p>
+We get less information if we flip a biased coin. Why is that? Because there is less uncertainty in the outcome of the coin flip. If the coin is biased, then one side is more likely to come up than the other. In the case above, if the probability of getting heads is <span class="math">\(0.75\)</span>, then before you even flip it the odds are good that it will come up heads. So you don't get as much information as when the coin is unbiased, where there is more uncertainty (in fact, the maximum amount of uncertainty).</p>
+<p>Let's look at a plot of entropy as the bias of a coin changes.</p>
+<p><img alt="plot of chunk entropy_plot" src="./figure/info_theory-entropy_plot-1.png" /></p>
+<p>As the plot shows, the more biased the coin is, the less information we gain when we flip it. Sometimes it helps to think about entropy in terms of being surprised. When we flip a coin biased to land on heads, we're less surprised when it does land on heads (lower entropy). But when a coin is unbiased, each flip is a surprise (high entropy).</p>
+<h1>Conclusion</h1>
+<p>Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.</p>
+<p>As a last note, I wrote this post in RMarkdown, which was surprisingly easy to integrate with this site, which runs on Pelican. All I needed was the <a href="https://github.com/getpelican/pelican-plugins/tree/master/rmd_reader">RMD Reader Pelican Plugin</a>.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div><!-- .content -->
+
+</section>
+
+
+    <!-- footer -->
+    <footer>
+      <p>
+        © John Lalor, license <a href=""> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a> with
+        <a href="http://github.com/porterjamesj/crowsfoot">crowsfoot</a> theme.
+      </p>
+    </footer>
+  </body>
+</html>

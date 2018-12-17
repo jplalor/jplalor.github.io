@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>John Lalor</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+        <div class= "siteimage">
+          <a class="nodec" href=images/me_head_2.png>
+            <img width="200" height="200" src=images/me_head_2.png>
+          </a>
+        </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href=".">John Lalor</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+              <li><a class="nodec" href="/">home</a></li>
+              <li><a class="nodec" href="/blog_index.html">blog</a></li>
+              <li><a class="nodec" href="/pdfs/cv.pdf">cv</a></li>
+            <!--pages-->
+            <!-- services icons -->
+              <li><a class="nodec icon-mail-alt" href="mailto:lalor@cs.umass.edu"></a></li>
+              <li><a class="nodec icon-github" href="https://github.com/jplalor"></a></li>
+              <li><a class="nodec icon-twitter" href="http://www.twitter.com/lalorjp"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/info-theory-part-2.html" rel="bookmark" title="Permalink to StatNLP: Essential Information Theory, Part 2">
+      StatNLP: Essential Information Theory, Part 2
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2018-02-23T00:00:00-05:00">
+      Fri 23 February 2018
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <p>Welcome back! In the last post we started our discussion of Information Theory, and defined some key building blocks related to calculating information for a single random variable. This time we'll look at the relationships between two random variables, and what they can tell us (if anything) about the informativeness of each other.</p>
+<h2>Joint Entropy</h2>
+<p>The first thing we'll look at is <strong>joint entropy</strong>. For two random variables, <span class="math">\(X\)</span> and <span class="math">\(Y\)</span>, the joint entropy between them is </p>
+<div class="math">$$
+\begin{align}
+H(X, Y) &amp;= - \sum_{x \in X} \sum_{y \in Y} p(x, y) \log p(x, y) \\
+&amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(x, y)}
+\end{align}
+$$</div>
+<p>Joint entropy refers to the amount of information you would need to determine the values of two random variables.
+As an example, we'll go back to coin flipping from last time.
+Now, we have two independent coins, both of them unbiased (so <span class="math">\(p(x=H) = p(x=T) = p(y=H) = p(y=T) = 0.5\)</span>).</p>
+<p>The joint entropy for these two random variables is as follows (below the order for the variables is <span class="math">\((x,y)\)</span>, so <span class="math">\(p(H,H)\)</span> is really <span class="math">\(p(x=H, y=H)\)</span>:</p>
+<div class="math">$$
+\begin{align}
+H(X, Y) &amp;=  \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{ p(x, y)} \\
+&amp;= p(H,H)\log \frac{1}{p(H,H)} + p(H,T)\log \frac{1}{p(H,T)} \\
+&amp;+ p(T,H)\log \frac{1}{p(T,H)} + p(T,T)\log \frac{1}{p(T,T)} \\
+&amp;= \frac{1}{4}\log 4 + \frac{1}{4}\log 4+ \frac{1}{4}\log 4+ \frac{1}{4}\log 4 \\
+&amp;= 2
+\end{align}
+$$</div>
+<p>
+This should make sense, since we showed last time that the entropy of a single unbiased coin is 1 bit. If we have two coins, we then double our information.</p>
+<h2>Conditional Entropy</h2>
+<p>Conditional entropy is related to joint entropy. We're still dealing with two random variables, but with conditional entropy we're interested in how much information is gained <em>when we know one of the outcomes.</em> </p>
+<div class="math">$$
+\begin{align}
+H(Y \vert X) &amp;= \sum_{x \in X} p(x) H(Y \vert X = x) \\
+&amp;= \sum_{x \in X} p(x) [\sum_{y \in Y} p(y \vert x) \log \frac{1}{p(y \vert x)}] \\
+&amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) log \frac{1}{p(y \vert x)}
+\end{align}
+$$</div>
+<p>Ok, so what just happened? Let's take the previous set of equations one at a time. In the first line we define the conditional entropy as a weighted average of the conditional entropies of <span class="math">\(Y\)</span> given each possible value of <span class="math">\(X\)</span>. In the second line we just expand that out, using the definition of entropy. Finally, <span class="math">\(p(x)p(y|x) = p(x,y)\)</span> so we can rewrite the equation as in the third line.</p>
+<p>Joint and conditional entropy are closely related. With joint entropy, we are measuring the amount of information in two random variables. Conditional entropy we already know one of the two random variables, and so we're measuring how much additional information is in the other. We can also look at it mathematically, starting with the definition of joint entropy:</p>
+<div class="math">$$
+\begin{align}
+H(X, Y) &amp;=  \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{ p(x, y)} \\
+&amp;= \sum_{x \in X} \sum_{y \in Y} p(x,y) \log \frac{1}{ p(x) p(y\vert x)} \\
+&amp;= \sum_{x \in X} \sum_{y \in Y} p(x,y)[ \log \frac{1}{p(x)} + \log \frac{1}{p(y \vert x)}] \\
+&amp;= \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
+&amp;= \sum_{x \in X} p(x) \log \frac{1}{p(x)} + \sum_{x \in X} \sum_{y \in Y} p(x, y) \log \frac{1}{p(y \vert x)} \\
+&amp;= H(X) + H(Y \vert X)
+\end{align}
+$$</div>
+<p>Let's walk through that. In eqn. 12, we rewrite <span class="math">\(p(x,y)\)</span> in the log. In eqn 13. we split that log product into a sum of logs. In eqn. 14 we move <span class="math">\(p(x,y)\)</span> into the sum, and in eqn. 15 we use the fact that <span class="math">\(\sum_{y \in Y} p(x, y) = p(x)\)</span>.</p>
+<p>So to get the joint entropy of two random variables, you calculate the entropy of one, and add the conditional entropy of the other, given the first one. If the two random variables are independent, then <span class="math">\(H(X, Y) = H(X) + H(Y)\)</span>. We saw that above with our two coin example. If you swap all of the x's and y's in the above, you'll see that the order doesn't matter, and <span class="math">\(H(X,Y) = H(X) + H(Y \vert X) = H(Y) + H(X \vert Y)\)</span></p>
+<h2>Wrapping Up</h2>
+<p>There were a lot of equations here, but hopefully they all make sense. We're still trying to measure information (as in standard entropy for a single random variable) but now we can look at the information relationship between pairs of random variables. Next time we'll look at two more advanced concepts: mutual information and KL-Divergence.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+  </div><!-- .content -->
+
+</section>
+
+
+    <!-- footer -->
+    <footer>
+      <p>
+        © John Lalor, license <a href=""> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a> with
+        <a href="http://github.com/porterjamesj/crowsfoot">crowsfoot</a> theme.
+      </p>
+    </footer>
+  </body>
+</html>

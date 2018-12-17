@@ -6,7 +6,9 @@ Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
-I am a PhD candidate at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the Bio-NLP group. My research interests are in Machine Learning and Natural Language Processing. I am particularly interested in model evaluation and quantifying uncertainty, as well as applications in biomedical informatics.
+**I will be joining the [Mendoza College of Business][32] at the [University of Notre Dame][9] as an assistant professor in August 2019!**
+
+I am a PhD candidate at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the [Bio-NLP][33] group. My research interests are in Machine Learning and Natural Language Processing. I am particularly interested in model evaluation and quantifying uncertainty, as well as applications in biomedical informatics.
 
 Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago and as an IT Audit Associate for [KPMG][23]. I received my Master's Degree in Computer Science at [DePaul University][3], where I worked on projects in Computer Science Education and Recommender Systems. I received my bachelor's degree in IT Management from [Universty of Notre Dame][9], with a minor in Irish Language & Literature.
 
@@ -87,3 +89,5 @@ Below are a few projects that I've worked on, either as part of a class project 
 [29]:http://jplalor.github.io/pdfs/cv.pdf
 [30]:http://jplalor.github.io/pdfs/research_statement.pdf
 [31]:http://jplalor.github.io/pdfs/teaching_statement.pdf
+[32]:https://mendoza.nd.edu
+[33]:http://bio-nlp.org/

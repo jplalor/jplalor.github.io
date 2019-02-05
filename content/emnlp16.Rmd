@@ -1,7 +1,7 @@
 ---
-title: StatNLP: Giving NLP Models Standardized Tests
+title: Item Response Theory for Natural Language Processing
 author: John Lalor
-date: October 17, 2018
+date: February 5, 2019
 output: html
 Category: IRT
 Status: draft
@@ -14,7 +14,7 @@ Tags: ml, nlp, irt
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This post is meant as a companion to our EMNLP 2016 paper ``Building an Evaluation Scale using Item Response Theory'' [[arXiv link][https://arxiv.org/abs/1605.08889]]. 
+This post is meant as a companion to our EMNLP 2016 paper ["Building an Evaluation Scale using Item Response Theory"](https://arxiv.org/abs/1605.08889). 
 It's quite a bit overdue, but hopefully this post will be useful to those who haven't seen IRT before.
 
 # Introduction
@@ -88,7 +88,7 @@ plot(x, y, ylim = c(0, 1), xlim=c(-3.5, 3.5), type='l', xlab = "$theta$", ylab="
 
 $c_i$ is referred to as the guessing parameter. As you can see from the plots above, the lower asymptotes of the curves are not $0$. In a three parameter model, there is an assumption that even at low levels of $\theta$, there is some non-zero probability that an individual will answer a question correctly (with for example a lucky guess). That is modeled by $c_i$.
 
-# Looking at NLI
+# IRT for NLP
 
 So how can we use IRT to help us in NLP? It's often the case that when you train and test your brand new machine learning model on an NLP dataset, the metric of interest is test set accuracy. If your model has a higher accuracy than the current state of the art in the literature, then you're the new top dog. However, there is usually something missing in these evaluations: the question of the specific test set examples that were answered correctly. If your fancy new model has a high accuracy because it labeled a random sequence of examples correctly, that indicates very different performance than some other model that labeled items correctly according to their difficulty (i.e. labeled all easy examples correctly up to some difficulty threshold, then labeled all subsequent examples incorrectly). Having some notion of difficulty is important to distinguish between these two cases, which is where IRT comes in!
 

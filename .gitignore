@@ -69,3 +69,6 @@ target/
 *.aux
 *.log
 *.out
+
+# VSCode
+.vscode/

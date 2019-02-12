@@ -15,6 +15,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR!
 1. **November 2018:** Successfully defended my Ph.D. thesis proposal
 1. **October 2018:** Our latest paper using the ComprehENotes test was accepted for publication by the Journal of Medical Internet Research
 1. **October 2018:** Talk at Notre Dame Mendoza College of Business
@@ -23,8 +24,6 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 1. **Summer 2018:** Internship with the Amazon Alexa team in Cambridge, MA
 1. **February 2018:** Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research
 1. **January 2018:** I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway
-1. **December 2017:** I passed the [CICS Portfolio][24] and am now a PhD candidate
-1. **November 2017:** I attended the AMIA Annual Symposium presenting our podium abstract on a new test of Electronic Health Record note comprehension
 
 # Teaching
 

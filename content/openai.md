@@ -74,5 +74,19 @@ So what should we do moving forward?
 - OpenAI should release the model, or change their name
 - Humans should regain some confidence 
 - You should change the locks in your house so I can't jump out from behind you anymore
+- You should spend less time reading stuff on the internet
+
+The last point is most important.
+Internet companies want you to spend time on the internet so that they can show you ads.
+They have an incentive to provide *content* in order to keep you on their pages.
+They unfortunately do not currently have an incentive to provide you with *facts.*
+The more time you spend on the internet, the more content you see, the more ads you see, and the more money these companies get.
+So, if they need more and more content, and fancy AI systems are writing top notch content now, then they will use said systems to reduce the cost of content.
+
+It's not clear if there will be an increased cost associated with the potentially less-than-totally-true nature of the AI content.
+But looking at fake new now, there isn't much cost associated with putting fake news online, so I don't see there being big costs to putting AI-fake-news online either.
+
+So if you want to prevent AI from taking over the world of online publishing, then turn off your computer and go outside.
+Or if you are reading something online and you have your doubts as to whether it is true or not, do some digging! Find out for yourself.
 
 

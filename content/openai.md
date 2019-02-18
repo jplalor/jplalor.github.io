@@ -2,19 +2,20 @@ Title: AI is not going to destroy us all
 Date: 2019-02-18 10:00
 Category: general
 Status: draft
+Slug: openai
 Author: John Lalor
 Summary: People need to have confidence in their peopleness
 
 Everyone is going crazy over the OpenAI thing. 
+
 You can go crazy if you like, that's fine with me, seems to be what all the cool kids are doing these days.
-I'd point you to Zach Lipton's post for how I generally feel about the whole thing.
+I'd point you to Zach Lipton's post for how I generally feel about the research aspect of this.
 The short version is: this is a better version of very standard natural language processing. 
 That's it.
 It's also not going to destroy us all, so rest easy.
 
-But all of that being said, I've been thinking a lot recently about AI, machine learning, and people.
-That kinda covers a lot, I know.
-But specifically, it feels like we're currently in the middle of a moment where a whole lot of people *want* AI to take over.
+But all of that being said, this raises some interesting questions about AI policy.
+Specifically, it feels like we're currently in the middle of a moment where a whole lot of people *want* AI to take over.
 That sounds very dramatic, so let me unpack it. 
 
 I want to make 2 points through this post:
@@ -56,6 +57,13 @@ This could be a novel, a poem, or (importantly) a commentary written *about* som
 If I jumped out after you finished reading this and told you that it was written by an AI, what would you do?
 My argument here is that your answer should be "I don't know and I don't really care. I was entertained."
 
+If some form of artificial intelligence (in this case, a language model) can create entertainment via text to the point where you can read it and enjoy it, that is a remarkable accomplishment that should be celebrated.
+
+If some form of artificial intelligence can create textual descriptions of news events, that is an even more impressive feat.
+
+If the AI can write what looks like news but has factual errors (even if the structure is good), then the text isn't news.
+We already have defenses against this kind of not-news: the ability to do research, find facts, and make informed decisions about things.
+
 What OpenAI seems to be saying with their lack of transparency over this whole thing is that this new language model is dangerous.
 But I would ask the following: if this model is so good that we don't trust humans to read its output, has OpenAI just passed the Turing test?
 Doubtful.
@@ -67,9 +75,4 @@ So what should we do moving forward?
 - Humans should regain some confidence 
 - You should change the locks in your house so I can't jump out from behind you anymore
 
-quick thoughts on the recent OpenAI kerfuffle:
-
-- have more faith in humanity!!
-- if it's as bad as everyone thinks, have we sneakily passed some form of the Turing test? let's test it.
-- if the problem, is "we're worried that someone will ready a single random article on the internet and then say 'hmm, it's on abc123newsblog.com so it must be true!'" then we have much bigger problems as a society. 
 

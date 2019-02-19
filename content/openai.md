@@ -1,7 +1,6 @@
-Title: A quick, poorly edited rant about language modeling.
-Date: 2019-02-18 10:00
+Title: A quick rant about language modeling.
+Date: 2019-02-19 14:56
 Category: general
-Status: draft
 Slug: openai
 Author: John Lalor
 Summary: People need to have confidence in their peopleness
@@ -21,7 +20,7 @@ Specifically, it feels like we're currently in the middle of a moment where a wh
 That sounds very dramatic, so let me unpack it. 
 
 Let's start at the very beginning (a very good place to start).
-Recall, dear reader, the ELIZA program ([click for an online version](https://www.masswerk.at/eliza/)].
+Recall, dear reader, the ELIZA program ([click for an online version](https://www.masswerk.at/eliza/)).
 ELIZA was an early chatbot built to mimic a very specific sort of psychotherapist.
 There is a lot written about the history of ELIZA, and it is fascinating.
 Some of the subjects who interacted with ELIZA formed an emotional attachment to the program.
@@ -47,7 +46,7 @@ You may even say "Hmm, I don't know if I trust an AI to write news, I should fir
 But it's unlikely that you will say "OK!" and be done with it.
 Why? 
 Because you are a human! 
-You are not a news-injesting machine that simply takes in news uncritically.
+You are not a news-ingesting machine that simply takes in news uncritically.
 
 Your new skeptical approach to news written by an AI should really be your default method for reading the news, but that is a post for another time.
 

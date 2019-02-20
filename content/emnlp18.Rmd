@@ -51,6 +51,21 @@ It usually consists of a split between training, testing, and (sometimes) valida
 When you build a new model, you use the entire training set to train your model, because more data is better and this will show the best possible performance for your model.
 However, in our case we want a variety of performance levels, so to do that we can sample from the training set, and use this training subset to train several different models to label our IRT items. 
 
+# Predicting Correctness
+
+We know the output we want to predict: whether a given model labeled an item correctly or not.
+What are the inputs to our model?
+We kept it simple and used two input features: 
+
+1. The difficulty of the specific item 
+2. The training set size used to train the model
+
+These two features cover the two questions we are trying to answer:
+
+1. Does item difficulty affect predictive performance?
+2. How important is training size on predictive performance?
+
+If we also model the interaction between these features, we can see if there are interesting changes as one or both features vary as well. 
 
 
 

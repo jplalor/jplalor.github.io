@@ -31,7 +31,8 @@ Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 
 # Publications
 
-- J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res (forthcoming)*. [[project page][20]]
+- J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients’ Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res (forthcoming)*. doi:10.2196/11990
+- J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[project page][20]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[arXiv pre-print][27], [project page][19], [youtube link for presentation][28]]
 - J.P. Lalor, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. *UAI Workshop on Uncertainty in Deep Learning.*, 2018.
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[project page][20]]

@@ -6,8 +6,8 @@
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
       <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
       <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
-      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
-      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/styles.css"/>
       <meta charset="utf-8" />
   </head>
 
@@ -22,7 +22,7 @@
         </div>
 
       <div class = "sitebanner">
-        <h1><a class="sitetitle nodec" href="..">John Lalor</a></h1>
+        <h1><a class="sitetitle nodec" href=".">John Lalor</a></h1>
         <h3 class ="sitesubtitle"></h3>
         <!-- nav -->
         <nav class="menu">
@@ -45,7 +45,7 @@
 <section class="content">
 
   <h3 class="posttitle">
-    <a class="nodec" href="/drafts/emnlp-18.html" rel="bookmark" title="Permalink to Does Item Difficulty Affect DNN Performance?">
+    <a class="nodec" href="/emnlp-18.html" rel="bookmark" title="Permalink to Does Item Difficulty Affect DNN Performance?">
       Does Item Difficulty Affect DNN Performance?
     </a>
   </h3>
@@ -58,8 +58,8 @@
   </div><!-- .postinfo -->
 
   <div class="article">
-    <p>Short answer: yes.
-The long answer is a bit more involved, hence the blog post.
+    <p>Short answer: yes.</p>
+<p>The long answer is a bit more involved, hence the blog post.
 This post is a companion to our recent EMNLP 2018 paper <a href="https://arxiv.org/abs/1702.04811">"Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study"</a>.
 If you're really interested, I have a recorded version of the talk from EMNLP on <a href="https://www.youtube.com/watch?v=4FZYB-YvV7k">YouTube</a>.</p>
 <h1>Introduction</h1>
@@ -97,10 +97,34 @@ We kept it simple and used two input features: </p>
 </ol>
 <p>These two features cover the two questions we are trying to answer:</p>
 <ol>
-<li>Does item difficulty affect predictive performance?</li>
 <li>How important is training size on predictive performance?</li>
+<li>Does item difficulty affect predictive performance?</li>
 </ol>
-<p>If we also model the interaction between these features, we can see if there are interesting changes as one or both features vary as well. </p>
+<p>If we also model the interaction between these features, we can see if there are interesting changes as one or both features vary as well. 
+So as a model gets more training data, does it learn the easy or hard items more quickly? </p>
+<h1>Results</h1>
+<p>Going in order based on the three questions raised above, we found that when we plotted the log odds of a model labeling an item correctly as a function of item difficulty and training set size:</p>
+<ol>
+<li>More training data leads to higher odds of correct labeling </li>
+<li>Easier items have higher odds of correct labeling </li>
+<li>As training data increases, the easy items get easier <em>faster</em> than the hard items </li>
+</ol>
+<p>The first point is straightforward and consistent with everything we know about machine learning.
+More data equals better results. 
+The second point looks like an obvious one, but there is a very important caveat here: those item difficulties were learned from a <em>human</em> population.
+The response patterns that we used to fit the IRT model were from Amazon Mechanical Turk workers.
+So the difficulty parameters should be interpreted with respect to the human population.
+The fact that those human difficulties are meaningful for neural networks is not obvious, but is in fact a very interesting finding.
+Those networks think that hard things are hard too!
+And the final point is, I think, very interesting. 
+As these models are trained with more and more data, the rate of learning for the easy items increases faster than the rate of learning for the hard items. 
+This is something that has parallels in human learning, where you develop a curriculum to teach the easy items first, then introduce the harder material afterwards.</p>
+<p>Now for the million dollar question: Who cares?
+Well, I do. 
+But other than me, this is an interesting new result that sheds some light on what is happening in these neural network models at the <em>item</em> level, not just the aggregate test set level, which is where a lot of the analysis is.
+We can see that there are characteristics of items that have an effect on whether a model will label the item correctly.
+So we should think more about how models perform on specific items as opposed to how well models perform on large test sets. 
+Test set accuracy is important, but it isn't the end all be all.</p>
   </div><!-- .content -->
 
 </section>

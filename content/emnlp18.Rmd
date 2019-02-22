@@ -84,4 +84,7 @@ The response patterns that we used to fit the IRT model were from Amazon Mechani
 So the difficulty parameters should be interpreted with respect to the human population.
 The fact that those human difficulties are meaningful for neural networks is not obvious, but is in fact a very interesting finding.
 Those networks think that hard things are hard too!
+And the final point is, I think, very interesting. 
+As these models are trained with more and more data, the rate of learning for the easy items increases faster than the rate of learning for the hard items. 
+This is something that has parallels in human learning, where you develop a curriculum to teach the easy items first, then introduce the harder material afterwards.
 

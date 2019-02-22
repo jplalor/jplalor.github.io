@@ -63,10 +63,25 @@ We kept it simple and used two input features:
 
 These two features cover the two questions we are trying to answer:
 
-1. Does item difficulty affect predictive performance?
-2. How important is training size on predictive performance?
+1. How important is training size on predictive performance?
+2. Does item difficulty affect predictive performance?
 
 If we also model the interaction between these features, we can see if there are interesting changes as one or both features vary as well. 
+So as a model gets more training data, does it learn the easy or hard items more quickly? 
 
+# Results 
 
+Going in order based on the three questions raised above, we found that when we plotted the log odds of a model labeling an item correctly as a function of item difficulty and training set size:
+
+1. More training data leads to higher odds of correct labeling 
+2. Easier items have higher odds of correct labeling 
+3. As training data increases, the easy items get easier *faster* than the hard items 
+
+The first point is straightforward and consistent with everything we know about machine learning.
+More data equals better results. 
+The second point looks like an obvious one, but there is a very important caveat here: those item difficulties were learned from a *human* population.
+The response patterns that we used to fit the IRT model were from Amazon Mechanical Turk workers.
+So the difficulty parameters should be interpreted with respect to the human population.
+The fact that those human difficulties are meaningful for neural networks is not obvious, but is in fact a very interesting finding.
+Those networks think that hard things are hard too!
 

@@ -4,16 +4,11 @@ author: John Lalor
 date: February 21, 2019
 output: html
 Category: IRT
-Status: draft
 Slug: emnlp-18
 Summary: Notes on our EMNLP18 paper
 Tags: ml, nlp, irt
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-require(latex2exp)
-```
 
 Short answer: yes.
 The long answer is a bit more involved, hence the blog post.
@@ -87,4 +82,11 @@ Those networks think that hard things are hard too!
 And the final point is, I think, very interesting. 
 As these models are trained with more and more data, the rate of learning for the easy items increases faster than the rate of learning for the hard items. 
 This is something that has parallels in human learning, where you develop a curriculum to teach the easy items first, then introduce the harder material afterwards.
+
+Now for the million dollar question: Who cares?
+Well, I do. 
+But other than me, this is an interesting new result that sheds some light on what is happening in these neural network models at the *item* level, not just the aggregate test set level, which is where a lot of the analysis is.
+We can see that there are characteristics of items that have an effect on whether a model will label the item correctly.
+So we should think more about how models perform on specific items as opposed to how well models perform on large test sets. 
+Test set accuracy is important, but it isn't the end all be all.
 

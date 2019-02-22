@@ -11,6 +11,7 @@ Tags: ml, nlp, irt
 
 
 Short answer: yes.
+
 The long answer is a bit more involved, hence the blog post.
 This post is a companion to our recent EMNLP 2018 paper ["Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study"](https://arxiv.org/abs/1702.04811).
 If you're really interested, I have a recorded version of the talk from EMNLP on [YouTube](https://www.youtube.com/watch?v=4FZYB-YvV7k).

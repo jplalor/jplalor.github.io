@@ -6,7 +6,7 @@ Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
-**I will be joining the [Mendoza College of Business][32] at the [University of Notre Dame][9] as an assistant professor in August 2019!**
+**I will be joining the [Mendoza College of Business][32] at the [University of Notre Dame][9] as an assistant professor in Fall 2019!**
 
 I am a PhD candidate at the University of Massachusetts Amherst in the [College of Information and Computer Science][1]. I work with Dr. Hong Yu in the [Bio-NLP][33] group. My research interests are in Machine Learning and Natural Language Processing. I am particularly interested in model evaluation and quantifying uncertainty, as well as applications in biomedical informatics.
 
@@ -15,7 +15,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
-1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR!
+1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR
 1. **November 2018:** Successfully defended my Ph.D. thesis proposal
 1. **October 2018:** Our latest paper using the ComprehENotes test was accepted for publication by the Journal of Medical Internet Research
 1. **October 2018:** Talk at Notre Dame Mendoza College of Business
@@ -31,8 +31,8 @@ Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 
 # Publications
 
-- J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients’ Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res (forthcoming)*. doi:10.2196/11990
-- J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[project page][20]]
+- J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients’ Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. [[paper][34]]
+- J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[paper][35], [project page][20]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[arXiv pre-print][27], [project page][19], [youtube link for presentation][28]]
 - J.P. Lalor, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. *UAI Workshop on Uncertainty in Deep Learning.*, 2018.
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[project page][20]]
@@ -91,3 +91,5 @@ Below are a few projects that I've worked on, either as part of a class project 
 [31]:http://jplalor.github.io/pdfs/teaching_statement.pdf
 [32]:https://mendoza.nd.edu
 [33]:http://bio-nlp.org/
+[34]:https://www.jmir.org/2019/3/e11990/
+[35]:https://www.jmir.org/2019/1/e10793/ 

@@ -15,6 +15,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **March 2019:** *Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting* accepted as an extended abstract at the NAACL Cognitive Modeling and Computational Linguistics workshop
 1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR
 1. **November 2018:** Successfully defended my Ph.D. thesis proposal
 1. **October 2018:** Our latest paper using the ComprehENotes test was accepted for publication by the Journal of Medical Internet Research
@@ -22,8 +23,6 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 1. **August 2018:** One paper accepted to EMNLP 2018
 1. **August 2018:** Two papers accepted to the UAI Uncertainty in Deep Learning workshop
 1. **Summer 2018:** Internship with the Amazon Alexa team in Cambridge, MA
-1. **February 2018:** Our paper *ComprehENotes: Development and Validation of an Instrument to Assess Patient EHR Note Reading Comprehension* was accepted for publication by the Journal of Medical Internet Research
-1. **January 2018:** I presented at the first Northern Lights Deep Learning Workshop in Tromso, Norway
 
 # Teaching
 
@@ -34,8 +33,8 @@ Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 - J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients’ Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. [[paper][34]]
 - J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[paper][35], [project page][20]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[arXiv pre-print][27], [project page][19], [youtube link for presentation][28]]
-- J.P. Lalor, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. *UAI Workshop on Uncertainty in Deep Learning.*, 2018.
-- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[project page][20]]
+- J.P. Lalor, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. *UAI Workshop on Uncertainty in Deep Learning.*, 2018. [[arxiv pre-print][36]]
+- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[paper][37], [project page][20]]
 - T. Munkhdalai, J.P. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][13]]
 - J.P. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[arXiv pre-print][4], [project page][19]]
 - C. Miller, A. Settle, and J.P. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[ACM link][5]]
@@ -45,8 +44,10 @@ Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 
 # Posters and Abstracts
 
+- J.P. Lalor, H. Wu, H. Yu. Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting. *NAACL Workshop on Cognitive Modeling and Computational Linguistics* 2019
+- J. Chen, J.P. Lalor, H. Yu. Detecting Hypoglycemia Incidents from Patients' Secure Messages. *American Medical Informatics Association (AMIA) Annual Symposium* Poster, 2018
 - J.P. Lalor, H. Wu, H. Yu, Modeling Difficulty to Understand Deep Learning Performance. *Northern Lights Deep Learning Workshop (NLDL), 2018* [[slides][25]]
-- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. Podium Abstract, In *AMIA 2017*. [[project page][20], [slides][22]]
+- J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. *American Medical Informatics Association (AMIA) Annual Symposium* Podium Abstract, 2017. [[project page][20], [slides][22]]
 - J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][21]]
 
 #Projects
@@ -93,3 +94,5 @@ Below are a few projects that I've worked on, either as part of a class project 
 [33]:http://bio-nlp.org/
 [34]:https://www.jmir.org/2019/3/e11990/
 [35]:https://www.jmir.org/2019/1/e10793/ 
+[36]:https://arxiv.org/abs/1702.08563
+[37]:https://www.jmir.org/2018/4/e139/

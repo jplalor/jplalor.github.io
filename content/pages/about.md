@@ -15,6 +15,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **March 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted as an extended abstract at the NAACL Shortcomings in Vision and Language workshop
 1. **March 2019:** *Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting* accepted as an extended abstract at the NAACL Cognitive Modeling and Computational Linguistics workshop
 1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR
 1. **November 2018:** Successfully defended my Ph.D. thesis proposal
@@ -44,7 +45,8 @@ Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 
 # Posters and Abstracts
 
-- J.P. Lalor, H. Wu, H. Yu. Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting. *NAACL Workshop on Cognitive Modeling and Computational Linguistics* 2019
+- J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019
+- J.P. Lalor, H. Wu, H. Yu. Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting. *NAACL Workshop on Cognitive Modeling and Computational Linguistics (CMCL)* 2019
 - J. Chen, J.P. Lalor, H. Yu. Detecting Hypoglycemia Incidents from Patients' Secure Messages. *American Medical Informatics Association (AMIA) Annual Symposium* Poster, 2018
 - J.P. Lalor, H. Wu, H. Yu, Modeling Difficulty to Understand Deep Learning Performance. *Northern Lights Deep Learning Workshop (NLDL), 2018* [[slides][25]]
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. *American Medical Informatics Association (AMIA) Annual Symposium* Podium Abstract, 2017. [[project page][20], [slides][22]]

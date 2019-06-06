@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>John Lalor</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="./theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+        <div class= "siteimage">
+          <a class="nodec" href=images/me_head_2.png>
+            <img width="200" height="200" src=images/me_head_2.png>
+          </a>
+        </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href=".">John Lalor</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+              <li><a class="nodec" href="/">home</a></li>
+              <li><a class="nodec" href="/blog_index.html">blog</a></li>
+              <li><a class="nodec" href="/pdfs/cv.pdf">cv</a></li>
+            <!--pages-->
+            <!-- services icons -->
+              <li><a class="nodec icon-mail-alt" href="mailto:lalor@cs.umass.edu"></a></li>
+              <li><a class="nodec icon-github" href="https://github.com/jplalor"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/openai.html" rel="bookmark" title="Permalink to A quick rant about language modeling.">
+      A quick rant about language modeling.
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2019-02-19T14:56:00-05:00">
+      Tue 19 February 2019
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <p>(I never thought I would write a title like that)</p>
+<p>Everyone is going crazy over the OpenAI thing. </p>
+<p>You can go crazy if you like, that's fine with me, seems to be what all the cool kids are doing these days.
+I'd point you to <a href="http://approximatelycorrect.com/2019/02/17/openai-trains-language-model-mass-hysteria-ensues/">Zachary Lipton's post</a> for how I generally feel about the research aspect of this.
+The short version is: this is a better version of very standard natural language processing. 
+That's it.
+It's also not going to destroy us all, so rest easy.</p>
+<p>But all of that being said, this raises some interesting questions about AI policy.
+Specifically, it feels like we're currently in the middle of a moment where a whole lot of people <em>want</em> AI to take over.
+That sounds very dramatic, so let me unpack it. </p>
+<p>Let's start at the very beginning (a very good place to start).
+Recall, dear reader, the ELIZA program (<a href="https://www.masswerk.at/eliza/">click for an online version</a>).
+ELIZA was an early chatbot built to mimic a very specific sort of psychotherapist.
+There is a lot written about the history of ELIZA, and it is fascinating.
+Some of the subjects who interacted with ELIZA formed an emotional attachment to the program.
+If you interact with ELIZA now you can see very quickly that not only is it a program, but it is one with pretty severe limitations.</p>
+<p>Which brings us to the new announcement.
+This week, OpenAI announced that they had built a language model that was <em>very good.</em>
+The language model is essentially a better version of stuff that already exists and has existed for a very long time (again, see Zachary's post).
+But there is huge concern right now that if this particular bit of research were to get into the wrong hands, bad things would happen.
+This is silly.
+But let's indulge ourselves for a minute.</p>
+<p>Imagine that you are a person (shouldn't be too hard).
+You are consuming <strong>news</strong> via your favorite app/dead tree/whatever.
+(The fact that I bolded news is important).
+As you read through a story, you may or may not check the byline to determine who wrote the piece.
+Knowing the author can signal quality or trustworthiness if the author is good or trustworthy.
+If you don't know the author, you can at least trust the news source.
+So, if you finished your article and thought to yourself, "that was really well-written" and then I jumped out from behind you and yelled "Aha! But it was written by an AI!" what would you do?
+Other than kick me out of your house (justifiable)?
+You would probably go back and consider the article more closely.
+You may even say "Hmm, I don't know if I trust an AI to write news, I should fire up Google dot com and see if this is being reported elsewhere."
+But it's unlikely that you will say "OK!" and be done with it.
+Why? 
+Because you are a human! 
+You are not a news-ingesting machine that simply takes in news uncritically.</p>
+<p>Your new skeptical approach to news written by an AI should really be your default method for reading the news, but that is a post for another time.</p>
+<p>Now, new scenario.
+Imagine that you are a person (I know, I'm really making you work here).
+You are reading some collection of words that are <strong>not news.</strong>
+This could be a novel, a poem, or (importantly) a commentary written <em>about</em> something in the news (I hope we're all on the same page that these commentaries aren't news).
+If I jumped out after you finished reading this and told you that it was written by an AI, what would you do?
+My argument here is that your answer should be "I don't know and I don't really care. I was entertained."
+AI-generated entertainment shouldn't be cause for concern.</p>
+<p>If some form of artificial intelligence (in this case, a language model) can create entertainment via text to the point where you can read it and enjoy it, that is a remarkable accomplishment that should be celebrated.</p>
+<p>If some form of artificial intelligence can create textual descriptions of news events, that is an even more impressive feat.</p>
+<p>If the AI can write what looks like news but has factual errors (even if the structure is good), then the text isn't news.
+We already have defenses against this kind of not-news: the ability to do research, find facts, and make informed decisions about things.</p>
+<p>What OpenAI is saying with their lack of transparency over this whole thing is that this new language model is dangerous.
+But I would ask the following: if this model is so good that we don't trust humans to read its output, has OpenAI just passed the Turing test?
+Doubtful.
+There simply is a model that does a better job of matching patterns in writing as determined by a very large corpus of writing.</p>
+<p>So what should we do moving forward?</p>
+<ul>
+<li>OpenAI should release the model, or change their name</li>
+<li>Humans should regain some confidence </li>
+<li>You should change the locks in your house so I can't jump out from behind you anymore</li>
+<li>You should spend less time reading stuff on the internet</li>
+</ul>
+<p>The last point is most important.
+Internet companies want you to spend time on the internet so that they can show you ads.
+They have an incentive to provide <em>content</em> in order to keep you on their pages.
+They unfortunately do not currently have an incentive to provide you with <em>facts.</em>
+The more time you spend on the internet, the more content you see, the more ads you see, and the more money these companies get.
+So, if they need more and more content, and fancy AI systems are writing top notch content now, then they will use said systems to reduce the cost of content.</p>
+<p>It's not clear if there will be an increased cost associated with the potentially-less-than-totally-true nature of the AI content.
+But looking at fake news now, there isn't much cost associated with putting fake news online, so I don't see there being big costs to putting AI-fake-news online either.</p>
+<p>So if you want to prevent AI from taking over the world of online publishing, then don't read as much entertainment online.
+Or if you are reading something online and you have your doubts as to whether it is true or not, do some digging! Find out for yourself.</p>
+  </div><!-- .content -->
+
+</section>
+
+
+    <!-- footer -->
+    <footer>
+      <p>
+        © John Lalor, license <a href=""> </a>
+        unless otherwise noted.
+        Generated by <a href= "http://docs.getpelican.com/">Pelican</a> with
+        <a href="http://github.com/porterjamesj/crowsfoot">crowsfoot</a> theme.
+      </p>
+    </footer>
+  </body>
+</html>

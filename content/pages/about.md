@@ -45,7 +45,7 @@ Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
 
 # Posters and Abstracts
 
-- J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019
+- J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019 [[poster][39], [code][38]]
 - J.P. Lalor, H. Wu, H. Yu. Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting. *NAACL Workshop on Cognitive Modeling and Computational Linguistics (CMCL)* 2019
 - J. Chen, J.P. Lalor, H. Yu. Detecting Hypoglycemia Incidents from Patients' Secure Messages. *American Medical Informatics Association (AMIA) Annual Symposium* Poster, 2018
 - J.P. Lalor, H. Wu, H. Yu, Modeling Difficulty to Understand Deep Learning Performance. *Northern Lights Deep Learning Workshop (NLDL), 2018* [[slides][25]]
@@ -98,3 +98,5 @@ Below are a few projects that I've worked on, either as part of a class project 
 [35]:https://www.jmir.org/2019/1/e10793/ 
 [36]:https://arxiv.org/abs/1702.08563
 [37]:https://www.jmir.org/2018/4/e139/
+[38]:https://github.com/jplalor/py-irt
+[39]:http://jplalor.github.io/pdfs/sivl19_irt.pdf

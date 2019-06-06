@@ -91,7 +91,7 @@ $$&lt;/div&gt;
 &lt;p&gt;
 Here, &lt;span class="math"&gt;\(\theta_j\)&lt;/span&gt; is the latent ability parameter of test-taker &lt;span class="math"&gt;\(j\)&lt;/span&gt;, and &lt;span class="math"&gt;\(a_i\)&lt;/span&gt;, &lt;span class="math"&gt;\(b_i\)&lt;/span&gt;, and &lt;span class="math"&gt;\(c_i\)&lt;/span&gt; are item &lt;span class="math"&gt;\(i\)&lt;/span&gt;'s discriminatory, difficulty, and guessing parameters, respectively.
 A typical IRT curve will look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot1" src="http://jplalor.github.io/figure/emnlp16-irtplot1-1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="plot of chunk irtplot1" src="{static}/figure/emnlp16-irtplot1-1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Our x-axis is &lt;span class="math"&gt;\(\theta_j\)&lt;/span&gt;, the latent ability parameter.
 The y-axis is &lt;span class="math"&gt;\(p_{ij}(\theta_j)\)&lt;/span&gt;, the probability that an individual with a certain ability level will answer this item correctly.
 The curve is monotonically increasing, which makes sense. 
@@ -99,13 +99,13 @@ As the ability of an individual increases, we expect that the probability of tha
 &lt;span class="math"&gt;\(a_i\)&lt;/span&gt;, the discriminatory parameter, represents the slope of the curve at its steepest point.
 &lt;span class="math"&gt;\(a_i\)&lt;/span&gt; should be steep enough that in a relatively short range, there is a sizeable jump in &lt;span class="math"&gt;\(p_{ij}(\theta_j)\)&lt;/span&gt;, but shouldn't be so steep that the range is tiny.
 An item with too steep of a slope is only useful in a very small ability range:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot2" src="http://jplalor.github.io/figure/emnlp16-irtplot2-1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="plot of chunk irtplot2" src="{static}/figure/emnlp16-irtplot2-1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="math"&gt;\(b_i\)&lt;/span&gt;, the difficulty parameter, represents the halfway point between the minimum and maximum values of &lt;span class="math"&gt;\(p_{ij}(\theta_j)\)&lt;/span&gt;.
 For a 3PL model, the minimum is &lt;span class="math"&gt;\(c_i\)&lt;/span&gt; and the maximum is &lt;span class="math"&gt;\(1\)&lt;/span&gt;.
 Since &lt;span class="math"&gt;\(\theta\)&lt;/span&gt; is a unit Gaussian (&lt;span class="math"&gt;\(\theta_j \sim N(0, 1)\)&lt;/span&gt;), we want the value of &lt;span class="math"&gt;\(b_i\)&lt;/span&gt; to fall somewhere between &lt;span class="math"&gt;\(-3\)&lt;/span&gt; and &lt;span class="math"&gt;\(3\)&lt;/span&gt; in most cases, since that covers 99.7% of people.
 The next two plots show "easy"" and "hard"" items where the difficulty parameters are &lt;span class="math"&gt;\(-2\)&lt;/span&gt; and &lt;span class="math"&gt;\(2\)&lt;/span&gt;, respectively:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot3" src="http://jplalor.github.io/figure/emnlp16-irtplot3-1.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot4" src="http://jplalor.github.io/figure/emnlp16-irtplot4-1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="plot of chunk irtplot3" src="{static}/figure/emnlp16-irtplot3-1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="plot of chunk irtplot4" src="{static}/figure/emnlp16-irtplot4-1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="math"&gt;\(c_i\)&lt;/span&gt; is referred to as the guessing parameter. As you can see from the plots above, the lower asymptotes of the curves are not &lt;span class="math"&gt;\(0\)&lt;/span&gt;. In a three parameter model, there is an assumption that even at low levels of &lt;span class="math"&gt;\(\theta\)&lt;/span&gt;, there is some non-zero probability that an individual will answer a question correctly (with for example a lucky guess). That is modeled by &lt;span class="math"&gt;\(c_i\)&lt;/span&gt;.&lt;/p&gt;
 &lt;h1&gt;IRT for NLP&lt;/h1&gt;
 &lt;p&gt;So how can we use IRT to help us in NLP? 
@@ -140,10 +140,13 @@ Typically the items are removed one at a time, the model is re-fit, and the set 
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -157,6 +160,7 @@ Typically the items are removed one at a time, the model is re-fit, and the set 
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        fonts: [['STIX', 'TeX']]," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -177,6 +181,8 @@ Typically the items are removed one at a time, the model is re-fit, and the set 
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category><category term="irt"></category></entry></feed>

@@ -58,10 +58,13 @@ We can calculate this if we know &lt;span class="math"&gt;\(q\)&lt;/span&gt;.&lt
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -75,6 +78,7 @@ We can calculate this if we know &lt;span class="math"&gt;\(q\)&lt;/span&gt;.&lt
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        fonts: [['STIX', 'TeX']]," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -95,6 +99,8 @@ We can calculate this if we know &lt;span class="math"&gt;\(q\)&lt;/span&gt;.&lt
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category></entry><entry><title>StatNLP: Essential Information Theory, Part 2</title><link href="http://jplalor.github.io/info-theory-part-2.html" rel="alternate"></link><updated>2018-02-23T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-23:info-theory-part-2.html</id><summary type="html">&lt;p&gt;Welcome back! In the last post we started our discussion of Information Theory, and defined some key building blocks related to calculating information for a single random variable. This time we'll look at the relationships between two random variables, and what they can tell us (if anything) about the informativeness of each other.&lt;/p&gt;
@@ -161,10 +167,13 @@ $$&lt;/div&gt;
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -178,6 +187,7 @@ $$&lt;/div&gt;
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        fonts: [['STIX', 'TeX']]," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -198,6 +208,8 @@ $$&lt;/div&gt;
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category></entry><entry><title>StatNLP: Essential Information Theory, Part 1</title><link href="http://jplalor.github.io/info-theory-part-1.html" rel="alternate"></link><updated>2018-02-15T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2018-02-15:info-theory-part-1.html</id><summary type="html">&lt;p&gt;I'd like to blog regularly, but I often struggle to come up with topics. So what I'm going to do is blog my way through some textbooks, to work on my writing and also to make sure that I have the concepts in the books down pat. The first textbook in the series will be &lt;em&gt;Foundations of Statistical Natural Language Processing&lt;/em&gt; by Manning and Sch&amp;uuml;tze (which I'll refer to as StatNLP from here on out). And the first topic will be &lt;em&gt;Essential Information Theory&lt;/em&gt; (section 2.2 in the book). This first post will introduce entropy and provide a few examples.&lt;/p&gt;
@@ -237,7 +249,7 @@ $$&lt;/div&gt;
 &lt;p&gt;
 We get less information if we flip a biased coin. Why is that? Because there is less uncertainty in the outcome of the coin flip. If the coin is biased, then one side is more likely to come up than the other. In the case above, if the probability of getting heads is &lt;span class="math"&gt;\(0.75\)&lt;/span&gt;, then before you even flip it the odds are good that it will come up heads. So you don't get as much information as when the coin is unbiased, where there is more uncertainty (in fact, the maximum amount of uncertainty).&lt;/p&gt;
 &lt;p&gt;Let's look at a plot of entropy as the bias of a coin changes.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk entropy_plot" src="http://jplalor.github.io/figure/info_theory-entropy_plot-1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="plot of chunk entropy_plot" src="{static}/figure/info_theory-entropy_plot-1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;As the plot shows, the more biased the coin is, the less information we gain when we flip it. Sometimes it helps to think about entropy in terms of being surprised. When we flip a coin biased to land on heads, we're less surprised when it does land on heads (lower entropy). But when a coin is unbiased, each flip is a surprise (high entropy).&lt;/p&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.&lt;/p&gt;
@@ -257,10 +269,13 @@ We get less information if we flip a biased coin. Why is that? Because there is 
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -274,6 +289,7 @@ We get less information if we flip a biased coin. Why is that? Because there is 
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        fonts: [['STIX', 'TeX']]," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -294,6 +310,8 @@ We get less information if we flip a biased coin. Why is that? Because there is 
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category></entry></feed>

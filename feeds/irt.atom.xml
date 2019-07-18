@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/irt.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2019-02-21T00:00:00-05:00</updated><entry><title>Does Item Difficulty Affect DNN Performance?</title><link href="http://jplalor.github.io/emnlp-18.html" rel="alternate"></link><updated>2019-02-21T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-21:emnlp-18.html</id><summary type="html">&lt;p&gt;Short answer: yes.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor - IRT</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/irt.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2019-02-21T00:00:00-05:00</updated><entry><title>Does Item Difficulty Affect DNN Performance?</title><link href="http://jplalor.github.io/emnlp-18.html" rel="alternate"></link><published>2019-02-21T00:00:00-05:00</published><updated>2019-02-21T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-21:/emnlp-18.html</id><summary type="html">&lt;p&gt;Notes on our EMNLP18 paper&lt;/p&gt;</summary><content type="html">&lt;p&gt;Short answer: yes.&lt;/p&gt;
 &lt;p&gt;The long answer is a bit more involved, hence the blog post.
 This post is a companion to our recent EMNLP 2018 paper &lt;a href="https://arxiv.org/abs/1702.04811"&gt;"Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study"&lt;/a&gt;.
 If you're really interested, I have a recorded version of the talk from EMNLP on &lt;a href="https://www.youtube.com/watch?v=4FZYB-YvV7k"&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
@@ -65,7 +65,7 @@ Well, I do.
 But other than me, this is an interesting new result that sheds some light on what is happening in these neural network models at the &lt;em&gt;item&lt;/em&gt; level, not just the aggregate test set level, which is where a lot of the analysis is.
 We can see that there are characteristics of items that have an effect on whether a model will label the item correctly.
 So we should think more about how models perform on specific items as opposed to how well models perform on large test sets. 
-Test set accuracy is important, but it isn't the end all be all.&lt;/p&gt;</summary><category term="ml"></category><category term="nlp"></category><category term="irt"></category></entry><entry><title>Item Response Theory for Natural Language Processing</title><link href="http://jplalor.github.io/emnlp-16.html" rel="alternate"></link><updated>2019-02-12T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-12:emnlp-16.html</id><summary type="html">&lt;p&gt;This post is meant as a companion to our EMNLP 2016 paper &lt;a href="https://arxiv.org/abs/1605.08889"&gt;"Building an Evaluation Scale using Item Response Theory"&lt;/a&gt;. 
+Test set accuracy is important, but it isn't the end all be all.&lt;/p&gt;</content><category term="ml"></category><category term="nlp"></category><category term="irt"></category></entry><entry><title>Item Response Theory for Natural Language Processing</title><link href="http://jplalor.github.io/emnlp-16.html" rel="alternate"></link><published>2019-02-12T00:00:00-05:00</published><updated>2019-02-12T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-12:/emnlp-16.html</id><summary type="html">&lt;p&gt;Notes on our EMNLP16 paper&lt;/p&gt;</summary><content type="html">&lt;p&gt;This post is meant as a companion to our EMNLP 2016 paper &lt;a href="https://arxiv.org/abs/1605.08889"&gt;"Building an Evaluation Scale using Item Response Theory"&lt;/a&gt;. 
 It's quite a bit overdue, but hopefully this post will be useful to those who haven't seen IRT before.&lt;/p&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Let's start by thinking about the typical supervised machine learning setup. 
@@ -91,7 +91,10 @@ $$&lt;/div&gt;
 &lt;p&gt;
 Here, &lt;span class="math"&gt;\(\theta_j\)&lt;/span&gt; is the latent ability parameter of test-taker &lt;span class="math"&gt;\(j\)&lt;/span&gt;, and &lt;span class="math"&gt;\(a_i\)&lt;/span&gt;, &lt;span class="math"&gt;\(b_i\)&lt;/span&gt;, and &lt;span class="math"&gt;\(c_i\)&lt;/span&gt; are item &lt;span class="math"&gt;\(i\)&lt;/span&gt;'s discriminatory, difficulty, and guessing parameters, respectively.
 A typical IRT curve will look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot1" src="{static}/figure/emnlp16-irtplot1-1.png" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;##&lt;/span&gt; &lt;span class="n"&gt;Error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;TeX&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;$\\theta_j$&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="n"&gt;could&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;find&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;TeX&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Our x-axis is &lt;span class="math"&gt;\(\theta_j\)&lt;/span&gt;, the latent ability parameter.
 The y-axis is &lt;span class="math"&gt;\(p_{ij}(\theta_j)\)&lt;/span&gt;, the probability that an individual with a certain ability level will answer this item correctly.
 The curve is monotonically increasing, which makes sense. 
@@ -99,13 +102,22 @@ As the ability of an individual increases, we expect that the probability of tha
 &lt;span class="math"&gt;\(a_i\)&lt;/span&gt;, the discriminatory parameter, represents the slope of the curve at its steepest point.
 &lt;span class="math"&gt;\(a_i\)&lt;/span&gt; should be steep enough that in a relatively short range, there is a sizeable jump in &lt;span class="math"&gt;\(p_{ij}(\theta_j)\)&lt;/span&gt;, but shouldn't be so steep that the range is tiny.
 An item with too steep of a slope is only useful in a very small ability range:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot2" src="{static}/figure/emnlp16-irtplot2-1.png" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;##&lt;/span&gt; &lt;span class="n"&gt;Error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;TeX&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;$\\theta_j$&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="n"&gt;could&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;find&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;TeX&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;span class="math"&gt;\(b_i\)&lt;/span&gt;, the difficulty parameter, represents the halfway point between the minimum and maximum values of &lt;span class="math"&gt;\(p_{ij}(\theta_j)\)&lt;/span&gt;.
 For a 3PL model, the minimum is &lt;span class="math"&gt;\(c_i\)&lt;/span&gt; and the maximum is &lt;span class="math"&gt;\(1\)&lt;/span&gt;.
 Since &lt;span class="math"&gt;\(\theta\)&lt;/span&gt; is a unit Gaussian (&lt;span class="math"&gt;\(\theta_j \sim N(0, 1)\)&lt;/span&gt;), we want the value of &lt;span class="math"&gt;\(b_i\)&lt;/span&gt; to fall somewhere between &lt;span class="math"&gt;\(-3\)&lt;/span&gt; and &lt;span class="math"&gt;\(3\)&lt;/span&gt; in most cases, since that covers 99.7% of people.
 The next two plots show "easy"" and "hard"" items where the difficulty parameters are &lt;span class="math"&gt;\(-2\)&lt;/span&gt; and &lt;span class="math"&gt;\(2\)&lt;/span&gt;, respectively:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot3" src="{static}/figure/emnlp16-irtplot3-1.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="plot of chunk irtplot4" src="{static}/figure/emnlp16-irtplot4-1.png" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;##&lt;/span&gt; &lt;span class="n"&gt;Error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;TeX&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;$\\theta_j$&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="n"&gt;could&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;find&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;TeX&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;##&lt;/span&gt; &lt;span class="n"&gt;Error&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="n"&gt;TeX&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;&amp;quot;$\\theta_j$&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="n"&gt;could&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="n"&gt;find&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;TeX&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;span class="math"&gt;\(c_i\)&lt;/span&gt; is referred to as the guessing parameter. As you can see from the plots above, the lower asymptotes of the curves are not &lt;span class="math"&gt;\(0\)&lt;/span&gt;. In a three parameter model, there is an assumption that even at low levels of &lt;span class="math"&gt;\(\theta\)&lt;/span&gt;, there is some non-zero probability that an individual will answer a question correctly (with for example a lucky guess). That is modeled by &lt;span class="math"&gt;\(c_i\)&lt;/span&gt;.&lt;/p&gt;
 &lt;h1&gt;IRT for NLP&lt;/h1&gt;
 &lt;p&gt;So how can we use IRT to help us in NLP? 
@@ -160,7 +172,8 @@ Typically the items are removed one at a time, the model is re-fit, and the set 
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
-        "        fonts: [['STIX', 'TeX']]," +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -185,4 +198,4 @@ Typically the items are removed one at a time, the model is re-fit, and the set 
     (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="ml"></category><category term="nlp"></category><category term="irt"></category></entry></feed>
+&lt;/script&gt;</content><category term="ml"></category><category term="nlp"></category><category term="irt"></category></entry></feed>

@@ -84,7 +84,10 @@ $$</div>
 <p>
 Here, <span class="math">\(\theta_j\)</span> is the latent ability parameter of test-taker <span class="math">\(j\)</span>, and <span class="math">\(a_i\)</span>, <span class="math">\(b_i\)</span>, and <span class="math">\(c_i\)</span> are item <span class="math">\(i\)</span>'s discriminatory, difficulty, and guessing parameters, respectively.
 A typical IRT curve will look something like this:</p>
-<p><img alt="plot of chunk irtplot1" src="{static}/figure/emnlp16-irtplot1-1.png" /></p>
+<div class="highlight"><pre><span></span><span class="o">##</span> <span class="n">Error</span> <span class="k">in</span> <span class="n">TeX</span><span class="p">(</span><span class="ss">&quot;$\\theta_j$&quot;</span><span class="p">):</span> <span class="n">could</span> <span class="k">not</span> <span class="n">find</span> <span class="k">function</span> <span class="ss">&quot;TeX&quot;</span>
+</pre></div>
+
+
 <p>Our x-axis is <span class="math">\(\theta_j\)</span>, the latent ability parameter.
 The y-axis is <span class="math">\(p_{ij}(\theta_j)\)</span>, the probability that an individual with a certain ability level will answer this item correctly.
 The curve is monotonically increasing, which makes sense. 
@@ -92,13 +95,22 @@ As the ability of an individual increases, we expect that the probability of tha
 <span class="math">\(a_i\)</span>, the discriminatory parameter, represents the slope of the curve at its steepest point.
 <span class="math">\(a_i\)</span> should be steep enough that in a relatively short range, there is a sizeable jump in <span class="math">\(p_{ij}(\theta_j)\)</span>, but shouldn't be so steep that the range is tiny.
 An item with too steep of a slope is only useful in a very small ability range:</p>
-<p><img alt="plot of chunk irtplot2" src="{static}/figure/emnlp16-irtplot2-1.png" /></p>
+<div class="highlight"><pre><span></span><span class="o">##</span> <span class="n">Error</span> <span class="k">in</span> <span class="n">TeX</span><span class="p">(</span><span class="ss">&quot;$\\theta_j$&quot;</span><span class="p">):</span> <span class="n">could</span> <span class="k">not</span> <span class="n">find</span> <span class="k">function</span> <span class="ss">&quot;TeX&quot;</span>
+</pre></div>
+
+
 <p><span class="math">\(b_i\)</span>, the difficulty parameter, represents the halfway point between the minimum and maximum values of <span class="math">\(p_{ij}(\theta_j)\)</span>.
 For a 3PL model, the minimum is <span class="math">\(c_i\)</span> and the maximum is <span class="math">\(1\)</span>.
 Since <span class="math">\(\theta\)</span> is a unit Gaussian (<span class="math">\(\theta_j \sim N(0, 1)\)</span>), we want the value of <span class="math">\(b_i\)</span> to fall somewhere between <span class="math">\(-3\)</span> and <span class="math">\(3\)</span> in most cases, since that covers 99.7% of people.
 The next two plots show "easy"" and "hard"" items where the difficulty parameters are <span class="math">\(-2\)</span> and <span class="math">\(2\)</span>, respectively:</p>
-<p><img alt="plot of chunk irtplot3" src="{static}/figure/emnlp16-irtplot3-1.png" /></p>
-<p><img alt="plot of chunk irtplot4" src="{static}/figure/emnlp16-irtplot4-1.png" /></p>
+<div class="highlight"><pre><span></span><span class="o">##</span> <span class="n">Error</span> <span class="k">in</span> <span class="n">TeX</span><span class="p">(</span><span class="ss">&quot;$\\theta_j$&quot;</span><span class="p">):</span> <span class="n">could</span> <span class="k">not</span> <span class="n">find</span> <span class="k">function</span> <span class="ss">&quot;TeX&quot;</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="o">##</span> <span class="n">Error</span> <span class="k">in</span> <span class="n">TeX</span><span class="p">(</span><span class="ss">&quot;$\\theta_j$&quot;</span><span class="p">):</span> <span class="n">could</span> <span class="k">not</span> <span class="n">find</span> <span class="k">function</span> <span class="ss">&quot;TeX&quot;</span>
+</pre></div>
+
+
 <p><span class="math">\(c_i\)</span> is referred to as the guessing parameter. As you can see from the plots above, the lower asymptotes of the curves are not <span class="math">\(0\)</span>. In a three parameter model, there is an assumption that even at low levels of <span class="math">\(\theta\)</span>, there is some non-zero probability that an individual will answer a question correctly (with for example a lucky guess). That is modeled by <span class="math">\(c_i\)</span>.</p>
 <h1>IRT for NLP</h1>
 <p>So how can we use IRT to help us in NLP? 
@@ -153,7 +165,8 @@ Typically the items are removed one at a time, the model is re-fit, and the set 
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
-        "        fonts: [['STIX', 'TeX']]," +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +

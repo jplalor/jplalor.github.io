@@ -95,7 +95,7 @@ $$</div>
 <p>
 We get less information if we flip a biased coin. Why is that? Because there is less uncertainty in the outcome of the coin flip. If the coin is biased, then one side is more likely to come up than the other. In the case above, if the probability of getting heads is <span class="math">\(0.75\)</span>, then before you even flip it the odds are good that it will come up heads. So you don't get as much information as when the coin is unbiased, where there is more uncertainty (in fact, the maximum amount of uncertainty).</p>
 <p>Let's look at a plot of entropy as the bias of a coin changes.</p>
-<p><img alt="plot of chunk entropy_plot" src="{static}/figure/info_theory-entropy_plot-1.png" /></p>
+<p><img alt="plot of chunk entropy_plot" src="./figure/info_theory-entropy_plot-1.png"></p>
 <p>As the plot shows, the more biased the coin is, the less information we gain when we flip it. Sometimes it helps to think about entropy in terms of being surprised. When we flip a coin biased to land on heads, we're less surprised when it does land on heads (lower entropy). But when a coin is unbiased, each flip is a surprise (high entropy).</p>
 <h1>Conclusion</h1>
 <p>Entropy is a key building block for Information Theory, and it is also very useful in Machine Learning and NLP (more in a later post). Next time we'll look at entropy for more than one random variable, and define joint entropy, conditional entropy, and (probably) KL-Divergence.</p>
@@ -135,7 +135,8 @@ We get less information if we flip a biased coin. Why is that? Because there is 
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
-        "        fonts: [['STIX', 'TeX']]," +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +

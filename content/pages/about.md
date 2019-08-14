@@ -13,6 +13,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **August 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted at EMNLP 2019 (to appear)
 1. **March 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted as an extended abstract at the NAACL Shortcomings in Vision and Language workshop
 1. **March 2019:** *Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting* accepted as an extended abstract at the NAACL Cognitive Modeling and Computational Linguistics workshop
 1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR
@@ -24,11 +25,13 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 1. **Summer 2018:** Internship with the Amazon Alexa team in Cambridge, MA
 
 # Teaching
-
-Fall 2018 [FYS: Artificial Intelligence and Healthcare][26]
+- Fall 2019: Unstructured Data Analytics
+- Fall 2019: Data Wrangling with R 
+- Fall 2018: [UMass First Year Seminar: Artificial Intelligence and Healthcare][26]
 
 # Publications
 
+- J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* 
 - J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients’ Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. [[paper][34]]
 - J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[paper][35], [project page][20]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[arXiv pre-print][27], [project page][19], [youtube link for presentation][28]]

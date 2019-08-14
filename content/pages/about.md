@@ -13,7 +13,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
-1. **August 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted at EMNLP 2019 (to appear)
+1. **August 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted to appear at EMNLP 2019
 1. **March 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted as an extended abstract at the NAACL Shortcomings in Vision and Language workshop
 1. **March 2019:** *Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting* accepted as an extended abstract at the NAACL Cognitive Modeling and Computational Linguistics workshop
 1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR

@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor - general</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/general.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2019-02-19T14:56:00-05:00</updated><entry><title>A quick rant about language modeling.</title><link href="http://jplalor.github.io/openai.html" rel="alternate"></link><published>2019-02-19T14:56:00-05:00</published><updated>2019-02-19T14:56:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-19:/openai.html</id><summary type="html">&lt;p&gt;People need to have confidence in their peopleness&lt;/p&gt;</summary><content type="html">&lt;p&gt;(I never thought I would write a title like that)&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>John Lalor - general</title><link href="http://jplalor.github.io/" rel="alternate"></link><link href="http://jplalor.github.io/feeds/general.atom.xml" rel="self"></link><id>http://jplalor.github.io/</id><updated>2019-08-29T15:06:00-04:00</updated><entry><title>IRT with Artificial Crowds</title><link href="http://jplalor.github.io/emnlp19.html" rel="alternate"></link><published>2019-08-29T15:06:00-04:00</published><updated>2019-08-29T15:06:00-04:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-08-29:/emnlp19.html</id><summary type="html">&lt;p&gt;Because people don't want to label 50,000 sentences&lt;/p&gt;</summary><content type="html">&lt;p&gt;If you have been keeping up with what's going on here my website, you'll know that a lot of my work involves Item Response Theory (IRT).
+Typically, IRT requires human &lt;em&gt;response patterns&lt;/em&gt;, which means that each human has to label each item in your data set so that patterns across the individuals can be comapred when fitting the model.
+This limits the size of the data sets that can be used, but even so we've been able to do some interesting work in NLP with IRT models using human data.&lt;/p&gt;
+&lt;p&gt;This bottleneck leads to an obvious question: can we pull the humans out of this process and instead gather response patterns from an ensemble of models?
+The models could act as our &lt;em&gt;artificial crowd&lt;/em&gt;, and the response patterns could be used to fit IRT models for very large data sets.&lt;/p&gt;
+&lt;p&gt;To answer the question: you can, and we did.
+The results are in our upcoming EMNLP 2019 paper: &lt;em&gt;Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds&lt;/em&gt; (arXiv link coming soon).
+This post will serve as a companion to the paper.&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;As I mentioned above, IRT can be really useful for NLP.
+Information such as how difficult certain examples are, and how well a model performs with respect to a population (instead of just raw accuracy) can be used to better evaluate models, build better models, and sample training data.
+But a major bottleneck in rolling IRT out has been the fact that IRT requires a lot of human data.
+And it requires a lot of human data in two dimensions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For each example in your data set, you need a lot of labels for model-fitting (a few hundred or more)&lt;/li&gt;
+&lt;li&gt;Each human has to label all (or at least most) of the examples in the data set&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first point means that data collection is expensive from a researcher's point of view.
+The second point means that the data sets you can work with are somewhat limited in terms of size.
+You could ask a human to label a few hundred or a thousand examples from a data set, but they would probably get bored (or angry) and the quality of those annotations would suffer.
+So we wanted to see if we could fit IRT models with a crowd of models, since we can get a model to label a huge data set very cheaply.&lt;/p&gt;
+&lt;h1&gt;Artificial Crowds&lt;/h1&gt;
+&lt;p&gt;There are a number of ways you can construct an ensemble of models.
+In this work we focused on &lt;em&gt;training data manipulation&lt;/em&gt; as the mechanism for building an artificial crowd.
+For our two NLP data sets (SNLI and SSTB) we started with a baseline neural network model.
+We used a straightforward LSTM model, nothing fancy.
+With this baseline model, we ran 1000 training cycles, each time starting with a different subset of the training data set.
+We did two manipulations to the training data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sample the training set size so that we have some subset of the training data&lt;/li&gt;
+&lt;li&gt;flip the label for a randomly selected subset of this sample to introduce noise into training&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With this setup each instance of the model is being trained with a very different data set, which will lead to very different results in terms of performance.
+Once each of these models were trained we labeled all of the examples in the data set and used these outputs as the response patterns for fitting an IRT model.&lt;/p&gt;
+&lt;h1&gt;Variational IRT&lt;/h1&gt;
+&lt;h1&gt;Results&lt;/h1&gt;
+&lt;p&gt;In order for all of this model training to be worth our while, there were three questions that we needed to answer:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Are the output parameters (reasonably) similar to those learned from a human crowd?&lt;/li&gt;
+&lt;li&gt;Can we fit the IRT models for tens or hundreds of thousands of examples?&lt;/li&gt;
+&lt;li&gt;If we can, who cares? (put another way: What downstream tasks can we use those learned parameters for?)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Comparing Humans and Machines&lt;/h2&gt;
+&lt;p&gt;The first thing we did was have the artificial crowd label all of the examples that we already had human annotations for from our earlier work.
+This way we can compare the learned parameters across the groups to see how well they correlate.&lt;/p&gt;
+&lt;p&gt;For SNLI, the correlations look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="correlations" src="figure/snli_scatter.png"&gt;&lt;/p&gt;
+&lt;p&gt;And for SSTB:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="correlations_sstb" src="figure/sstb_scatter.png"&gt;&lt;/p&gt;
+&lt;p&gt;So we can see that they are positive, which is nice.
+Remember, they didn't have to be.
+There is nothing that assumes that examples that are easy for humans are also easy for the models.
+But it turns out for a lot of items that is the case, which is cool.&lt;/p&gt;
+&lt;h2&gt;Putting it to Use&lt;/h2&gt;
+&lt;p&gt;The next question then is, can we do this for very large data sets?
+(If the answer was no then I probably wouldn't be writing this now would I?)
+We compared fitting an IRT model with traditional methods to fitting one with variational inference, and saw that the results were very similar.
+Once we scaled the variational inference method up to the response pattern data for all of SNLI and SSTB, we were able to fit IRT models in a few minutes for each one.&lt;/p&gt;
+&lt;p&gt;Using the learned difficulty parameters, we conducted a data sampling experiment to see how sampling according to difficulty can impact model training.
+Turns out that if you sample examples that are &lt;em&gt;average&lt;/em&gt; in terms of difficulty, you learn models that better generalize when the sampled data sets are very small:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="sampling" src="figure/thresholds.png"&gt;&lt;/p&gt;
+&lt;p&gt;Sampling the easiest examples also does well, but by sampling average examples it seems like the model learns more generalizeable patterns than it does with just the easiest examples.&lt;/p&gt;
+&lt;h2&gt;Where are the Differences?&lt;/h2&gt;
+&lt;p&gt;Another interesting aspect of this work is the fact that we can compare easy and difficult examples across the human and machine populations.
+A few patterns emerge, such as the need for external information and the presence of ambiguity, that cause a lot of the differences.
+Tables showing the examples with the biggest differences, along with more discussion about possible causes, are in the paper.&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;There are more results and technical details in the paper.
+It's exciting to see that we can learn these IRT models with data collected from an artificial crowd.
+This makes it much easier to fit an IRT model as part of a machine learning workflow.
+You can see which specific examples are easiest/hardest for your task and use the information to inform model building and training.
+Not to mention the fact that now we can use IRT to &lt;em&gt;evaluate&lt;/em&gt; models using very large machine learning data sets.
+Hopefully this will encourage others to take a look at IRT and see how it can help in their machine learning and NLP research.&lt;/p&gt;
+&lt;p&gt;Code for fitting your own IRT models is available &lt;a href="https://github.com/jplalor/py-irt"&gt;here&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>A quick rant about language modeling.</title><link href="http://jplalor.github.io/openai.html" rel="alternate"></link><published>2019-02-19T14:56:00-05:00</published><updated>2019-02-19T14:56:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-19:/openai.html</id><summary type="html">&lt;p&gt;People need to have confidence in their peopleness&lt;/p&gt;</summary><content type="html">&lt;p&gt;(I never thought I would write a title like that)&lt;/p&gt;
 &lt;p&gt;Everyone is going crazy over the OpenAI thing. &lt;/p&gt;
 &lt;p&gt;You can go crazy if you like, that's fine with me, seems to be what all the cool kids are doing these days.
 I'd point you to &lt;a href="http://approximatelycorrect.com/2019/02/17/openai-trains-language-model-mass-hysteria-ensues/"&gt;Zachary Lipton's post&lt;/a&gt; for how I generally feel about the research aspect of this.

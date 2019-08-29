@@ -13,7 +13,7 @@ This bottleneck leads to an obvious question: can we pull the humans out of this
 The models could act as our *artificial crowd*, and the response patterns could be used to fit IRT models for very large data sets.
 
 To answer the question: you can, and we did.
-The results are in our upcoming EMNLP 2019 paper: *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds.*
+The results are in our upcoming EMNLP 2019 paper: *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* (arXiv link coming soon).
 This post will serve as a companion to the paper.
 
 # Introduction
@@ -59,17 +59,42 @@ This way we can compare the learned parameters across the groups to see how well
 
 For SNLI, the correlations look like this:
 
-[correlations](figure/snli_scatter.png)
+![correlations](figure/snli_scatter.png)
 
 And for SSTB:
 
-[correlations_sstb](figure/sstb_scatter.png)
+![correlations_sstb](figure/sstb_scatter.png)
 
+So we can see that they are positive, which is nice.
+Remember, they didn't have to be.
+There is nothing that assumes that examples that are easy for humans are also easy for the models.
+But it turns out for a lot of items that is the case, which is cool.
 
 ## Putting it to Use
+The next question then is, can we do this for very large data sets?
+(If the answer was no then I probably wouldn't be writing this now would I?)
+We compared fitting an IRT model with traditional methods to fitting one with variational inference, and saw that the results were very similar.
+Once we scaled the variational inference method up to the response pattern data for all of SNLI and SSTB, we were able to fit IRT models in a few minutes for each one.
+
+Using the learned difficulty parameters, we conducted a data sampling experiment to see how sampling according to difficulty can impact model training.
+Turns out that if you sample examples that are *average* in terms of difficulty, you learn models that better generalize when the sampled data sets are very small:
+
+![sampling](figure/thresholds.png)
+
+Sampling the easiest examples also does well, but by sampling average examples it seems like the model learns more generalizeable patterns than it does with just the easiest examples.
 
 ## Where are the Differences?
+Another interesting aspect of this work is the fact that we can compare easy and difficult examples across the human and machine populations.
+A few patterns emerge, such as the need for external information and the presence of ambiguity, that cause a lot of the differences.
+Tables showing the examples with the biggest differences, along with more discussion about possible causes, are in the paper.
 
 # Conclusion
+
+There are more results and technical details in the paper.
+It's exciting to see that we can learn these IRT models with data collected from an artificial crowd.
+This makes it much easier to fit an IRT model as part of a machine learning workflow.
+You can see which specific examples are easiest/hardest for your task and use the information to inform model building and training.
+Not to mention the fact that now we can use IRT to *evaluate* models using very large machine learning data sets.
+Hopefully this will encourage others to take a look at IRT and see how it can help in their machine learning and NLP research.
 
 Code for fitting your own IRT models is available [here](https://github.com/jplalor/py-irt).

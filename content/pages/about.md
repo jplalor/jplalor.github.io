@@ -13,16 +13,13 @@ Prior to UMass, I worked as a software developer at [Eze Software][2] in Chicago
 
 # Updates
 
+1. **September 2019:** *Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity* accepted to appear at ASRU 2019
 1. **August 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted to appear at EMNLP 2019
 1. **March 2019:** *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* accepted as an extended abstract at the NAACL Shortcomings in Vision and Language workshop
 1. **March 2019:** *Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting* accepted as an extended abstract at the NAACL Cognitive Modeling and Computational Linguistics workshop
 1. **February 2019:** Our paper on detecting hypoglycemia incidents in secure messages was accepted by JMIR
 1. **November 2018:** Successfully defended my Ph.D. thesis proposal
 1. **October 2018:** Our latest paper using the ComprehENotes test was accepted for publication by the Journal of Medical Internet Research
-1. **October 2018:** Talk at Notre Dame Mendoza College of Business
-1. **August 2018:** One paper accepted to EMNLP 2018
-1. **August 2018:** Two papers accepted to the UAI Uncertainty in Deep Learning workshop
-1. **Summer 2018:** Internship with the Amazon Alexa team in Cambridge, MA
 
 # Teaching
 - Fall 2019: Unstructured Data Analytics
@@ -59,7 +56,7 @@ Below are a few projects that I've worked on, either as part of a class project 
 
 - [GutenRecs][10]: "More like this" book recommendations for Project Gutenberg. Final Project for ECT 584: Web Data Mining at DePaul
 - [An Analysis of Major League Baseball as a Social Network][11]: Final project for CSC 495: Social Network Analysis at DePaul.
-- [Goodreads Right Click][12]: A Chrome Extension for Searching on Goodreads. I wanted this to exist, so I built it.
+- [Goodreads Right Click][12]: A Chrome Extension for Searching on Goodreads. 
 
 
 [1]:https://cics.umass.edu/

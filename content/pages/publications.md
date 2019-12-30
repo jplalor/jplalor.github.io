@@ -3,6 +3,7 @@ Date: 2019-12-30 10:03
 Category: static
 Author: John Lalor
 Summary: Publications
+save_as: publications.html
 
 # Journal 
 

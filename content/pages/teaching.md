@@ -3,6 +3,7 @@ Date: 2019-12-30 10:03
 Category: static
 Author: John Lalor
 Summary: Teaching
+save_as: teaching.html
 
 # University of Notre Dame
 

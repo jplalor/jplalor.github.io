@@ -16,7 +16,7 @@ Prior to UMass, I worked as a software developer at [Eze Software][eze] in Chica
 I received my Master's Degree in Computer Science at [DePaul University][depaul], where I worked on projects in Computer Science Education and Recommender Systems. 
 
 
-# Updates
+## Updates
 
 1. **November 2019:** I successfully defended my Ph.D. dissertation, "Learning Latent Characteristics of Data and Models using Item Response Theory."
 1. **September 2019:** *Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity* accepted to appear at ASRU 2019

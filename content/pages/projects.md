@@ -7,7 +7,7 @@ save_as: projects.html
 
 
 
-# Miscellaneous Projects
+## Miscellaneous Projects
 
 Below are a few projects that I've worked on, either as part of a class project or on my own time.
 

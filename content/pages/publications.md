@@ -5,14 +5,14 @@ Author: John Lalor
 Summary: Publications
 save_as: publications.html
 
-# Journal 
+## Journal 
 
 - J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients’ Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. [[paper][jmir hypo 2019]]
 - J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[paper][jmir2019], [project page][comprehenotes-page]]
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[paper][jmir2018], [project page][comprehenotes-page]]
 
 
-# Conference 
+## Conference 
 
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* [[paper][emnlp2019], [code][emnlp2019-github]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[paper][emnlp2018], [project page][irt-page], [youtube link for presentation][emnlp2018-youtube]]
@@ -23,7 +23,7 @@ save_as: publications.html
 - A. Settle, J.P. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[paper][sigcse2015]]
 
 
-# Workshop 
+## Workshop 
 
 - E. Cho, H. Xie, J.P. Lalor, V. Kumar, W.M. Campbell. Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity. *ASRU 2019*
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019 [[poster][sivl-poster]]

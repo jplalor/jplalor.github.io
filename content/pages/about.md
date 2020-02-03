@@ -6,7 +6,7 @@ Author: John Lalor
 Summary: Homepage
 save_as: index.html
 
-I am an Instructor at the [Mendoza College of Business][mendoza] at the [University of Notre Dame][nd]. 
+I am an Assistant Professor at the [Mendoza College of Business][mendoza] at the [University of Notre Dame][nd]. 
 I recently defended my Ph.D. dissertation at the University of Massachusetts Amherst in the [College of Information and Computer Science][cics]. 
 At UMass I was a member of the [Bio-NLP][bionlp] group, working with Dr. Hong Yu. 
 My research interests are in Machine Learning and Natural Language Processing. 

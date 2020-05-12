@@ -13,7 +13,7 @@ This bottleneck leads to an obvious question: can we pull the humans out of this
 The models could act as our *artificial crowd*, and the response patterns could be used to fit IRT models for very large data sets.
 
 To answer the question: you can, and we did.
-The results are in our upcoming EMNLP 2019 paper: *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* (arXiv link coming soon).
+The results are in our upcoming EMNLP 2019 paper: *Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds* ([https://www.aclweb.org/anthology/D19-1434/](available at the ACL Anthology)).
 This post will serve as a companion to the paper.
 
 # Introduction

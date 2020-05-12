@@ -45,6 +45,16 @@ With this setup each instance of the model is being trained with a very differen
 Once each of these models were trained we labeled all of the examples in the data set and used these outputs as the response patterns for fitting an IRT model.
 
 # Variational IRT
+(Update) In looking back on these posts I realized that this section was just excluded. 
+My apologies. 
+In order to estimate our IRT parameters, we implemented a variational inference model proposed by Natesan et al. (2016). 
+Each difficulty and ability parameter is assumed to be normally distributed and independent, and estimation involves minimizing the KL-divergence between the true posterior and the variational parameters. 
+This has two key benefits:
+
+1. It's Bayesian, so we get uncertainty estimates in the form of mean and variance parameters for each item.
+2. It's fast. 
+
+We implemented the variational IRT model in Pyro and used a hierarchical version that was shown to perform well in the prior work.
 
 # Results
 In order for all of this model training to be worth our while, there were three questions that we needed to answer:
@@ -98,3 +108,7 @@ Not to mention the fact that now we can use IRT to *evaluate* models using very 
 Hopefully this will encourage others to take a look at IRT and see how it can help in their machine learning and NLP research.
 
 Code for fitting your own IRT models is available [here](https://github.com/jplalor/py-irt).
+
+## References
+
+Prathiba Natesan, Ratna Nandakumar, Tom Minka, and Jonathan D Rubright. 2016. Bayesian prior choice in irt estimation using mcmc and variational bayes. Frontiers in psychology, 7:1422.

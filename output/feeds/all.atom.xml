@@ -34,6 +34,16 @@ We did two manipulations to the training data:&lt;/p&gt;
 &lt;p&gt;With this setup each instance of the model is being trained with a very different data set, which will lead to very different results in terms of performance.
 Once each of these models were trained we labeled all of the examples in the data set and used these outputs as the response patterns for fitting an IRT model.&lt;/p&gt;
 &lt;h1&gt;Variational IRT&lt;/h1&gt;
+&lt;p&gt;(Update) In looking back on these posts I realized that this section was just excluded. 
+My apologies. 
+In order to estimate our IRT parameters, we implemented a variational inference model proposed by Natesan et al. (2016). 
+Each difficulty and ability parameter is assumed to be normally distributed and independent, and estimation involves minimizing the KL-divergence between the true posterior and the variational parameters. 
+This has two key benefits:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It's Bayesian, so we get uncertainty estimates in the form of mean and variance parameters for each item.&lt;/li&gt;
+&lt;li&gt;It's fast. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We implemented the variational IRT model in Pyro and used a hierarchical version that was shown to perform well in the prior work.&lt;/p&gt;
 &lt;h1&gt;Results&lt;/h1&gt;
 &lt;p&gt;In order for all of this model training to be worth our while, there were three questions that we needed to answer:&lt;/p&gt;
 &lt;ol&gt;
@@ -72,7 +82,9 @@ This makes it much easier to fit an IRT model as part of a machine learning work
 You can see which specific examples are easiest/hardest for your task and use the information to inform model building and training.
 Not to mention the fact that now we can use IRT to &lt;em&gt;evaluate&lt;/em&gt; models using very large machine learning data sets.
 Hopefully this will encourage others to take a look at IRT and see how it can help in their machine learning and NLP research.&lt;/p&gt;
-&lt;p&gt;Code for fitting your own IRT models is available &lt;a href="https://github.com/jplalor/py-irt"&gt;here&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Does Item Difficulty Affect DNN Performance?</title><link href="http://jplalor.github.io/emnlp-18.html" rel="alternate"></link><published>2019-02-21T00:00:00-05:00</published><updated>2019-02-21T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-21:/emnlp-18.html</id><summary type="html">&lt;p&gt;Notes on our EMNLP18 paper&lt;/p&gt;</summary><content type="html">&lt;p&gt;Short answer: yes.&lt;/p&gt;
+&lt;p&gt;Code for fitting your own IRT models is available &lt;a href="https://github.com/jplalor/py-irt"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;p&gt;Prathiba Natesan, Ratna Nandakumar, Tom Minka, and Jonathan D Rubright. 2016. Bayesian prior choice in irt estimation using mcmc and variational bayes. Frontiers in psychology, 7:1422.&lt;/p&gt;</content></entry><entry><title>Does Item Difficulty Affect DNN Performance?</title><link href="http://jplalor.github.io/emnlp-18.html" rel="alternate"></link><published>2019-02-21T00:00:00-05:00</published><updated>2019-02-21T00:00:00-05:00</updated><author><name>John Lalor</name></author><id>tag:jplalor.github.io,2019-02-21:/emnlp-18.html</id><summary type="html">&lt;p&gt;Notes on our EMNLP18 paper&lt;/p&gt;</summary><content type="html">&lt;p&gt;Short answer: yes.&lt;/p&gt;
 &lt;p&gt;The long answer is a bit more involved, hence the blog post.
 This post is a companion to our recent EMNLP 2018 paper &lt;a href="https://arxiv.org/abs/1702.04811"&gt;"Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study"&lt;/a&gt;.
 If you're really interested, I have a recorded version of the talk from EMNLP on &lt;a href="https://www.youtube.com/watch?v=4FZYB-YvV7k"&gt;YouTube&lt;/a&gt;.&lt;/p&gt;

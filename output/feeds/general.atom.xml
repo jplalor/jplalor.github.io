@@ -5,7 +5,7 @@ This limits the size of the data sets that can be used, but even so we've been a
 &lt;p&gt;This bottleneck leads to an obvious question: can we pull the humans out of this process and instead gather response patterns from an ensemble of models?
 The models could act as our &lt;em&gt;artificial crowd&lt;/em&gt;, and the response patterns could be used to fit IRT models for very large data sets.&lt;/p&gt;
 &lt;p&gt;To answer the question: you can, and we did.
-The results are in our upcoming EMNLP 2019 paper: &lt;em&gt;Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds&lt;/em&gt; (&lt;a href="available at the ACL Anthology"&gt;https://www.aclweb.org/anthology/D19-1434/&lt;/a&gt;).
+The results are in our upcoming EMNLP 2019 paper: &lt;em&gt;Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds&lt;/em&gt; (&lt;a href="https://www.aclweb.org/anthology/D19-1434/"&gt;available at the ACL Anthology&lt;/a&gt;).
 This post will serve as a companion to the paper.&lt;/p&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;As I mentioned above, IRT can be really useful for NLP.

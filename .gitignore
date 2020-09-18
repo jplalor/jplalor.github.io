@@ -1,2 +1,6 @@
 # exclude output dir
 /hugo/public
+
+# exclude Rporj user
+/hugo/.Rproj.user
+/hugo/.Rhistory

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	
+	<meta name="generator" content="Hugo 0.75.1" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="John P. Lalor"><meta name="description" content=""><meta property="og:title" content="Essential Information Theory, Part 3" />
+<meta property="og:description" content="Wrapping up the Information Theory Introduction" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/info-theory-part-3/" />
+<meta property="article:published_time" content="2018-03-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-03-28T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Essential Information Theory, Part 3"/>
+<meta name="twitter:description" content="Wrapping up the Information Theory Introduction"/>
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Essential Information Theory, Part 3 | John P. Lalor</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="/">
+		  <img src="/img/headshot_cropped.jpg" alt="John P. Lalor">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="/">John P. Lalor</a></h2></div>
+	<div id="title-description"><p id="subtitle">Assistant Professor of IT, Analytics, and Operations.</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/dataCobra/hugo-vitae"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="mailto:john.lalor@nd.edu"><i title="Email" class="icons fas fa-envelope"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/research">Research</a></li>
+				
+				<li><a href="/teaching">Teaching</a></li>
+				
+				<li><a href="/post">Blog</a></li>
+				
+				<li><a href="/pdf/cv.pdf">CV</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">28</span>
+				<span class="rest">Mar 2018</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Essential Information Theory, Part 3</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		
+
+
+<p>After a bit of a hiatus, it’s time to wrap up the Information Theory introduction. In this post I’m going to talk about Mutual Information and KL-Divergence. I’ll look at why these two are important, how we get them from what we already know, and what we can do with them (with an example or two for good measure). After this post we can hit the ground running with the StatNLP book, woohoo!</p>
+<div id="mutual-information" class="section level2">
+<h2>Mutual Information</h2>
+<p>At the end of the previous post, we looked at the relationship between joint entropy and conditional entropy. Recall that <span class="math inline">\(H(X,Y) = H(X) + H(Y \vert X)\)</span>. In this formula, we can reverse <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> to get <span class="math inline">\(H(X,Y) = H(Y) + H(X \vert Y)\)</span>. The two are equivalent. If we rearrange those formulas we can derive the formula for <em>mutual information:</em></p>
+<p><span class="math display">\[
+H(X) + H(Y \vert X) = H(Y) + H(X \vert Y) \\
+H(X) - H(X \vert Y) = H(Y) - H(Y \vert X) \\
+= I(X;Y)
+\]</span></p>
+<p>Mutual information describes the reduction in uncertainty of one random variable that you get if you know another random variable. For example if <span class="math inline">\(X\)</span> is a random variable indicating whether it is currently raining or not, and <span class="math inline">\(Y\)</span> is a random variable indicating whether the ground or not is wet, if you know that the ground is wet (<span class="math inline">\(Y=1\)</span>), that will reduce the amount of uncertainty in determining whether it is raining (<span class="math inline">\(X\)</span>).</p>
+<p>How do you calculate mutual information? From Equation 2.36 in StatNLP:</p>
+<p><span class="math display">\[
+I(X;Y) = H(X) - H(X \vert Y) \\
+= H(X) + H(Y) - H(X,Y)  \textit{ by the chain rule} \\
+= \sum_x p(x) \log \frac{1}{p(x)} + \sum_y p(y) \log \frac{1}{p(y)} + \sum_{x,y} p(x,y) \log p(x,y) \\
+= \sum_{x,y} p(x,y) \log \frac{p(x,y)}{p(x)p(y)}
+\]</span></p>
+<p>In the case where two random variables are independent, then <span class="math inline">\(I(X;Y) = 0\)</span>. Why? Because <span class="math inline">\(H(X \vert Y) = H(X)\)</span>, so we have <span class="math inline">\(I(X;Y) = H(X) - H(X) = 0\)</span>. This makes sense since mutual information is measuring the reduction in uncertainty for one variable when you know another one. If you know <span class="math inline">\(Y\)</span>, but it is independent of <span class="math inline">\(X\)</span>, there is no reduction in uncertainty for <span class="math inline">\(X\)</span>.</p>
+</div>
+<div id="kl-divergence" class="section level2">
+<h2>KL-Divergence</h2>
+<p>The next definition is for Kullback-Leibler divergence, or KL-divergence. KL-divergence measures how far one probability distribution is from another:</p>
+<p><span class="math display">\[
+D(p \vert \vert q) = \sum_{x \in X} p(x) \log \frac{p(x)}{q(x)}
+\]</span>
+It’s worth noting that KL-divergence is not a distance metric since it is not symmetric, <span class="math inline">\(D(p \vert \vert q) \neq D(q \vert \vert p)\)</span>. It’s useful for determining how good of an estimate q is for p. And looking at our equation for mutual information, we see that it can be expressed as a KL-divergence: <span class="math inline">\(I(X;Y) = D(p(x,y) \vert \vert p(x)p(y))\)</span>. This shows us that mutual information is a way to quantify the dependence of a joint distribution.</p>
+</div>
+<div id="cross-entropy" class="section level2">
+<h2>Cross Entropy</h2>
+<p>Imagine that you have some random variable <span class="math inline">\(X\)</span> with some true probability distribution <span class="math inline">\(p(x)\)</span>. You don’t know what <span class="math inline">\(p\)</span> is, but you have this other distribution <span class="math inline">\(q\)</span>, and you want to know how good of a job it does at approximating <span class="math inline">\(p(x)\)</span>. To answer this question requires <em>cross entropy:</em> <span class="math inline">\(H(X, q) = H(X) + D(p \vert \vert q)\)</span>. Now wait a minute. The formula for cross entropy still requires that we know <span class="math inline">\(p(x)\)</span>. Let’s rearrange some terms:</p>
+<p><span class="math display">\[
+H(X, q) = H(X) + D(p \vert \vert q) \\
+= - \sum_x p(x) \log p(x) + \sum_x p(x) \log \frac{p(x)}{q(x)} \\
+= - \sum_x p(x) \log p(x) + \sum_x p(x) \log p(x) + \sum_x p(x) \log \frac{1}{q(x)} \\
+= \sum_x p(x) \frac{1}{\log q(x)} \\
+= \mathbb{E}_p [\log \frac{1}{q(x)}]
+\]</span></p>
+<p>We can calculate this if we know <span class="math inline">\(q\)</span>.</p>
+</div>
+<div id="wrapping-up" class="section level2">
+<h2>Wrapping Up</h2>
+<p>These last few posts had a lot of definitions and math in them, but hopefully they are helpful for defining some key concepts in Information Theory. Entropy is a useful tool for machine learning and NLP, and upcoming posts will be using these concepts.</p>
+</div>
+
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright John P. Lalor | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
+	
+	
+	
+</footer>
+
+
+</body>
+</html>

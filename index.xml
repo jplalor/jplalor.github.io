@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>John P. Lalor</title>
+		<link>/</link>
+		<description>Recent content on </description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright John P. Lalor | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
+		
+		<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>IRT with Artificial Crowds</title>
+			<link>/post/emnlp19/</link>
+			<pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+			
+			<guid>/post/emnlp19/</guid>
+			<description>
+				
+				If you have been keeping up with what’s going on here my website, you’ll know that a lot of my work involves...
+				
+			</description>
+		</item>
+		<item>
+			<title>Does Item Difficulty Affect DNN Performance?</title>
+			<link>/post/emnlp18/</link>
+			<pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
+			
+			<guid>/post/emnlp18/</guid>
+			<description>
+				
+				Short answer: yes.
+The long answer is a bit more involved, hence the blog post.This post is a companion to our recent ...
+				
+			</description>
+		</item>
+		<item>
+			<title>A quick rant about language modeling.</title>
+			<link>/post/openai/</link>
+			<pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+			
+			<guid>/post/openai/</guid>
+			<description>
+				
+				(I never thought I would write a title like that)
+Everyone is going crazy over the OpenAI thing.
+You can go crazy if you...
+				
+			</description>
+		</item>
+		<item>
+			<title>Item Response Theory for Natural Language Processing</title>
+			<link>/post/emnlp16/</link>
+			<pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+			
+			<guid>/post/emnlp16/</guid>
+			<description>
+				
+				This post is meant as a companion to our EMNLP 2016 paper “Building an Evaluation Scale using Item Response Theory”.It...
+				
+			</description>
+		</item>
+		<item>
+			<title>Essential Information Theory, Part 3</title>
+			<link>/post/info-theory-part-3/</link>
+			<pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+			
+			<guid>/post/info-theory-part-3/</guid>
+			<description>
+				
+				After a bit of a hiatus, it’s time to wrap up the Information Theory introduction. In this post I’m going to talk about...
+				
+			</description>
+		</item>
+		<item>
+			<title>Essential Information Theory, Part 2</title>
+			<link>/post/info-theory-part-2/</link>
+			<pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+			
+			<guid>/post/info-theory-part-2/</guid>
+			<description>
+				
+				Welcome back! In the last post we started our discussion of Information Theory, and defined some key building blocks re...
+				
+			</description>
+		</item>
+		<item>
+			<title>Essential Information Theory, Part 1</title>
+			<link>/post/info-theory-part-1/</link>
+			<pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
+			
+			<guid>/post/info-theory-part-1/</guid>
+			<description>
+				
+				I’d like to blog regularly, but I often struggle to come up with topics. So what I’m going to do is blog my way through...
+				
+			</description>
+		</item>
+		<item>
+			<title>Confession: I&#39;m a Nodder</title>
+			<link>/post/nodder/</link>
+			<pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
+			
+			<guid>/post/nodder/</guid>
+			<description>
+				
+				I was preparing my slides for my recent MLFL talk, and I came across this great page on How to give a great presentation...
+				
+			</description>
+		</item>
+		<item>
+			<title>Generating Seinfeld Dialog using Neural Networks</title>
+			<link>/post/lstm-seinfeld/</link>
+			<pubDate>Fri, 29 Jan 2016 00:00:00 +0000</pubDate>
+			
+			<guid>/post/lstm-seinfeld/</guid>
+			<description>
+				
+				Neural networks are all the rage these days, with a huge number of examples of their capabilities around the web. One pa...
+				
+			</description>
+		</item>
+		<item>
+			<title>Dot Products and Vector Projections</title>
+			<link>/post/vector-projections/</link>
+			<pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
+			
+			<guid>/post/vector-projections/</guid>
+			<description>
+				
+				Because this stuff is useful
+				
+			</description>
+		</item>
+		<item>
+			<title></title>
+			<link>/homepage/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/homepage/</guid>
+			<description>
+				
+				Welcome to my web page
+				
+			</description>
+		</item>
+		<item>
+			<title>AMIA 2018 Workshop</title>
+			<link>/amia18/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/amia18/</guid>
+			<description>
+				
+				Evaluation and Interpretability in Deep Neural Networks Welcome! This page includes resources for our 2018 AMIA workshop...
+				
+			</description>
+		</item>
+		<item>
+			<title>ComprehENotes Question Set</title>
+			<link>/ehr/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/ehr/</guid>
+			<description>
+				
+				This page contains the ComprehENotes question set.
+If you use the question set please site the following:
+ J.P. Lalor, H...
+				
+			</description>
+		</item>
+		<item>
+			<title>FYS: Artificial Intelligence in Healthcare</title>
+			<link>/aihc/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/aihc/</guid>
+			<description>
+				
+				Note: This course page is retained as an archive, some of the information and links are out of date.
+Welcome to the cour...
+				
+			</description>
+		</item>
+		<item>
+			<title>Item Response Theory and Machine Learning</title>
+			<link>/irt/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/irt/</guid>
+			<description>
+				
+				Overview This page contains code and data for our IRT analyses. Test.
+SNLI If you use the following data, please cite:
+ ...
+				
+			</description>
+		</item>
+		<item>
+			<title>Publications</title>
+			<link>/publications/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/publications/</guid>
+			<description>
+				
+				Journal  J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Rep...
+				
+			</description>
+		</item>
+		<item>
+			<title>Research</title>
+			<link>/research/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/research/</guid>
+			<description>
+				
+				Publications For a list of publications click here.
+Projects  Item Response Theory and Machine Learning: [project page] ...
+				
+			</description>
+		</item>
+		<item>
+			<title>Teaching</title>
+			<link>/teaching/</link>
+			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+			
+			<guid>/teaching/</guid>
+			<description>
+				
+				University of Notre Dame  ITAO 40250: Unstructured Data Analytics ITAO 70810: Data Wrangling with R  University of Massa...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1600450749973.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "776225DF",
+    "lastKnownWriteTime" : 1600450819,
+    "last_content_update" : 1600450819605,
+    "path" : "C:/Users/jlalor1/code/jplalor.github.io/hugo/content/post/info_theory.Rmd",
+    "project_path" : "content/post/info_theory.Rmd",
+    "properties" : {
+        "cursorPosition" : "85,84",
+        "scrollLine" : "77"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

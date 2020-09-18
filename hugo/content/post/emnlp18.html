@@ -1,0 +1,87 @@
+---
+title: Does Item Difficulty Affect DNN Performance?
+author: John P. Lalor
+date: "2019-02-21"
+Slug: emnlp18
+Summary: Notes on our EMNLP18 paper
+---
+
+
+
+<p>Short answer: yes.</p>
+<p>The long answer is a bit more involved, hence the blog post.
+This post is a companion to our recent EMNLP 2018 paper <a href="https://arxiv.org/abs/1702.04811">“Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study”</a>.
+If you’re really interested, I have a recorded version of the talk from EMNLP on <a href="https://www.youtube.com/watch?v=4FZYB-YvV7k">YouTube</a>.</p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>In <a href="http://jplalor.github.io/emnlp-16.html">an earlier post</a> I discussed how Item Response Theory (IRT) can be used to build more advanced test sets for natural language processing models.
+IRT tests include items for which we know certain latent parameters such as difficulty and discriminatory ability.
+Our previous work looked at using these test sets to, well, test a deep neural network to see if reported high accuracy scores were really indicative of high latent ability.
+Turns out that high accuracy on a very easy dataset doesn’t directly translate to high ability, which makes sense.
+If the test is easy then most everyone will do well, so your high score isn’t as impressive.
+On the other hand, a high (but maybe not very high) score on a difficulty test does indicate high ability, because you have done well on a test that most find difficult.
+Knowing item difficulty and latent ability lets us better understand performance, of humans and of neural networks.</p>
+<p>The next question we wanted to answer was about the neural networks’ performance on <em>specific</em> items.
+We determined how scores change at the aggregate level, but can we learn anything about a model’s performance based on the difficulty of specific items?
+Do high-performing models do better on easy items than low-performing models, or do they do better on harder items, or both?</p>
+</div>
+<div id="the-goal" class="section level1">
+<h1>The Goal</h1>
+<p>What we want to do here is determine if the latent difficulty of an item is predictive of whether a neural network model will label the item correctly.
+Put another way: are easy items more likely to be labeled correctly by a neural network than harder items?
+And if so, does this relationship change as our models get better at the task?
+We already have data with item difficulties, from our prior work.
+So these items are now our test set for the models that we will use.
+Every model will label the IRT test set, and we can use these outputs and the input characteristics of the models to learn a logistic regression model to predict whether a model will label an item correctly, given some input set of features.</p>
+</div>
+<div id="different-data-different-model" class="section level1">
+<h1>Different Data, Different model</h1>
+<p>How can we get a model that performs better or worse while maintaining the underlying structure so we can make meaningful comparisons?
+One straightforward approach is to modify the training data, so that the same model can be trained with a variety of different training sets.
+For a typical NLP task, there is some large data set that has been gathered and released to the research community.
+It usually consists of a split between training, testing, and (sometimes) validation sets so that results can be compared between research groups.
+When you build a new model, you use the entire training set to train your model, because more data is better and this will show the best possible performance for your model.
+However, in our case we want a variety of performance levels, so to do that we can sample from the training set, and use this training subset to train several different models to label our IRT items.</p>
+</div>
+<div id="predicting-correctness" class="section level1">
+<h1>Predicting Correctness</h1>
+<p>We know the output we want to predict: whether a given model labeled an item correctly or not.
+What are the inputs to our model?
+We kept it simple and used two input features:</p>
+<ol style="list-style-type: decimal">
+<li>The difficulty of the specific item</li>
+<li>The training set size used to train the model</li>
+</ol>
+<p>These two features cover the two questions we are trying to answer:</p>
+<ol style="list-style-type: decimal">
+<li>How important is training size on predictive performance?</li>
+<li>Does item difficulty affect predictive performance?</li>
+</ol>
+<p>If we also model the interaction between these features, we can see if there are interesting changes as one or both features vary as well.
+So as a model gets more training data, does it learn the easy or hard items more quickly?</p>
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>Going in order based on the three questions raised above, we found that when we plotted the log odds of a model labeling an item correctly as a function of item difficulty and training set size:</p>
+<ol style="list-style-type: decimal">
+<li>More training data leads to higher odds of correct labeling</li>
+<li>Easier items have higher odds of correct labeling</li>
+<li>As training data increases, the easy items get easier <em>faster</em> than the hard items</li>
+</ol>
+<p>The first point is straightforward and consistent with everything we know about machine learning.
+More data equals better results.
+The second point looks like an obvious one, but there is a very important caveat here: those item difficulties were learned from a <em>human</em> population.
+The response patterns that we used to fit the IRT model were from Amazon Mechanical Turk workers.
+So the difficulty parameters should be interpreted with respect to the human population.
+The fact that those human difficulties are meaningful for neural networks is not obvious, but is in fact a very interesting finding.
+Those networks think that hard things are hard too!
+And the final point is, I think, very interesting.
+As these models are trained with more and more data, the rate of learning for the easy items increases faster than the rate of learning for the hard items.
+This is something that has parallels in human learning, where you develop a curriculum to teach the easy items first, then introduce the harder material afterwards.</p>
+<p>Now for the million dollar question: Who cares?
+Well, I do.
+But other than me, this is an interesting new result that sheds some light on what is happening in these neural network models at the <em>item</em> level, not just the aggregate test set level, which is where a lot of the analysis is.
+We can see that there are characteristics of items that have an effect on whether a model will label the item correctly.
+So we should think more about how models perform on specific items as opposed to how well models perform on large test sets.
+Test set accuracy is important, but it isn’t the end all be all.</p>
+</div>

@@ -1,0 +1,19 @@
+---
+title: "Confession: I'm a Nodder"
+date: "2016-12-08"
+author: John P. Lalor
+summary: How I act when I'm listening to a talk...
+---
+
+I was preparing my slides for my recent MLFL talk, and I came across this great page on [How to give a great presentation][1] by Simon Peyton Jones at MSR.
+First off, it was a huge help in getting ready for the presentation, I was still very nervous but the tips in the slides were a big help. 
+
+One thing that struck me was the slide on Being Heard.
+Specifically, trying to identify a *nodder* and speaking to him or her.
+
+I never thought about it before, but I am definitely a nodder when I attend talks. 
+My head is constantly bobbing as I listen to speakers present their work.
+So keep an eye out for me if I'm attending your talk, I'll be nodding away!
+
+
+[1]:https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/

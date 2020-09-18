@@ -75,3 +75,4 @@ target/
 
 # config
 .dir-locals.el 
+.Rproj.user

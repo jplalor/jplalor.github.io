@@ -14,6 +14,7 @@ summary: Publications
 
 ## Conference 
 
+- J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020,* to appear.
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* [[paper][emnlp2019], [code][emnlp2019-github]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[paper][emnlp2018], [youtube link for presentation][emnlp2018-youtube]]
 - J.P. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[paper][emnlp2016]]
@@ -25,6 +26,7 @@ summary: Publications
 
 ## Workshop 
 
+- J.P. Lalor, H. Guo. Towards Measuring Algorithmic Interpretability. *INFORMS Workshop on Data Science,* 2020.
 - E. Cho, H. Xie, J.P. Lalor, V. Kumar, W.M. Campbell. Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity. *ASRU 2019*
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019 [[poster][sivl-poster]]
 - J.P. Lalor, H. Wu, H. Yu. Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting. *NAACL Workshop on Cognitive Modeling and Computational Linguistics (CMCL)* 2019 [[poster][cmcl-poster]] 

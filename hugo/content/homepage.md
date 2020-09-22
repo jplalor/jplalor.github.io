@@ -17,6 +17,7 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 ## Recent Updates
 
+1. **September 2020:** *Towards Measuring Algorithmic Interpretability* accepted at the 2020 INFORMS Workshop on Data Science.
 1. **September 2020:** *Dynamic Data Selection for Curriculum Learning via Ability Estimation* accepted to appear in Findings of EMNLP.
 1. **February 2020:** Our abstract *Bots versus Humans in Online Social Networks: A Study of Reddit Communities* was accepted to Sunbelt 2020.
 1. **November 2019:** I successfully defended my Ph.D. dissertation, "Learning Latent Characteristics of Data and Models using Item Response Theory."

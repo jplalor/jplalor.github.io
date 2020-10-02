@@ -24,8 +24,9 @@ summary: Publications
 - A. Settle, J.P. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[paper][sigcse2015]]
 
 
-## Workshop 
+## Workshop
 
+- M. Ma, J.P. Lalor. An Empirical Analysis of Human-Bot Interaction on Reddit. *Workshop on Noisy User-generated Text (W-NUT),* 2020.
 - J.P. Lalor, H. Guo. Towards Measuring Algorithmic Interpretability. *INFORMS Workshop on Data Science,* 2020.
 - E. Cho, H. Xie, J.P. Lalor, V. Kumar, W.M. Campbell. Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity. *ASRU 2019*
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019 [[poster][sivl-poster]]

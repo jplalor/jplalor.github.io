@@ -8,7 +8,11 @@ date: ""
 
 ## Overview
 
-This page contains code and data for our IRT analyses. Test.
+This page contains code and data for our IRT analyses.
+
+## DDaCLAE
+
+*Coming soon*
 
 ## SNLI 
 
@@ -45,7 +49,7 @@ If you use the following data please cite:
 
 [download data][7]
 
-Questions about the code or data? Contact me at lalor at cs dot umass dot edu.
+Questions about the code or data? Contact me at john dot lalor at nd dot edu.
 
 [1]:https://www.aclweb.org/anthology/D16-1062/
 [2]:/files/data_emnlp2016.zip

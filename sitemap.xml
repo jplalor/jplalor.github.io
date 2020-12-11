@@ -3,102 +3,107 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jplalor.github.io/post/emnlp19/</loc>
+    <loc>/post/emnlp19/</loc>
     <lastmod>2019-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2019-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2019-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/emnlp18/</loc>
+    <loc>/post/emnlp18/</loc>
     <lastmod>2019-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/openai/</loc>
+    <loc>/post/openai/</loc>
     <lastmod>2019-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/emnlp16/</loc>
+    <loc>/post/emnlp16/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/info-theory-part-3/</loc>
+    <loc>/post/info-theory-part-3/</loc>
     <lastmod>2018-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/info-theory-part-2/</loc>
+    <loc>/post/info-theory-part-2/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/info-theory-part-1/</loc>
+    <loc>/post/info-theory-part-1/</loc>
     <lastmod>2018-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/nodder/</loc>
+    <loc>/post/nodder/</loc>
     <lastmod>2016-12-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/post/vector-projections/</loc>
+    <loc>/post/lstm-seinfeld/</loc>
+    <lastmod>2016-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/vector-projections/</loc>
     <lastmod>2015-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/homepage/</loc>
+    <loc>/homepage/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/amia18/</loc>
+    <loc>/amia18/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/ehr/</loc>
+    <loc>/ehr/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/aihc/</loc>
+    <loc>/aihc/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/irt/</loc>
+    <loc>/irt/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/publications/</loc>
+    <loc>/publications/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/research/</loc>
+    <loc>/research/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/series/</loc>
+    <loc>/series/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
   <url>
-    <loc>https://jplalor.github.io/teaching/</loc>
+    <loc>/teaching/</loc>
   </url>
   
 </urlset>

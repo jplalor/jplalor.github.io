@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 	
-	<meta name="generator" content="Hugo 0.75.1" />
+	<meta name="generator" content="Hugo 0.78.2" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -114,10 +114,10 @@ We did two manipulations to the training data:</p>
 <p>With this setup each instance of the model is being trained with a very different data set, which will lead to very different results in terms of performance.
 Once each of these models were trained we labeled all of the examples in the data set and used these outputs as the response patterns for fitting an IRT model.</p>
 <h1 id="variational-irt">Variational IRT</h1>
-<p>(Update) In looking back on these posts I realized that this section was just excluded. 
-My apologies. 
-In order to estimate our IRT parameters, we implemented a variational inference model proposed by Natesan et al. (2016). 
-Each difficulty and ability parameter is assumed to be normally distributed and independent, and estimation involves minimizing the KL-divergence between the true posterior and the variational parameters. 
+<p>(Update) In looking back on these posts I realized that this section was just excluded.
+My apologies.
+In order to estimate our IRT parameters, we implemented a variational inference model proposed by Natesan et al. (2016).
+Each difficulty and ability parameter is assumed to be normally distributed and independent, and estimation involves minimizing the KL-divergence between the true posterior and the variational parameters.
 This has two key benefits:</p>
 <ol>
 <li>It&rsquo;s Bayesian, so we get uncertainty estimates in the form of mean and variance parameters for each item.</li>

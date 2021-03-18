@@ -14,7 +14,7 @@ summary: Publications
 
 ## Conference 
 
-- J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020,* to appear.
+- J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020*. [[paper][emnlp2020]]
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* [[paper][emnlp2019], [code][emnlp2019-github]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[paper][emnlp2018], [youtube link for presentation][emnlp2018-youtube]]
 - J.P. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[paper][emnlp2016]]
@@ -26,7 +26,7 @@ summary: Publications
 
 ## Workshop
 
-- M. Ma, J.P. Lalor. An Empirical Analysis of Human-Bot Interaction on Reddit. *Workshop on Noisy User-generated Text (W-NUT),* 2020.
+- M. Ma, J.P. Lalor. An Empirical Analysis of Human-Bot Interaction on Reddit. *Workshop on Noisy User-generated Text (W-NUT),* 2020. [[paper][wnut2020]]
 - J.P. Lalor, H. Guo. Towards Measuring Algorithmic Interpretability. *INFORMS Workshop on Data Science,* 2020.
 - E. Cho, H. Xie, J.P. Lalor, V. Kumar, W.M. Campbell. Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity. *ASRU 2019*
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019 [[poster][sivl-poster]]
@@ -43,7 +43,8 @@ summary: Publications
 [amia2018]: ./amia18
 [comprehenotes-page]:./ehr
 [irt-page]:./irt
-
+[wnut2020]:https://www.aclweb.org/anthology/2020.wnut-1.14/
+[emnlp2020]:https://www.aclweb.org/anthology/2020.findings-emnlp.48/
 [emnlp2019]:https://www.aclweb.org/anthology/D19-1434/ 
 [emnlp2019-github]:https://github.com/jplalor/py-irt
 [slmg-arxiv]:https://arxiv.org/abs/1702.08563

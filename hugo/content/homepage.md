@@ -17,6 +17,8 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 ## Recent Updates
 
+1. **May 2021:** *Evaluation Examples Are Not Equally Informative: How Should That Change NLP Leaderboards?* accepted to ACL 2021. 
+1. **April 2021:** *Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Trial of Electronic Health Record Note Comprehension Interventions With Patients* accepted to JMIR.
 1. **October 2020:** *An Empirical Analysis of Human-Bot Interaction on Reddit* accepted at the 2020 Workshop on Noisy User-generated Text.
 1. **September 2020:** *Towards Measuring Algorithmic Interpretability* accepted at the 2020 INFORMS Workshop on Data Science.
 1. **September 2020:** *Dynamic Data Selection for Curriculum Learning via Ability Estimation* accepted to appear in Findings of EMNLP.

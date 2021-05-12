@@ -7,13 +7,15 @@ summary: Publications
 
 ## Journal 
 
-- J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients’ Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. [[paper][jmir hypo 2019]]
+- J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial. *J Med Internet Res* (forthcoming).
+- J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. [[paper][jmir hypo 2019]]
 - J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[paper][jmir2019]]
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[paper][jmir2018]]
 
 
 ## Conference 
 
+- P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021* (forthcoming).
 - J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020*. [[paper][emnlp2020]]
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* [[paper][emnlp2019], [code][emnlp2019-github]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[paper][emnlp2018], [youtube link for presentation][emnlp2018-youtube]]

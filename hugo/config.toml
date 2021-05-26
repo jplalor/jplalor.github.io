@@ -88,12 +88,12 @@ weight = 1
 
 [[menu.main]]
 name = "Research"
-url = "/research"
+url = "/#research-publications"
 weight = 2
 
 [[menu.main]]
 name = "Teaching"
-url = "/teaching"
+url = "/#teaching"
 weight = 3 
 
 [[menu.main]]

@@ -17,11 +17,9 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 ### Recent Updates
 
+1. **July 2021:** Two papers accepted to ICIS 2021. 
 1. **May 2021:** *Evaluation Examples Are Not Equally Informative: How Should That Change NLP Leaderboards?* accepted to ACL 2021. 
 1. **April 2021:** *Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Trial of Electronic Health Record Note Comprehension Interventions With Patients* accepted to JMIR.
-1. **October 2020:** *An Empirical Analysis of Human-Bot Interaction on Reddit* accepted at the 2020 Workshop on Noisy User-generated Text.
-1. **September 2020:** *Towards Measuring Algorithmic Interpretability* accepted at the 2020 INFORMS Workshop on Data Science.
-1. **September 2020:** *Dynamic Data Selection for Curriculum Learning via Ability Estimation* accepted to appear in Findings of EMNLP.
 
 
 ## Research Publications 
@@ -36,7 +34,9 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 ### Conference 
 
-- P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021* (forthcoming).
+- H. Safadi, J.P. Lalor, N. Berente. The Effect of Bots on Human Interaction in Online Communities. *ICIS 2021*
+- N. Berente, J.P. Lalor, S. Somanchi, A. Abbasi. The Illusion of Certainty and Data-Driven Decision Making in Emergent Situations. *ICIS 2021*
+- P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021* [[paper][acl2021], [project page][acl2021-pedro]]
 - J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020*. [[paper][emnlp2020]]
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* [[paper][emnlp2019], [code][emnlp2019-github]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[paper][emnlp2018], [youtube link for presentation][emnlp2018-youtube]]
@@ -73,6 +73,8 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 - UMass First Year Seminar: Artificial Intelligence and Healthcare
 
+[acl2021-pedro]: https://irt.pedro.ai
+[acl2021]: https://aclanthology.org/2021.acl-long.346/
 [amzn-paper]:https://arxiv.org/abs/1910.04196
 [jmir2020]:https://www.jmir.org/2021/5/e26354
 [amia2018]: ./amia18

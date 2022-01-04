@@ -17,6 +17,7 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 ### Recent Updates
 
+1. **December 2021:** Best Theory Paper at ICIS 2021 for *The Effect of Bots on Human Interaction in Online Communities*
 1. **September 2021:** *Constructing a Psychometric Testbed for Fair Natural Language Processing* accepted to EMNLP 2021.
 1. **July 2021:** Two papers accepted to ICIS 2021. 
 1. **May 2021:** *Evaluation Examples Are Not Equally Informative: How Should That Change NLP Leaderboards?* accepted to ACL 2021. 
@@ -39,6 +40,7 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 Psychometric Testbed for Fair Natural Language Processing. EMNLP 2021.
     - *Authors listed alphabetically*
 - H. Safadi, J.P. Lalor, N. Berente. The Effect of Bots on Human Interaction in Online Communities. *ICIS 2021*
+    - *Best Theory Paper*
 - N. Berente, J.P. Lalor, S. Somanchi, A. Abbasi. The Illusion of Certainty and Data-Driven Decision Making in Emergent Situations. *ICIS 2021*
 - P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021* [[paper][acl2021], [project page][acl2021-pedro]]
 - J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020*. [[paper][emnlp2020]]

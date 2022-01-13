@@ -79,6 +79,24 @@ Psychometric Testbed for Fair Natural Language Processing. EMNLP 2021.
 
 - UMass First Year Seminar: Artificial Intelligence and Healthcare
 
+## BALL Lab
+
+I lead the Business Analytics, Learning, and Language lab at Notre Dame (ND-BALL).
+Code from the lab is available on [GitHub][ball-github].
+
+### Current Students
+
+- Katie Ryan (MS, Business Analytics)
+- Sandy Huang (MS, Business Analytics)
+
+### Former Students 
+
+- Vincent Buono (BBA, Business Analytics)
+- Michael Ma (MS, Business Analytics)
+- Aiden McFadden (BBA, Business Analytics)
+- Keegan McLaughlin (BBA, Business Analytics)
+
+[ball-github]:https://github.com/nd-ball
 [acl2021-pedro]: https://irt.pedro.ai
 [acl2021]: https://aclanthology.org/2021.acl-long.346/
 [amzn-paper]:https://arxiv.org/abs/1910.04196

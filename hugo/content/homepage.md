@@ -6,10 +6,10 @@ tags:
 
 
 I am an Assistant Professor at the [Mendoza College of Business][mendoza] at the [University of Notre Dame][nd]. 
-I recently defended my Ph.D. dissertation at the University of Massachusetts Amherst in the [College of Information and Computer Science][cics]. 
+I completed my Ph.D. at the University of Massachusetts Amherst in the [College of Information and Computer Science][cics]. 
 At UMass I was a member of the [Bio-NLP][bionlp] group, working with Dr. Hong Yu. 
 My research interests are in Machine Learning and Natural Language Processing. 
-I am particularly interested in model evaluation and quantifying uncertainty, as well as applications in biomedical informatics.
+I am particularly interested in model evaluation, quantifying uncertainty, and biomedical informatics.
 
 Prior to UMass, I worked as a software developer at [Eze Software][eze] in Chicago and as an IT Audit Associate for [KPMG][kpmg]. 
 I received my Master's Degree in Computer Science at [DePaul University][depaul], where I worked on projects in Computer Science Education and Recommender Systems. 
@@ -17,7 +17,8 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 ### Recent Updates
 
-1. **December 2021:** Best Theory Paper at ICIS 2021 for *The Effect of Bots on Human Interaction in Online Communities*
+1. **April 2022:** *Benchmarking Intersectional Biases in NLP* accepted to NAACL 2022.
+1. **December 2021:** Best Theory Paper at ICIS 2021 for *The Effect of Bots on Human Interaction in Online Communities*.
 1. **September 2021:** *Constructing a Psychometric Testbed for Fair Natural Language Processing* accepted to EMNLP 2021.
 1. **July 2021:** Two papers accepted to ICIS 2021. 
 1. **May 2021:** *Evaluation Examples Are Not Equally Informative: How Should That Change NLP Leaderboards?* accepted to ACL 2021. 

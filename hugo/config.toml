@@ -3,7 +3,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 author = "John P. Lalor"
 title = "John P. Lalor"
-theme = "hugo-vitae"
+theme = "hugo-sustain"
 paginate = 5
 enableRobotsTXT = true
 
@@ -14,6 +14,8 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 googleAnalytics = ""
+
+description = "Welcome!"
 
 [taxonomies]
 	tag = "tags"
@@ -88,18 +90,18 @@ weight = 1
 
 [[menu.main]]
 name = "Research"
-url = "/#research-publications"
+url = "/publications"
 weight = 2
 
 [[menu.main]]
 name = "Teaching"
-url = "/#teaching"
+url = "/teaching"
 weight = 3 
 
 
 [[menu.main]]
-name = "BALL Lab"
-url = "/#ball-lab"
+name = "ND-BALL Lab"
+url = "/ball"
 weight = 4
 
 #[[menu.main]]
@@ -113,15 +115,17 @@ url = "/pdf/cv.pdf"
 weight = 6
 
 # Social Menu
-[[params.social]]
-name = "Github"
-icon = "fab fa-github"
-url = "https://github.com/jplalor"
+[params.social]
+Github = "jplalor"
+Email = "john.lalor@nd.edu"
+#name = "Github"
+#icon = "fab fa-github"
+#url = "https://github.com/jplalor"
 
-[[params.social]]
-name = "Email"
-icon = "fas fa-envelope"
-cmd = "mailto:john.lalor@nd.edu"
+#[[params.social]]
+#name = "Email"
+#icon = "fas fa-envelope"
+#cmd = "mailto:john.lalor@nd.edu"
 
 #[[params.social]]
 #name = "RSS"

@@ -5,17 +5,30 @@ author: John P. Lalor
 summary: Publications
 ---
 
-## Journal 
+### Recent Updates
 
-- J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial. *J Med Internet Res* (forthcoming).
+1. **April 2022:** *Benchmarking Intersectional Biases in NLP* accepted to NAACL 2022.
+1. **December 2021:** Best Theory Paper at ICIS 2021 for *The Effect of Bots on Human Interaction in Online Communities*.
+1. **September 2021:** *Constructing a Psychometric Testbed for Fair Natural Language Processing* accepted to EMNLP 2021.
+
+
+### Journal 
+
+- J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial. *J Med Internet Res* [[paper][jmir2020]]
 - J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. [[paper][jmir hypo 2019]]
 - J.P. Lalor, B. Woolf, H. Yu, Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, *J Med Internet Res* 2019;21(1):e10793. [[paper][jmir2019]]
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, *J Med Internet Res* 2018;20(4):e139. [[paper][jmir2018]]
 
 
-## Conference 
+### Conference 
 
-- P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021* (forthcoming).
+- A. Abbasi, D. Dobolyi, J. P. Lalor, R. Netemeyer, K. Smith, and Y. Yang. Constructing a
+Psychometric Testbed for Fair Natural Language Processing. EMNLP 2021.
+    - *Authors listed alphabetically*
+- H. Safadi, J.P. Lalor, N. Berente. The Effect of Bots on Human Interaction in Online Communities. *ICIS 2021*
+    - *Best Theory Paper*
+- N. Berente, J.P. Lalor, S. Somanchi, A. Abbasi. The Illusion of Certainty and Data-Driven Decision Making in Emergent Situations. *ICIS 2021*
+- P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021* [[paper][acl2021], [project page][acl2021-pedro]]
 - J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020*. [[paper][emnlp2020]]
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* [[paper][emnlp2019], [code][emnlp2019-github]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[paper][emnlp2018], [youtube link for presentation][emnlp2018-youtube]]
@@ -26,11 +39,11 @@ summary: Publications
 - A. Settle, J.P. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[paper][sigcse2015]]
 
 
-## Workshop
+### Workshop
 
 - M. Ma, J.P. Lalor. An Empirical Analysis of Human-Bot Interaction on Reddit. *Workshop on Noisy User-generated Text (W-NUT),* 2020. [[paper][wnut2020]]
 - J.P. Lalor, H. Guo. Towards Measuring Algorithmic Interpretability. *INFORMS Workshop on Data Science,* 2020.
-- E. Cho, H. Xie, J.P. Lalor, V. Kumar, W.M. Campbell. Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity. *ASRU 2019*
+- E. Cho, H. Xie, J.P. Lalor, V. Kumar, W.M. Campbell. Efficient Semi-Supervised Learning for Natural Language Understanding by Optimizing Diversity. *ASRU 2019* [[paper][amzn-paper]]
 - J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *NAACL Workshop on Shortcomings in Vision and Language (SiVL)* 2019 [[poster][sivl-poster]]
 - J.P. Lalor, H. Wu, H. Yu. Comparing Human and DNN-Ensemble Response Patterns for Item Response Theory Model Fitting. *NAACL Workshop on Cognitive Modeling and Computational Linguistics (CMCL)* 2019 [[poster][cmcl-poster]] 
 - J.P. Lalor, H. Wu, H. Yu. Soft Label Memorization-Generalization for Natural Language Inference. *UAI Workshop on Uncertainty in Deep Learning.*, 2018. [[arxiv pre-print][slmg-arxiv]]
@@ -40,8 +53,10 @@ summary: Publications
 - J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][hcomp2017]]
 - T. Munkhdalai, J.P. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][louhi2016]]
 
-
-
+[acl2021-pedro]: https://irt.pedro.ai
+[acl2021]: https://aclanthology.org/2021.acl-long.346/
+[amzn-paper]:https://arxiv.org/abs/1910.04196
+[jmir2020]:https://www.jmir.org/2021/5/e26354
 [amia2018]: ./amia18
 [comprehenotes-page]:./ehr
 [irt-page]:./irt
@@ -66,3 +81,5 @@ summary: Publications
 [settle2015sigite]:http://dl.acm.org/citation.cfm?id=2808031
 [iticse2015]:http://dl.acm.org/citation.cfm?id=2729094.2742621
 [sigcse2015]:http://dl.acm.org/citation.cfm?id=2677235
+
+

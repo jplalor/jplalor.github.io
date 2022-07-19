@@ -22,21 +22,22 @@ summary: Publications
 
 ### Conference 
 
+- J. P. Lalor, Y. Yang, K. Smith, N. Forsgren, A. Abbasi. Benchmarking Intersectional Biases in NLP. *NAACL 2022.* [[paper][naacl2022]]
 - A. Abbasi, D. Dobolyi, J. P. Lalor, R. Netemeyer, K. Smith, and Y. Yang. Constructing a
-Psychometric Testbed for Fair Natural Language Processing. EMNLP 2021.
+Psychometric Testbed for Fair Natural Language Processing. *EMNLP 2021.* [[paper][emnlp2021]]
     - *Authors listed alphabetically*
-- H. Safadi, J.P. Lalor, N. Berente. The Effect of Bots on Human Interaction in Online Communities. *ICIS 2021*
+- H. Safadi, J.P. Lalor, N. Berente. The Effect of Bots on Human Interaction in Online Communities. *ICIS 2021.*
     - *Best Theory Paper*
-- N. Berente, J.P. Lalor, S. Somanchi, A. Abbasi. The Illusion of Certainty and Data-Driven Decision Making in Emergent Situations. *ICIS 2021*
-- P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021* [[paper][acl2021], [project page][acl2021-pedro]]
-- J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020*. [[paper][emnlp2020]]
-- J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019* [[paper][emnlp2019], [code][emnlp2019-github]]
+- N. Berente, J.P. Lalor, S. Somanchi, A. Abbasi. The Illusion of Certainty and Data-Driven Decision Making in Emergent Situations. *ICIS 2021.*
+- P. Rodriguez, J. Barrow, A.M. Hoyle, J.P. Lalor, R. Jia and J. Boyd-Graber. Rethinking NLP Leaderboards with Methods from Educational Testing. *ACL 2021.* [[paper][acl2021], [project page][acl2021-pedro]]
+- J.P. Lalor, H. Yu. Dynamic Data Selection for Curriculum Learning via Ability Estimation. *Findings of ACL: EMNLP 2020.* [[paper][emnlp2020]]
+- J.P. Lalor, H. Wu, H. Yu. Learning Latent Parameters without Human Response Patterns: Item Response Theory with Artificial Crowds. *EMNLP 2019.* [[paper][emnlp2019], [code][emnlp2019-github]]
 - J.P. Lalor, H. Wu, T. Munkhdalai, H. Yu. Understanding Deep Learning Performance through an Examination of Test Set Difficulty: A Psychometric Case Study. In *EMNLP 2018.* [[paper][emnlp2018], [youtube link for presentation][emnlp2018-youtube]]
 - J.P. Lalor, H. Wu, H. Yu. Building an Evaluation Scale using Item Response Theory, In *EMNLP 2016*. [[paper][emnlp2016]]
-- C. Miller, A. Settle, and J.P. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015*. [[paper][miller2015sigite]]
-- A. Settle, J.P. Lalor, and T. Steinbach. Evaluating a Linked-courses Learning Community for Development Majors. In *SIGITE 2015*. [[paper][settle2015sigite]]
-- A. Settle, J.P. Lalor, and T. Steinbach. A Computer Science Linked-courses Learning Community, In *ITiCSE 2015*. [[paper][iticse2015]]
-- A. Settle, J.P. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015*. [[paper][sigcse2015]]
+- C. Miller, A. Settle, and J.P. Lalor. Learning Object-Oriented Programming in Python: Towards an Inventory of Difficulties and Testing Pitfalls, *SIGITE 2015.* [[paper][miller2015sigite]]
+- A. Settle, J.P. Lalor, and T. Steinbach. Evaluating a Linked-courses Learning Community for Development Majors. In *SIGITE 2015.* [[paper][settle2015sigite]]
+- A. Settle, J.P. Lalor, and T. Steinbach. A Computer Science Linked-courses Learning Community, In *ITiCSE 2015.* [[paper][iticse2015]]
+- A. Settle, J.P. Lalor, and T. Steinbach. Reconsidering the Impact of CS1 on Novice Attitudes. In *SIGCSE 2015.* [[paper][sigcse2015]]
 
 
 ### Workshop
@@ -53,6 +54,8 @@ Psychometric Testbed for Fair Natural Language Processing. EMNLP 2021.
 - J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][hcomp2017]]
 - T. Munkhdalai, J.P. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. [[pdf][louhi2016]]
 
+[naacl2022]:https://aclanthology.org/2022.naacl-main.263/
+[emnlp2021]:https://aclanthology.org/2021.emnlp-main.304/
 [acl2021-pedro]: https://irt.pedro.ai
 [acl2021]: https://aclanthology.org/2021.acl-long.346/
 [amzn-paper]:https://arxiv.org/abs/1910.04196

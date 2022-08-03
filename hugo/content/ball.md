@@ -1,5 +1,5 @@
 ---
-title: ND-BALL Lab
+title: Notre Dame Business Analytics, Learning, and Language lab
 Date: 2019-12-30 10:03
 type: page
 author: John P. Lalor
@@ -7,7 +7,7 @@ summary: Teaching
 ---
 
 
-I lead the Notre Dame Business Analytics, Learning, and Language lab (ND-BALL).
+I lead the Notre Dame Business Analytics, Learning, and Language Lab (ND-BALL).
 Code from the lab is available on [GitHub][ball-github].
 
 ### Current Students

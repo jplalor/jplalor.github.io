@@ -5,16 +5,11 @@ author: John P. Lalor
 summary: Research
 ---
 
-### Recent Updates
-
-1. **April 2022:** *Benchmarking Intersectional Biases in NLP* accepted to NAACL 2022.
-1. **December 2021:** Best Theory Paper at ICIS 2021 for *The Effect of Bots on Human Interaction in Online Communities*.
-1. **September 2021:** *Constructing a Psychometric Testbed for Fair Natural Language Processing* accepted to EMNLP 2021.
-
 
 ### Journal Articles
 
-- J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. [Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial][jmir2020]. *J Med Internet Res* 
+- J.P. Lalor, P. Rodriguez. py-irt: A Scalable Item Response Theory Library for Python. INFORMS Journal on Computing. *In press.*
+- J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. [Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial][jmir2020]. *J Med Internet Res* 2021;23(5):e26354 
 - J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. [Detecting Hypoglycemia Incidents Reported in Patients Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance][jmir hypo 2019]. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. 
 - J.P. Lalor, B. Woolf, H. Yu. [Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers][jmir2019], *J Med Internet Res* 2019;21(1):e10793.
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu. [ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation][jmir2018], *J Med Internet Res* 2018;20(4):e139.

@@ -8,7 +8,8 @@ summary: Research
 
 ### Journal Articles
 
-- J.P. Lalor, P. Rodriguez. py-irt: A Scalable Item Response Theory Library for Python. INFORMS Journal on Computing. *In press.*
+- K.D. Wowak, J.P. Lalor, S. Somanchi, C. Angst. Business Analytics in Healthcare: Past, Present, and Future Trends. Manufacturing and Service Operations Management. *Forthcoming.*
+- J.P. Lalor, P. Rodriguez. [py-irt: A Scalable Item Response Theory Library for Python][ijoc2022]. *INFORMS Journal on Computing.* 2022. doi:10.1287/ijoc.2022.1250
 - J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. [Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial][jmir2020]. *J Med Internet Res* 2021;23(5):e26354 
 - J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. [Detecting Hypoglycemia Incidents Reported in Patients Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance][jmir hypo 2019]. *J Med Internet Res* 2019;21(3):e11990. doi:10.2196/11990. 
 - J.P. Lalor, B. Woolf, H. Yu. [Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers][jmir2019], *J Med Internet Res* 2019;21(1):e10793.
@@ -48,6 +49,7 @@ summary: Research
 - J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* [[poster][hcomp2017]]
 - T. Munkhdalai, J.P. Lalor, H. Yu. [Citation Analysis with Neural Attention Models][louhi2016], In *LOUHI 2016 EMNLP Workshop*. 
 
+[ijoc2022]:https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2022.1250
 [icis2021bernoulli]:https://aisel.aisnet.org/icis2021/gen_topics/gen_topics/10/
 [icis2021bots]:https://aisel.aisnet.org/icis2021/ai_business/ai_business/1/
 [naacl2022]:https://aclanthology.org/2022.naacl-main.263/

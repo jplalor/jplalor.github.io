@@ -16,13 +16,13 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 <div style="text-align: left">
 <ul>
 <li>
+<strong>January 2023:</strong> <i>Business Analytics in Healthcare: Past, Present, and Future Trends</i> accepted at Manufacturing and Service Operations Management.
+</li>
+<li>
 <strong>September 2022:</strong> <i>py-irt: A Scalable Item Response Theory Library for Python</i> accepted at the INFORMS Journal on Computing.
 </li>
 <li>
 <strong>April 2022:</strong> <i>Benchmarking Intersectional Biases in NLP</i> accepted to NAACL 2022.
-</li>
-<li>
-<strong>December 2021:</strong> Best Theory Paper at ICIS 2021 for <i>The Effect of Bots on Human Interaction in Online Communities</I>.
 </li>
 </ul>
 </div>

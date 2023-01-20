@@ -6,6 +6,10 @@
     <description>Recent content in Series on John P. Lalor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Copyright John P. Lalor | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)</copyright><atom:link href="https://jplalor.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright John P. Lalor | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)</copyright>
+    
+	<atom:link href="https://jplalor.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

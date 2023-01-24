@@ -13,8 +13,14 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 
 
 ## Recent Updates
+
+
+<!--> The below is in HTML so that I can align left.<-->
 <div style="text-align: left">
 <ul>
+<li>
+<strong>January 2023:</strong> <i>Evaluating the Efficacy of NoteAid on EHR Note Comprehension among US Veterans through Amazon Mechanical Turk</i> accepted at the International Journal of Medical Informatics.
+</li>
 <li>
 <strong>January 2023:</strong> <i>Business Analytics in Healthcare: Past, Present, and Future Trends</i> accepted at Manufacturing and Service Operations Management.
 </li>

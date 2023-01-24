@@ -8,6 +8,7 @@ summary: Research
 
 ### Journal Articles
 
+- J.P. Lalor, H. Wu, K. Mazor. H. Yu. Evaluating the Efficacy of NoteAid on EHR Note Comprehension among US Veterans through Amazon Mechanical Turk. International Journal of Medical Informatics. *Forthcoming*.
 - K.D. Wowak, J.P. Lalor, S. Somanchi, C. Angst. Business Analytics in Healthcare: Past, Present, and Future Trends. Manufacturing and Service Operations Management. *Forthcoming.*
 - J.P. Lalor, P. Rodriguez. [py-irt: A Scalable Item Response Theory Library for Python][ijoc2022]. *INFORMS Journal on Computing.* 2022. doi:10.1287/ijoc.2022.1250
 - J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. [Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial][jmir2020]. *J Med Internet Res* 2021;23(5):e26354 

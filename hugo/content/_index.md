@@ -15,7 +15,7 @@ I received my Master's Degree in Computer Science at [DePaul University][depaul]
 ## Recent Updates
 
 
-<!--> The below is in HTML so that I can align left.<-->
+
 <div style="text-align: left">
 <ul>
 <li>

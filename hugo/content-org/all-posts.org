@@ -1,3 +1,6 @@
+#+TITLE: Personal Website
+#+DATE: May 4th, 2023
+#+AUTHOR: John P. Lalor
 #+hugo_base_dir: ../
 
 
@@ -5,7 +8,8 @@
 ** Pages
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: ./
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :author false :toc false
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false :author false
+:EXPORT_OPTIONS: author:nil 
 :END:
 #+LANGUAGE: en
 #+OPTIONS: ':t
@@ -30,7 +34,6 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 - *January 2023*: /Evaluating the Efficacy of NoteAid on EHR Note Comprehension among US Veterans through Amazon Mechanical Turk/ accepted at the International Journal of Medical Informatics.
 - *January 2023*: /Business Analytics in Healthcare: Past, Present, and Future Trends/ accepted at Manufacturing and Service Operations Management.
 - *September 2022*: /py-irt: A Scalable Item Response Theory Library for Python/ accepted at the INFORMS Journal on Computing.
-
 
 *** Research
 :PROPERTIES:
@@ -82,6 +85,55 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 - J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu, Generating a Test of Electronic Health Narrative Comprehension with Item Response Theory. *American Medical Informatics Association (AMIA) Annual Symposium* Podium Abstract, 2017. 
 - J.P. Lalor, H. Wu, H. Yu. CIFT: Crowd-Informed Fine-Tuning to Improve Machine Learning Ability, *HCOMP 2017 Works in Progress* 
 - T. Munkhdalai, J.P. Lalor, H. Yu. Citation Analysis with Neural Attention Models, In *LOUHI 2016 EMNLP Workshop*. 
+
+*** Teaching
+:PROPERTIES:
+:EXPORT_FILE_NAME: teaching
+:EXPORT_HUGO_WEIGHT: -50
+:EXPORT_HUGO_MENU: :menu main
+:END:
+
+**** University of Notre Dame
+
+- ITAO 80810: Machine Learning and NLP
+- MSSA 60230: Data Analysis with Python
+- ITAO 40250: Unstructured Data Analytics
+- ITAO 70810: Data Wrangling with R 
+- ITAO 70800: Integrated Analytics Deep Dive
+
+**** University of Massachusetts Amherst
+
+- UMass First Year Seminar: Artificial Intelligence and Healthcare
+*** Notre Dame Business Analytics, Learning, and Language Lab
+:PROPERTIES:
+:EXPORT_FILE_NAME: ball
+:EXPORT_HUGO_WEIGHT: 0
+:EXPORT_HUGO_MENU: :menu main :name ND-BALL
+:END:
+
+
+I lead the Notre Dame Business Analytics, Learning, and Language Lab (ND-BALL).
+Code from the lab is available on [[https://github.com/nd-ball][GitHub]].
+
+**** Current Students
+
+- Katie Ryan (MS, Business Analytics)
+- Sandy Huang (MS, Business Analytics)
+
+**** Former Students 
+
+- Vincent Buono (BBA, Business Analytics)
+- Michael Ma (MS, Business Analytics)
+- Aiden McFadden (BBA, Business Analytics)
+- Keegan McLaughlin (BBA, Business Analytics)
+
+** Blog
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: posts
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :toc false :type post
+:END:
+#+LANGUAGE: en
+#+OPTIONS: ':t
 
 
 * TODO My first post                                        :tag1:@category1:

@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>John P. Lalor</title>
+    <title>Welcome! on John P. Lalor</title>
     <link>https://jplalor.github.io/</link>
-    <description>Recent content on John P. Lalor</description>
+    <description>Recent content in Welcome! on John P. Lalor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright John P. Lalor | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)</copyright>
-    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jplalor.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research</title>
+      <link>https://jplalor.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/research/</guid>
+      <description>Journal Articles  J.P. Lalor, H. Wu, K. Mazor. H. Yu. Evaluating the Efficacy of NoteAid on EHR Note Comprehension among US Veterans through Amazon Mechanical Turk. International Journal of Medical Informatics. Forthcoming. K.D. Wowak, J.P. Lalor, S. Somanchi, C. Angst. Business Analytics in Healthcare: Past, Present, and Future Trends. Manufacturing and Service Operations Management. Forthcoming. J.P. Lalor, P. Rodriguez. py-irt: A Scalable Item Response Theory Library for Python. INFORMS Journal on Computing.</description>
+    </item>
     
-	<atom:link href="https://jplalor.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Teaching</title>
+      <link>https://jplalor.github.io/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/teaching/</guid>
+      <description>University of Notre Dame  ITAO 80810: Machine Learning and NLP MSSA 60230: Data Analysis with Python ITAO 40250: Unstructured Data Analytics ITAO 70810: Data Wrangling with R ITAO 70800: Integrated Analytics Deep Dive  University of Massachusetts Amherst  UMass First Year Seminar: Artificial Intelligence and Healthcare  </description>
+    </item>
     
     <item>
       <title>IRT with Artificial Crowds</title>
@@ -130,12 +144,13 @@
     </item>
     
     <item>
-      <title>Notre Dame Business Analytics, Learning, and Language lab</title>
+      <title>Notre Dame Business Analytics, Learning, and Language Lab</title>
       <link>https://jplalor.github.io/ball/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jplalor.github.io/ball/</guid>
-      <description>Teaching</description>
+      <description>I lead the Notre Dame Business Analytics, Learning, and Language Lab (ND-BALL). Code from the lab is available on GitHub.
+Current Students  Katie Ryan (MS, Business Analytics) Sandy Huang (MS, Business Analytics)  Former Students  Vincent Buono (BBA, Business Analytics) Michael Ma (MS, Business Analytics) Aiden McFadden (BBA, Business Analytics) Keegan McLaughlin (BBA, Business Analytics)  </description>
     </item>
     
     <item>
@@ -145,24 +160,6 @@
       
       <guid>https://jplalor.github.io/publications/</guid>
       <description>Research</description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>https://jplalor.github.io/research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jplalor.github.io/research/</guid>
-      <description>Research</description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>https://jplalor.github.io/teaching/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jplalor.github.io/teaching/</guid>
-      <description>Teaching</description>
     </item>
     
   </channel>

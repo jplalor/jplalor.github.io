@@ -1,21 +1,23 @@
----
-title: Teaching
-Date: 2019-12-30 10:03
-type: page
-author: John P. Lalor
-summary: Teaching
----
++++
+title = "Teaching"
+draft = false
+weight = -50
+toc = false
+[menu]
+  [menu.main]
+    weight = 3003
+    identifier = "teaching"
++++
+
+## University of Notre Dame {#university-of-notre-dame}
+
+-   ITAO 80810: Machine Learning and NLP
+-   MSSA 60230: Data Analysis with Python
+-   ITAO 40250: Unstructured Data Analytics
+-   ITAO 70810: Data Wrangling with R
+-   ITAO 70800: Integrated Analytics Deep Dive
 
 
-### University of Notre Dame
+## University of Massachusetts Amherst {#university-of-massachusetts-amherst}
 
-- ITAO 80810: Machine Learning and NLP
-- MSSA 60230: Data Analysis with Python
-- ITAO 40250: Unstructured Data Analytics
-- ITAO 70810: Data Wrangling with R 
-- ITAO 70800: Integrated Analytics Deep Dive
-
-### University of Massachusetts Amherst
-
-- UMass First Year Seminar: Artificial Intelligence and Healthcare
-
+-   UMass First Year Seminar: Artificial Intelligence and Healthcare

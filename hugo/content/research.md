@@ -2,8 +2,8 @@
 title = "Research"
 draft = false
 weight = -100
-author = false
 toc = false
+author = false
 [menu]
   [menu.main]
     weight = 3002
@@ -14,9 +14,15 @@ toc = false
 
 -   J.P. Lalor, H. Wu, K. Mazor. H. Yu. Evaluating the Efficacy of NoteAid on EHR Note Comprehension among US Veterans through Amazon Mechanical Turk. International Journal of Medical Informatics. **Forthcoming**.
 -   K.D. Wowak, J.P. Lalor, S. Somanchi, C. Angst. Business Analytics in Healthcare: Past, Present, and Future Trends. Manufacturing and Service Operations Management. **Forthcoming.**
+<<<<<<< HEAD
 -   J.P. Lalor, P. Rodriguez. py-irt: A Scalable Item Response Theory Library for Python. **INFORMS Journal on Computing.** 2022. <10.1287/ijoc.2022.1250>
 -   J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial. **J Med Internet Res** 2021;23(5):e26354
 -   J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. **J Med Internet Res** 2019;21(3):e11990. <10.2196/11990>.
+=======
+-   J.P. Lalor, P. Rodriguez. py-irt: A Scalable Item Response Theory Library for Python. **INFORMS Journal on Computing.** 2022. https://doi.org/10.1287/ijoc.2022.1250
+-   J.P. Lalor, W. Hu, M. Tran, H. Wu, K. Mazor, H. Yu. Evaluating the Effectiveness of NoteAid in a Community Hospital Setting: Randomized Control Trial. **J Med Internet Res** 2021;23(5):e26354
+-   J. Chen, J.P. Lalor, W. Liu, E. Druhl, E. Granillo, V. Vimalananda, H. Yu. Detecting Hypoglycemia Incidents Reported in Patients Secure Messages: Using Cost-sensitive Learning and Oversampling to Reduce Data Imbalance. **J Med Internet Res** 2019;21(3):e11990. https://doi.org/10.2196/11990.
+>>>>>>> e645181cd01812467da256a1310ed215036e6fd3
 -   J.P. Lalor, B. Woolf, H. Yu. Improving EHR Note Comprehension with NoteAid: A Randomized Trial of EHR Note Comprehension Interventions with Crowdsourced Workers, **J Med Internet Res** 2019;21(1):e10793.
 -   J.P. Lalor, H. Wu, L. Chen, K. Mazor, H. Yu. ComprehENotes, an Instrument for Assessing Patient Electronic Health Record Note Reading Comprehension: Development and Validation, **J Med Internet Res** 2018;20(4):e139.
 

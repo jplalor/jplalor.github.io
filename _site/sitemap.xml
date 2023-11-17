@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/aihc.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/amia18.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ball.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/ehr.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/irt.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/research.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/teaching.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/cv.pdf</loc>
+<lastmod>2023-11-17T16:07:38-05:00</lastmod>
+</url>
+</urlset>

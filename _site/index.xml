@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome! on John P. Lalor</title>
+    <link>https://jplalor.github.io/</link>
+    <description>Recent content in Welcome! on John P. Lalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright John P. Lalor | [Vitae](https://github.com/dataCobra/hugo-vitae) theme for [Hugo](https://gohugo.io)</copyright>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jplalor.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research</title>
+      <link>https://jplalor.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/research/</guid>
+      <description>Journal Articles  J.P. Lalor, H. Wu, K. Mazor. H. Yu. Evaluating the Efficacy of NoteAid on EHR Note Comprehension among US Veterans through Amazon Mechanical Turk. International Journal of Medical Informatics. Forthcoming. K.D. Wowak, J.P. Lalor, S. Somanchi, C. Angst. Business Analytics in Healthcare: Past, Present, and Future Trends. Manufacturing and Service Operations Management. Forthcoming. J.P. Lalor, P. Rodriguez. py-irt: A Scalable Item Response Theory Library for Python. INFORMS Journal on Computing.</description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://jplalor.github.io/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/teaching/</guid>
+      <description>University of Notre Dame  ITAO 80810: Machine Learning and NLP MSSA 60230: Data Analysis with Python ITAO 40250: Unstructured Data Analytics ITAO 70810: Data Wrangling with R ITAO 70800: Integrated Analytics Deep Dive  University of Massachusetts Amherst  UMass First Year Seminar: Artificial Intelligence and Healthcare  </description>
+    </item>
+    
+    <item>
+      <title>IRT with Artificial Crowds</title>
+      <link>https://jplalor.github.io/post/emnlp19/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/emnlp19/</guid>
+      <description>Because people don&amp;rsquo;t want to label 50,000 sentences</description>
+    </item>
+    
+    <item>
+      <title>Does Item Difficulty Affect DNN Performance?</title>
+      <link>https://jplalor.github.io/post/emnlp18/</link>
+      <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/emnlp18/</guid>
+      <description>Notes on our EMNLP18 paper</description>
+    </item>
+    
+    <item>
+      <title>A quick rant about language modeling.</title>
+      <link>https://jplalor.github.io/post/openai/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/openai/</guid>
+      <description>People need to have confidence in their peopleness</description>
+    </item>
+    
+    <item>
+      <title>Item Response Theory for Natural Language Processing</title>
+      <link>https://jplalor.github.io/post/emnlp16/</link>
+      <pubDate>Tue, 12 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/emnlp16/</guid>
+      <description>Notes on our EMNLP16 paper</description>
+    </item>
+    
+    <item>
+      <title>Essential Information Theory, Part 3</title>
+      <link>https://jplalor.github.io/post/info-theory-part-3/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/info-theory-part-3/</guid>
+      <description>Wrapping up the Information Theory Introduction</description>
+    </item>
+    
+    <item>
+      <title>Essential Information Theory, Part 2</title>
+      <link>https://jplalor.github.io/post/info-theory-part-2/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/info-theory-part-2/</guid>
+      <description>Joint and Conditional Entropy</description>
+    </item>
+    
+    <item>
+      <title>Essential Information Theory, Part 1</title>
+      <link>https://jplalor.github.io/post/info-theory-part-1/</link>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/info-theory-part-1/</guid>
+      <description>Entropy!</description>
+    </item>
+    
+    <item>
+      <title>Confession: I&#39;m a Nodder</title>
+      <link>https://jplalor.github.io/post/nodder/</link>
+      <pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/nodder/</guid>
+      <description>How I act when I&amp;rsquo;m listening to a talk&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Dot Products and Vector Projections</title>
+      <link>https://jplalor.github.io/post/vector-projections/</link>
+      <pubDate>Tue, 20 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/post/vector-projections/</guid>
+      <description>Every once in a while I&amp;rsquo;m going to write a post about something I learned in my Machine Learning course here at UMass. I&amp;rsquo;d like to do one post per lecture, but I&amp;rsquo;m late out of the gate, so it might be less frequent. These posts aren&amp;rsquo;t intended to be thorough explanations of particular topics, but instead will be relatively high-level overviews, with a simple example to illustrate the concept. That&amp;rsquo;s the plan anyway.</description>
+    </item>
+    
+    <item>
+      <title>AMIA 2018 Workshop</title>
+      <link>https://jplalor.github.io/amia18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/amia18/</guid>
+      <description>Companion page for our AMIA 2018 Workshop</description>
+    </item>
+    
+    <item>
+      <title>ComprehENotes Question Set</title>
+      <link>https://jplalor.github.io/ehr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/ehr/</guid>
+      <description>Details on the ComprehENotes test</description>
+    </item>
+    
+    <item>
+      <title>FYS: Artificial Intelligence in Healthcare</title>
+      <link>https://jplalor.github.io/aihc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/aihc/</guid>
+      <description>Course page for 191CICS1</description>
+    </item>
+    
+    <item>
+      <title>Item Response Theory and Machine Learning</title>
+      <link>https://jplalor.github.io/irt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/irt/</guid>
+      <description>Incorporating IRT into ML</description>
+    </item>
+    
+    <item>
+      <title>Notre Dame Business Analytics, Learning, and Language Lab</title>
+      <link>https://jplalor.github.io/ball/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/ball/</guid>
+      <description>I lead the Notre Dame Business Analytics, Learning, and Language Lab (ND-BALL). Code from the lab is available on GitHub.
+Current Students  Katie Ryan (MS, Business Analytics) Sandy Huang (MS, Business Analytics)  Former Students  Vincent Buono (BBA, Business Analytics) Michael Ma (MS, Business Analytics) Aiden McFadden (BBA, Business Analytics) Keegan McLaughlin (BBA, Business Analytics)  </description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://jplalor.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jplalor.github.io/publications/</guid>
+      <description>Research</description>
+    </item>
+    
+  </channel>
+</rss>

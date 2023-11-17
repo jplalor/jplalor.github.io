@@ -1,7 +1,1 @@
-# exclude output dir
-/hugo/public
 
-# exclude Rproj user
-/hugo/.Rproj.user
-/hugo/.Rhistory
-.Rproj.user

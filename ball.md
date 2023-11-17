@@ -1,5 +1,5 @@
 ---
-title: "Notre Dame Business Analytics, Learning, and Language Lab"
+title: 
 ---
 
 I lead the Notre Dame Business Analytics, Learning, and Language Lab (ND-BALL).

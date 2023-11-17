@@ -1,11 +1,8 @@
 ---
-title: Homepage
+title:  
 ---
 
 
-# Welcome
-
-I'm **John Lalor**.
 I am an Assistant Professor at the [Mendoza College of Business](https://mendoza.nd.edu) at the [University of Notre Dame](https://www.nd.edu).
 I completed my Ph.D. at the University of Massachusetts Amherst in the [College of Information and Computer Science](https://cics.umass.edu).
 At UMass I was a member of the Bio-NLP group, working with Dr. Hong Yu.

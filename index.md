@@ -15,6 +15,7 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 
 ## Recent Updates {#recent-updates}
 
+-   **December 2023**: *The Effect of Bots on Human Interaction in Online Communities* was accepted for publication in MIS Quarterly!
 -   **October 2023**: Our tutorial *Item Response Theory for Natural Language Processing* was accepted for presentation at EACL 2024.
 -   **August 2023**: *H-COAL: Human Correction of AI-Generated Labels for Biomedical Named Entity Recognition* has been accepted for presentation at CIST 2023.
 -   **January 2023**: *Evaluating the Efficacy of NoteAid on EHR Note Comprehension among US Veterans through Amazon Mechanical Turk* accepted at the International Journal of Medical Informatics.

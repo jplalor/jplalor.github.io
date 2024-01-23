@@ -15,7 +15,7 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 
 ## Recent Updates {#recent-updates}
 
--   **January 2024**: *Should Fairness be a Metric or a Model? A Model-based Framework for Assessing Bias in Machine Learning Pipelines* was accepted for publication in ACM Transactions on Information Systems!
+-   **January 2024**: [*Should Fairness be a Metric or a Model? A Model-based Framework for Assessing Bias in Machine Learning Pipelines*](https://dl.acm.org/doi/10.1145/3641276) was accepted for publication in ACM Transactions on Information Systems!
 -   **December 2023**: *The Effect of Bots on Human Interaction in Online Communities* was accepted for publication in MIS Quarterly!
 -   **October 2023**: Our tutorial *Item Response Theory for Natural Language Processing* was accepted for presentation at EACL 2024.
 -   **August 2023**: *H-COAL: Human Correction of AI-Generated Labels for Biomedical Named Entity Recognition* has been accepted for presentation at CIST 2023.

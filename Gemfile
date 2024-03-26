@@ -8,6 +8,6 @@ gem "jekyll-theme-so-simple"
 group :jekyll_plugins do
     gem "jekyll-remote-theme", "~> 0.4.2"
     gem "github-pages", "228"
-
 end
+
 gem "webrick", "~> 1.8"

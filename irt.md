@@ -3,6 +3,7 @@ title: Item Response Theory and Machine Learning
 author: John P. Lalor
 summary: Incorporating IRT into ML
 type: page
+layout: page
 date: ""
 ---
 

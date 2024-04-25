@@ -3,6 +3,7 @@ title: AMIA 2018 Workshop
 author: John P. Lalor
 summary: Companion page for our AMIA 2018 Workshop
 type: page
+layout: page
 date: ""
 ---
 

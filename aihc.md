@@ -2,6 +2,7 @@
 title: "FYS: Artificial Intelligence in Healthcare"
 type: page
 author: John P. Lalor
+layout: page
 summary: Course page for 191CICS1
 ---
 

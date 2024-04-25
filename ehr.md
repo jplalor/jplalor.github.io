@@ -3,6 +3,7 @@ title: ComprehENotes Question Set
 author: John P. Lalor
 summary: Details on the ComprehENotes test
 type: page
+layout: page
 ---
 
 This page contains the ComprehENotes question set.

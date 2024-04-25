@@ -1,5 +1,6 @@
 ---
 title: "Teaching"
+layout: page
 ---
 
 ## University of Notre Dame {#university-of-notre-dame}

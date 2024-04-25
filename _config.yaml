@@ -1,16 +1,15 @@
 title: John Lalor
 description: Assistant Professor of IT, Analytics, and Operations at Notre Dame
-#remote_theme: mmistakes/so-simple-theme@3.2.0
-theme: jekyll-theme-so-simple
+remote_theme: mmistakes/so-simple-theme@3.2.0
+
 repository: jplalor/jplalor.github.io
 
 plugins:
   - jekyll-scholar
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
-github:
-  is_project_page: false
-show_downloads: false
-baseurl: '/'
+#baseurl: '/'
 url: 'https://johnlalor.github.io'
 
 exclude:

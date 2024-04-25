@@ -1,5 +1,6 @@
 ---
 title: 
+layout: page
 ---
 
 I lead the Notre Dame Business Analytics, Learning, and Language Lab (ND-BALL).

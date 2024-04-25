@@ -4,7 +4,6 @@ description: Assistant Professor of IT, Analytics, and Operations at Notre Dame
 theme: jekyll-theme-so-simple
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-scholar
 
 github:

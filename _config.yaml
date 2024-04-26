@@ -18,6 +18,8 @@ exclude:
 
 logo: /images/me.jpg
 
+google_analytics: "G-54FX4FSCJP"
+
 scholar:
   bibliography_template: bib
   bibtex_filters:

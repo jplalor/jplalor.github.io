@@ -20,6 +20,9 @@ logo: /images/me.jpg
 
 google_analytics: "G-54FX4FSCJP"
 
+permalink: /:year/:month/:title/
+
+
 scholar:
   bibliography_template: bib
   bibtex_filters:

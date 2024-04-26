@@ -3,11 +3,13 @@
 - title: Home
   url: /
 - title: Research
-  url: /research.html
+  url: /research/
 - title: Teaching
-  url: /teaching.html
+  url: /teaching/
 - title: ND-BALL
-  url: /ball.html
+  url: /ball/
+- title: Blog
+  url: /blog/
 - title: CV
   url: /cv.pdf
 # - title: Search

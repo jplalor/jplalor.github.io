@@ -10,7 +10,7 @@ plugins:
   - jekyll-remote-theme
 
 #baseurl: '/'
-url: 'https://johnlalor.github.io'
+url: 'https://johnlalor.net'
 
 exclude:
   - README.md

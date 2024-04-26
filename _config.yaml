@@ -8,6 +8,7 @@ plugins:
   - jekyll-scholar
   - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-feed
 
 #baseurl: '/'
 url: 'https://johnlalor.net'

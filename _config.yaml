@@ -24,3 +24,19 @@ scholar:
   bibliography_template: bib
   bibtex_filters:
     - latex
+
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      show_date: true
+  - scope:
+      path: "_drafts"
+      type: posts
+    values:
+      layout: post
+      show_date: true
+

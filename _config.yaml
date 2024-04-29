@@ -37,6 +37,7 @@ defaults:
     values:
       layout: post
       show_date: true
+      share: true
   - scope:
       path: "_drafts"
       type: posts

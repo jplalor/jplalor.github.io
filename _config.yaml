@@ -9,6 +9,11 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10  # amount of posts to show per page
+paginate_path: /blog/page:num/
+
 
 #baseurl: '/'
 url: 'https://johnlalor.net'

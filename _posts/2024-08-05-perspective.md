@@ -1,5 +1,5 @@
 ---
-title:"Perspective"
+title: "Perspective"
 ---
 
 Even something as seemingly definitive as time can wiggle a little from different perspectives. 

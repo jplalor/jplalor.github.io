@@ -1,0 +1,23 @@
+---
+title: "Getting Fancy"
+output: md_document
+---
+
+
+A test of getting some plots in here. 
+
+I want to use R and the baseballr package to show the standings of the NL East. 
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+library(baseballr)
+
+library(baseballr)
+library(dplyr)
+
+
+bref_standings_on_date("2024-08-22", "NL East", from = FALSE) %>%
+knitr::kable(format="markdown")
+
+```

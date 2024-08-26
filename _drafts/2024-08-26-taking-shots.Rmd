@@ -1,0 +1,54 @@
+---
+title: "Taking Shots"
+output: md_document
+---
+
+
+More experimenting with plotting in here, this time with our local WNBA team, the Indiana Fever.
+
+Since the end of June, if Caitlin Clark attempts 10 or more 3-pointers, the Fever win the game.
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(wehoop)
+
+library(dplyr)
+
+library(ggplot2)
+
+
+
+D2 <- load_wnba_player_box() %>%
+filter(athlete_id == 4433403)
+
+
+D2 %>%
+ggplot(
+    aes(
+        x=lubridate::ymd(game_date),
+        y=three_point_field_goals_attempted,
+        shape=team_winner,
+        size=three_point_field_goals_made
+    )
+) +
+geom_point() +
+geom_vline(
+    aes(
+        xintercept=lubridate::ymd("2024-06-30")
+    ),
+    color="red"
+) +
+geom_hline(
+    aes(
+        yintercept=10
+    ),
+    linetype=2
+)+
+theme_bw()  + 
+labs(
+    shape="Fever Win",
+    size="3PT Made",
+    x="Game Date",
+    y="3PT Attempts"
+)
+
+```

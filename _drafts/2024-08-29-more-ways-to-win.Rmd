@@ -1,0 +1,82 @@
+---
+title: "More Wayts to Win"
+output: md_document
+---
+
+
+More experimenting with plotting with the Fever.
+Since the Olympic break, the team is 4-1. 
+
+When they are hitting the defensive glass, they are winning.
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(wehoop)
+library(dplyr)
+
+library(ggplot2)
+
+wnba_pbp <- wehoop::load_wnba_team_box()
+
+D <- wnba_pbp %>%
+filter(team_id==5) %>% 
+filter( 
+    game_date > lubridate::ymd("2024-08-01")
+)%>% 
+select( 
+    game_date, 
+    team_score,                       
+team_winner, assists,blocks,defensive_rebounds,
+fast_break_points, field_goal_pct, field_goals_made, 
+field_goals_attempted, flagrant_fouls, fouls, 
+free_throw_pct, free_throws_made, free_throws_attempted, 
+largest_lead, offensive_rebounds, points_in_paint, 
+steals, team_turnovers, technical_fouls, 
+three_point_field_goal_pct, three_point_field_goals_made, 
+three_point_field_goals_attempted, total_rebounds,  
+total_technical_fouls, total_turnovers, turnover_points,
+turnovers   
+)
+
+D %>% 
+ggplot(
+    aes( 
+        x= game_date,
+        y=defensive_rebounds, 
+        shape=team_winner
+    )
+) + 
+geom_point(size=5)+
+theme_bw()+ 
+labs(
+    shape="Fever Win",
+    x="Game Date",
+    y="Defensive Rebounds"
+)
+
+```
+
+
+Interestingly, in their one loss they had their highest number of offensive rebounds. 
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+D %>% 
+ggplot(
+    aes( 
+        x= game_date,
+        y=offensive_rebounds, 
+        shape=team_winner
+    )
+) + 
+geom_point(size=5)+
+theme_bw()+ 
+labs(
+    shape="Fever Win",
+    x="Game Date",
+    y="Offensive Rebounds"
+)
+
+```
+
+

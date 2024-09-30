@@ -30,9 +30,7 @@ January 2025 (flexible)
 models, human-LLM interaction, and instance hardness and data difficulty
 - Work with a PhD student on implementing new machine learning methods
 for difficulty estimation and uncertainty quantification
-- Design and implement experiments using large language models to
-identify cases where models do not behave as expected given a variety of
-prompts
+- Design and implement experiments using large language models 
 - Assist with the curation of new datasets and shared tasks for NLP
 
 ### Skills

@@ -3,6 +3,7 @@ layout: page
 title:  
 ---
 
+**I'm hiring**: [See here](/hiring) for details on an open postdoc position. 
 
 I am an Assistant Professor at the [Mendoza College of Business](https://mendoza.nd.edu) at the [University of Notre Dame](https://www.nd.edu).
 I completed my Ph.D. at the University of Massachusetts Amherst in the [College of Information and Computer Science](https://cics.umass.edu).

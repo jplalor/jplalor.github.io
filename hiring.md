@@ -12,8 +12,8 @@ Please see below for details.
 
 ### To Apply 
 
-Please email your CV and a brief cover letter to jlalor1+postdoc@nd.edu to apply.
-
+- Please email your CV and a brief cover letter to jlalor1+postdoc@nd.edu to apply.
+- Arrange for two letters of recommendation to be sent to jlalor1+postdocrec@nd.edu.
 
 ### Duration
 
@@ -36,7 +36,8 @@ for difficulty estimation and uncertainty quantification
 - Design and implement experiments using large language models 
 - Assist with the curation of new datasets and shared tasks for NLP
 
-### Skills
+### Qualifications
 
 - PhD in machine learning, information systems, or related field
 - History of publications in top ML/NLP/IS conferences or journals
+- Experience with open source software and reproducible research 

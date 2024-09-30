@@ -23,6 +23,9 @@ Please email your CV and a brief cover letter to jlalor1+postdoc@nd.edu to apply
 
 January 2025 (flexible)
 
+### Location
+
+The position is in the IT, Analytics, and Operations Department of the University of Notre Dame's Mendoza College of Business.
 
 ### Responsibilities
 

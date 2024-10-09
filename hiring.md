@@ -12,8 +12,7 @@ Please see below for details.
 
 ### To Apply 
 
-- Please email your CV and a brief cover letter to jlalor1+postdoc@nd.edu to apply.
-- Arrange for two letters of recommendation to be sent to jlalor1+postdocrec@nd.edu.
+- Please submit your application using [this link](http://apply.interfolio.com/156773). 
 
 ### Duration
 
@@ -38,6 +37,6 @@ for difficulty estimation and uncertainty quantification
 
 ### Qualifications
 
-- PhD in machine learning, information systems, or related field
+- PhD received within the last five years in machine learning, information systems, or related field
 - History of publications in top ML/NLP/IS conferences or journals
 - Experience with open source software and reproducible research 

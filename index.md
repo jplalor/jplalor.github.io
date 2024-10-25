@@ -17,9 +17,10 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 
 ## Recent Updates {#recent-updates}
 
+- **October 2024**: "Individual Factors That Affect Laypeople’s Understanding of Definitions of Medical Jargon" accepted for publication at *Health Policy and Technology*!
 - **October 2024**: "Hierarchical Deep Document Model" accepted for publication at *Transactions on Knowledge and Data Engineering*!
 - **August 2024**: Received an NSF CISE grant on a Collaborative Research Proposal with Co-PIs Jordan Boyd-Graber, Robin Jia, Alvin Grissom III, and Swabha Swayamdipta
 - **August 2024**: "Evaluating Expert–Layperson Agreement in Identifying Jargon Terms in Electronic Health Record Notes: An Observational Study" accepted for publication at the Journal of Medical Internet Research!
--   **March 2024**: We ran a tutorial at EACL 2024 on [Item Response Theory for Natural Language Processing](https://eacl2024irt.github.io/). Thanks to everyone who participated! Materials are on the tutorial webpage, and a recording will be posted soon.
--   **January 2024**: [*Should Fairness be a Metric or a Model? A Model-based Framework for Assessing Bias in Machine Learning Pipelines*](https://dl.acm.org/doi/10.1145/3641276) was accepted for publication in ACM Transactions on Information Systems!
+- **March 2024**: We ran a tutorial at EACL 2024 on [Item Response Theory for Natural Language Processing](https://eacl2024irt.github.io/). Thanks to everyone who participated! Materials are on the tutorial webpage, and a recording will be posted soon.
+- **January 2024**: [*Should Fairness be a Metric or a Model? A Model-based Framework for Assessing Bias in Machine Learning Pipelines*](https://dl.acm.org/doi/10.1145/3641276) was accepted for publication in ACM Transactions on Information Systems!
 

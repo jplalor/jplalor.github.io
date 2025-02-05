@@ -10,13 +10,13 @@ layout: page
 
 # Journal Articles
 
-{% bibliography --sort_by year --order descending --query @*[keywords ~= journal]%}
+{% bibliography --query @*[keywords ~= journal]%}
 
 # Conference Proceedings
 
-{% bibliography --sort_by year --order descending --query @*[keywords ~= conference]%}
+{% bibliography --query @*[keywords ~= conference]%}
 
 # Other Research Outputs
 
-{% bibliography --sort_by year --order descending --query @*[keywords ~= abstract]%}
+{% bibliography --query @*[keywords ~= abstract]%}
 

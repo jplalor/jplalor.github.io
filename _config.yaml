@@ -31,6 +31,8 @@ permalink: /:year/:month/:title/
 
 scholar:
   bibliography_template: bib
+  sort_by: date
+  order: descending
   bibtex_filters:
     - latex
 

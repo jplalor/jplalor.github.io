@@ -16,6 +16,9 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 
 ## Recent Updates {#recent-updates}
 
+<div markdown="1" style="height:200px;overflow-y:auto">
+
+- **July 2025**: "From Stars to Insights: Exploration and Implementation of Unified Sentiment Analysis with Distant Supervision" accepted for publication at ACM Transactions on Management Information Systems (TMIS)!
 - **May 2025**: "Textagon: Boosting Language Models with Theory-guided Parallel Representations" accepted at ACL 2025!
 - **January 2025**: "No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks" accepted at NAACL 2025!
 - **November 2024**: Gave a keynote talk at the [New Perspectives on Bias and Discrimination in Language Technology](https://wai-amsterdam.github.io/) workshop at the University of Amsterdam. Thank you to the organizers for the invitation!
@@ -26,3 +29,4 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 - **March 2024**: We ran a tutorial at EACL 2024 on [Item Response Theory for Natural Language Processing](https://eacl2024irt.github.io/). Thanks to everyone who participated! Materials are on the tutorial webpage, and a recording will be posted soon.
 - **January 2024**: [*Should Fairness be a Metric or a Model? A Model-based Framework for Assessing Bias in Machine Learning Pipelines*](https://dl.acm.org/doi/10.1145/3641276) was accepted for publication in ACM Transactions on Information Systems!
 
+</div>

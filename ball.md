@@ -7,10 +7,10 @@ I lead the Notre Dame Business Analytics, Learning, and Language Lab (ND-BALL).
 Code from the lab is available on [GitHub](https://github.com/nd-ball).
 
 
-## Current Students {#current-students}
+## Current Members {#current-students}
 
+- Krishna Pothugunta (postdoc)
 - Ryan Cook (PhD, Analytics)
-- Sarah Deussing (MS, Sports Analytics)
 
 
 ## Former Students {#former-students}
@@ -22,3 +22,4 @@ Code from the lab is available on [GitHub](https://github.com/nd-ball).
 - Katie Ryan (MS, Business Analytics)
 - Sandy Huang (MS, Business Analytics)
 - Guangyu Meng (PhD, Computer Science)
+- Sarah Deussing (MS, Sports Analytics)

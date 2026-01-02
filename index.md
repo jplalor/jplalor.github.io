@@ -18,6 +18,7 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 
 <div markdown="1" style="height:200px;overflow-y:auto">
 
+- **December 2025**: Pedro Rodriguez and I received the 2025 INFORMS Design Science Award, presented at WITS!
 - **November 2025**: "A Psychology-based Unified Dynamic Framework for Curriculum Learning" was accepted for publication at Computational Linguistics!
 - **September 2025**: "From Policy to Practice: Research Directions for Trustworthy and Responsible AI ‘by Design’” forthcoming at IEEE Intelligent Systems!
 - **July 2025**: "From Stars to Insights: Exploration and Implementation of Unified Sentiment Analysis with Distant Supervision" accepted for publication at ACM Transactions on Management Information Systems (TMIS)!

@@ -16,13 +16,14 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 
 ## Recent Updates {#recent-updates}
 
-<div markdown="1" style="height:200px;overflow-y:auto">
 
 - **December 2025**: Pedro Rodriguez and I received the 2025 INFORMS Design Science Award, presented at WITS!
 - **November 2025**: "A Psychology-based Unified Dynamic Framework for Curriculum Learning" was accepted for publication at Computational Linguistics!
 - **September 2025**: "From Policy to Practice: Research Directions for Trustworthy and Responsible AI ‘by Design’” forthcoming at IEEE Intelligent Systems!
 - **July 2025**: "From Stars to Insights: Exploration and Implementation of Unified Sentiment Analysis with Distant Supervision" accepted for publication at ACM Transactions on Management Information Systems (TMIS)!
 - **May 2025**: "Textagon: Boosting Language Models with Theory-guided Parallel Representations" accepted at ACL 2025!
+
+<!--
 - **January 2025**: "No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks" accepted at NAACL 2025!
 - **November 2024**: Gave a keynote talk at the [New Perspectives on Bias and Discrimination in Language Technology](https://wai-amsterdam.github.io/) workshop at the University of Amsterdam. Thank you to the organizers for the invitation!
 - **October 2024**: "Individual Factors That Affect Laypeople’s Understanding of Definitions of Medical Jargon" accepted for publication at *Health Policy and Technology*!
@@ -31,5 +32,5 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 - **August 2024**: "Evaluating Expert–Layperson Agreement in Identifying Jargon Terms in Electronic Health Record Notes: An Observational Study" accepted for publication at the Journal of Medical Internet Research!
 - **March 2024**: We ran a tutorial at EACL 2024 on [Item Response Theory for Natural Language Processing](https://eacl2024irt.github.io/). Thanks to everyone who participated! Materials are on the tutorial webpage, and a recording will be posted soon.
 - **January 2024**: [*Should Fairness be a Metric or a Model? A Model-based Framework for Assessing Bias in Machine Learning Pipelines*](https://dl.acm.org/doi/10.1145/3641276) was accepted for publication in ACM Transactions on Information Systems!
+-->
 
-</div>

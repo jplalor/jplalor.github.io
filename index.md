@@ -16,6 +16,7 @@ I received my Master's Degree in Computer Science at DePaul University, where I 
 
 ## Recent Updates {#recent-updates}
 
+- **August 2026**: "Inflation in Reputation Systems? Newcomers, Veterans, and Socialization within a Platform Community" accepted at Information Systems Research!
 - **August 2026**: "Modeling Edge-rich Graphs using Neural Networks" accepted at IEEE Transactions on Knowledge and Data Engineering!
 - **May 2026**: I received this year's ITAO Department Outstanding Research Award!
 - **April 2026**: "Carefully Considering Culture: Analyzing LLM Alignment in Single- and Multi-Cultural Settings using Cultural Consensus Theory" accepted to ACL Findings 2026!

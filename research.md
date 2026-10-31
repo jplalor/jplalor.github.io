@@ -9,21 +9,19 @@ layout: page
 
 ## Under Review/Revision
 
-- **[6]** Mohlmann, M., **Lalor, J. P.**, Son, Y., & Berente, N. Inflation in reputation systems? Newcomers, veterans, and socialization into a platform context. Minor revision (after 5th round) at *Information Systems Research*.
-- **[5]** Zheng, S.,† **Lalor, J. P.**, & Chen, Y. Diversifying recommendations on digital platforms: A dynamic graph neural network approach. Major revision (after 1st round) at *Management Science*.
-- **[4]** Li, S.,† **Lalor, J. P.**, Ahmad, F., Abbasi, A., & Chawla, N. Modeling edge-rich graphs using neural networks. Major revision (after 1st round) at *IEEE Transactions on Knowledge and Data Engineering*.
-- **[3]** **Lalor, J. P.**, Angst, C. M., D'Arcy, J., Nwanganga, F., & Joshi, M. When uniform regulation meets local realities: A theory of distributed regulatory decoupling in the case of GDPR. Under review (1st round) at *Information Systems Research*.
-- **[2]** Pothugunta, K.,◇ & **Lalor, J. P.** When AI learns to care: Cross-cultural variation in artificial compassion. Under review (1st round) at *Information Systems Research* Special Issue on Compassionate AI.
-- **[1]** Oketch, K.,† **Lalor, J. P.**, Zhang, D., & Abbasi, A. Is linguistic variation signal or noise? A taxonomy-guided evaluation of sociolinguistic diversity in Swahili NLP. Under review (1st round) at *MIS Quarterly*.
-
-
-
+- **[5]** **Lalor, J. P.** Literate research: Designing transparent, traceable, and reproducible human-AI inquiry. Under review (1st round) at *Information Systems Research*.
+- **[4]** **Lalor, J. P.**, Yu, X., Kanuri, V., & Kelley, K. LUMEN: A large language model architecture for discovering theory from unstructured data. Under review (1st round) at *Information Systems Research*.
+- **[3]** Zheng, S.,† **Lalor, J. P.**, & Chen, Y. Diversifying recommendations on digital platforms: A dynamic graph neural network approach. Major revision (after 1st round) at *Management Science*.
+- **[2]** **Lalor, J. P.**, Angst, C. M., D'Arcy, J., Nwanganga, F., & Joshi, M. When uniform regulation meets local realities: A theory of distributed regulatory decoupling in the case of GDPR. Major revision (after 1st round) at *Information Systems Research*.
+- **[1]** Oketch, K.,† **Lalor, J. P.**, Zhang, D., & Abbasi, A. Is linguistic variation signal or noise? A taxonomy-guided evaluation of sociolinguistic diversity in Swahili NLP. Major revision (after 1st round) at *MIS Quarterly*.
 
 ---
 
 ## Journal Articles
 
-- **[J15]** Meng, G.,† Zeng, Q.,† **Lalor, J. P.**, & Yu, H. (2025). A Psychology-based unified dynamic framework for curriculum learning. *Computational Linguistics*, 1–49.
+- **[J17]** Mohlmann, M., **Lalor, J. P.**, Son, Y., & Berente, N. (2026). Inflation in reputation systems? Newcomers, veterans, and socialization within a platform community. *Information Systems Research*, Articles in Advance. <https://doi.org/10.1287/isre.2022.0321>
+- **[J16]** Li, S.,† **Lalor, J. P.**, Ahmad, F., Abbasi, A., & Chawla, N. (2026). Modeling edge-rich graphs using neural networks. *IEEE Transactions on Knowledge and Data Engineering*, 38(11), 7624–7637.
+- **[J15]** Meng, G.,† Zeng, Q.,† **Lalor, J. P.**, & Yu, H. (2026). A Psychology-based unified dynamic framework for curriculum learning. *Computational Linguistics*, 52(3), 1001–1049.
 - **[J14]** Krishnan, R., **Lalor, J. P.**, Prat, N., & Abbasi, A. (2025). From policy to practice: Research directions for trustworthy and responsible artificial intelligence "by design". *IEEE Intelligent Systems*, 40(5), 45–51.
 - **[J13]** Li, W.,† **Lalor, J. P.**, Chen, Y., & Kanuri, V. K. (2025). From stars to insights: Exploration and implementation of unified sentiment analysis with distant supervision. *ACM Transactions on Management Information Systems*, 16(3), 1–21.
 - **[J12]** Yang, Y., **Lalor, J. P.**, Abbasi, A., & Zeng, D. D. (2025). Hierarchical deep document model. *IEEE Transactions on Knowledge and Data Engineering*, 37(1), 351–364.
@@ -36,7 +34,7 @@ layout: page
 - **[J8]** Levy, D. A., Jordan, H. S., **Lalor, J. P.**, Smirnova, J. K., Hu, W., Liu, W., & Yu, H. (2024). Individual factors that affect laypeople's understanding of definitions of medical jargon. *Health Policy and Technology*, 13(6), 100932.
 - **[J7]** **Lalor, J. P.**, & Rodriguez, P. (2023). py-irt: A scalable item response theory library for Python. *INFORMS Journal on Computing*, 35(1), 5–13.
     - INFORMS ISS Design Science Award, 2025.
-- **[J6]** Wowak, K. D., *Lalor, J. P.*, Somanchi, S., & Angst, C. M. (2023). Business analytics in healthcare: Past, present, and future trends. *Manufacturing & Service Operations Management*, 25(3), 975–995.
+- **[J6]** Wowak, K. D., **Lalor, J. P.**, Somanchi, S., & Angst, C. M. (2023). Business analytics in healthcare: Past, present, and future trends. *Manufacturing & Service Operations Management*, 25(3), 975–995.
 - **[J5]** **Lalor, J. P.**, Wu, H., Mazor, K. M., & Yu, H. (2023). Evaluating the efficacy of NoteAid on EHR note comprehension among US Veterans through Amazon Mechanical Turk. *International Journal of Medical Informatics*, 172, 105006.
 - **[J4]** **Lalor, J. P.**, Hu, W., Tran, M., Wu, H., Mazor, K. M., & Yu, H. (2021). Evaluating the effectiveness of NoteAid in a community hospital setting: Randomized trial of electronic health record note comprehension interventions with patients. *Journal of Medical Internet Research*, 23(5), e26354.
 - **[J3]** Chen, J., **Lalor, J. P.**, Liu, W., Druhl, E., Granillo, E., Vimalananda, V. G., & Yu, H. (2019). Detecting hypoglycemia incidents reported in patients' secure messages: Using cost-sensitive learning and oversampling to reduce data imbalance. *Journal of Medical Internet Research*, 21(3), e11990.
@@ -51,6 +49,7 @@ layout: page
 
 *Note: This list includes papers in computer science conference proceedings that have been listed as "Top Conferences" according to the NYU Technology, Operations and Statistics Department Top Publication Venues ([link](https://share.google/dTTRcV7LypkEMSJl0)).*
 
+- **[TC9]** Oketch, K.,† **Lalor, J. P.**, Zhang, D., & Abbasi, A. (2026, October). T-CLA: Taxonomy of cultural-linguistic artifacts for modeling misalignment in NLP. In *Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing* (pp. 61267–61284).
 - **[TC8]** **Lalor, J. P.**, Qin, R.,† Dobolyi, D., & Abbasi, A. (2025, July). Textagon: Boosting language models with theory-guided parallel representations. In *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)* (pp. 82–92).
 - **[TC7]** Cook, R. A.,† **Lalor, J. P.**, & Abbasi, A. (2025, April). No simple answer to data complexity: An examination of instance-level complexity metrics for classification tasks. In *Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)* (pp. 2553–2573).
 - **[TC6]** **Lalor, J. P.**, Yang, Y., Smith, K., Forsgren, N., & Abbasi, A. (2022, July). Benchmarking intersectional biases in NLP. In *Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies* (pp. 3598–3609).
@@ -66,14 +65,16 @@ layout: page
 
 ## Additional Peer-Reviewed Conference and Workshop Proceedings
 
-- **[P30]** Pothugunta, K.,◇ & **Lalor, J. P.** (To appear). Carefully Considering Culture: Analyzing LLM Alignment in Single- and Multi-Cultural Settings using Cultural Consensus Theory. In *Findings of the Association for Computational Linguistics: ACL 2026*.
-- **[P29]** Meng, G.,† Gu, P., Liang, P., **Lalor, J. P.**, Chambers, E. W., & Chen, D. Z. (To appear). TopoCL: Topological Contrastive Learning for Medical Imaging. In *Proceedings of the 2026 Computer Vision and Pattern Recognition Conference (CVPR)*.
-- **[P28]** Chen, S.,† **Lalor, J. P.**, Yang, Y., & Abbasi, A. (2025, July). PersonaTwin: A multi-tier prompt conditioning framework for generating and evaluating personalized digital twins. In *Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²)* (pp. 774–788).
+- **[P32]** Pothugunta, K.,◇ & **Lalor, J. P.** (2026). Coherent but displaced: Measuring cultural representation validity in LLM deployment. In *Conference on Information Systems and Technology*.
+- **[P31]** Pothugunta, K.,◇ & **Lalor, J. P.** (2026, July). Carefully Considering Culture: Analyzing LLM Alignment in Single- and Multi-Cultural Settings using Cultural Consensus Theory. In *Findings of the Association for Computational Linguistics: ACL 2026* (pp. 26571–26582).
+- **[P30]** Meng, G.,† Gu, P., Liang, P., **Lalor, J. P.**, Chambers, E. W., & Chen, D. Z. (2026, June). TopoCL: Topological Contrastive Learning for Medical Imaging. In *Proceedings of the 2026 Computer Vision and Pattern Recognition Conference (CVPR)* (pp. 42681–42690).
+- **[P29]** Chen, S.,† **Lalor, J. P.**, Yang, Y., & Abbasi, A. (2025, July). PersonaTwin: A multi-tier prompt conditioning framework for generating and evaluating personalized digital twins. In *Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²)* (pp. 774–788).
+- **[P28]** Oketch, K.,† Angst, C. M., **Lalor, J. P.**, & Abbasi, A. (2025). Symbolic knowledge, epistemic pluralism, and decision support. In *Proceedings of the 2025 Pre-ICIS SIGDIGIT Workshop (DIGIT)*.
 - **[P27]** Oketch, K.,† **Lalor, J. P.**, & Abbasi, A. (2025). Cultural artifacts, tribal heterogeneity, and language models. In *the 46th AIS International Conference on Information Systems (ICIS)*.
     - Also presented at the *2025 Workshop on Information Technology and Systems (WITS)*.
 - **[P26]** Oketch, K.,† **Lalor, J. P.**, Yang, Y., & Abbasi, A. (2025). Bridging the LLM accessibility divide? Performance, fairness, and cost of closed versus open LLMs for automated essay scoring. In *Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²)* (pp. 655–669).
-- **[P25]** Prat, N., *Lalor, J. P.*, & Abbasi, A. (2025, May). GALEA-Leveraging generative agents in artifact evaluation. In *International Conference on Design Science Research in Information Systems and Technology* (pp. 83–98).
-- **[P24]** Yang, Y., Duan, H.,† Abbasi, A., *Lalor, J. P.*, & Tam, K. Y. (2025, May). Bias a-head? Analyzing bias in transformer-based language model attention heads. In *Proceedings of the 5th Workshop on Trustworthy NLP (TrustNLP 2025)* (pp. 276–290).
+- **[P25]** Prat, N., **Lalor, J. P.**, & Abbasi, A. (2025, May). GALEA-Leveraging generative agents in artifact evaluation. In *International Conference on Design Science Research in Information Systems and Technology* (pp. 83–98).
+- **[P24]** Yang, Y., Duan, H.,† Abbasi, A., **Lalor, J. P.**, & Tam, K. Y. (2025, May). Bias a-head? Analyzing bias in transformer-based language model attention heads. In *Proceedings of the 5th Workshop on Trustworthy NLP (TrustNLP 2025)* (pp. 276–290).
 - **[P23]** **Lalor, J. P.**, Somanchi, S., Nwanganga, F., D'Arcy, J., & Angst, C. M. (2024). It's not what you say, it's how you say it: Investigating GDPR enforcement variation in the EU. In *Academy of Management Proceedings* (Vol. 2024, No. 1, p. 17252).
     - Also presented at the *Twentieth Symposium on Statistical Challenges in Electronic Commerce Research (SCECR)*.
 - **[P22]** **Lalor, J. P.**, Rodriguez, P., Sedoc, J., & Hernandez-Orallo, J. (2024, March). Item response theory for natural language processing. In *Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: Tutorial Abstracts* (pp. 9–13).
@@ -106,7 +107,13 @@ layout: page
 
 ## Working Papers
 
+- **[12]** Meng, G.,† Gu, P., Liang, P., **Lalor, J. P.**, Chambers, E. W., & Chen, D. Z. VTRL-Med: Progressive visual refinement with topology-guided regularization for medical image clustering. <https://arxiv.org/abs/2610.32884>
+- **[11]** Batzner, J., Nelaturu, S. H., Stachura, D., …, **Lalor, J. P.**, …, & Choshen, L. (48 authors). Every Eval Ever: A unifying schema and community repository for AI evaluation results. <https://arxiv.org/abs/2606.14516>
+- **[10]** Ye, Y., Zhang, Z., Ma, T., …, **Lalor, J. P.**, …, & Chawla, N. V. (29 authors). LLMs4All: A review of large language models across academic disciplines. <https://arxiv.org/abs/2509.19580>
+- **[9]** Pothugunta, K.,◇ & **Lalor, J. P.** Digital representations of cross-cultural value structures: Evaluating consensus consistency across inference settings.
+- **[8]** Pothugunta, K.,◇ & **Lalor, J. P.** When AI learns to care: Cross-cultural variation in artificial compassion.
 - **[7]** **Lalor, J. P.**, Guo, H., Recker, J., Berente, N., & Abbasi, A. Measuring algorithmic interpretability: A human-learning-based framework and corresponding cognitive complexity score.
+    - Earlier version: <https://arxiv.org/abs/2205.10207>
 - **[6]** Costello, J., Chen, Y., **Lalor, J. P.**, & Guo, R. Rate before you write: How the presence and positioning of multidimensional attribute ratings influence attrition in online reviews.
 - **[5]** **Lalor, J. P.**, & Qu, X. On the production and spread of news in a digital age.
 - **[4]** Cook, R.,† **Lalor, J. P.**, & Abbasi, A. CADE: Classification with automatic difficulty estimation.
